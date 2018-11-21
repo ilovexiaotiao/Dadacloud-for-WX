@@ -6,10 +6,24 @@
 </head>
 <body>
   <table border = 1>
-         {% for Id, Name in result.items() %}
+      <tr>
+        <th>Status</th>
+        <th>CreatorName</th>
+        <th>Name</th>
+        <th>HasInstance</th>
+        <th>CreateTime</th>
+        <th>TplType</th>
+        <th>Id</th>
+    </tr>
+         {% for i in result %}
             <tr>
-               <th> {{ Id }} </th>
-               <td> {{ Name }} </td>
+               <th> {{ i['Status'] }} </th>
+               <th> {{ i['CreatorName'] }} </th>
+                <th> {{ i['Name'] }} </th>
+                <th> {{ i['HasInstance'] }} </th>
+                <th> {{ i['CreateTime'] }} </th>
+                <th> {{ i['TplType'] }} </th>
+                <th> {{ i['Id'] }} </th>
             </tr>
          {% endfor %}
       </table>

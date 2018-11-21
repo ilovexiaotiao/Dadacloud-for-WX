@@ -39,8 +39,12 @@ access_token = key["access_token"]
 print(access_token)
 key2=dada_form_module(access_token)
 # 从字典里取 data 数组
-dataList = key2[1]
-print dataList
+dataList = key2
+
+
+
+print dataList,len(dataList)
+
 
 app = Flask(__name__)
 @app.route('/result',methods = ['POST', 'GET'])
