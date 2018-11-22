@@ -4,8 +4,10 @@ import json
 from flask import Flask, render_template, request
 
 from core.login.login_dadayun import dada_accesstoken
+from core.form.get_form import dada_form_module
 from datetime import datetime
 
+KEPOPTHIN=""
 FILEDS =""
 FILTER =""
 START =""
@@ -14,14 +16,16 @@ SORT =""
 COUNT =""
 
 
-def dada_form_module(accesstoken):
+def dada_form_module(accesstoken,module_id):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
         #'Content-Type': 'application/x-www-form-urlencoded',
         'Authorization': 'Bearer ' + accesstoken
     }
-    url='https://api.dadayun.cn/v1/form/templates'
+
+    url='https://api.dadayun.cn/v1/form/templates/'+module_id +'/instances'
     params={
+        'keyOption':"",
         'fields':"",
         'filter':"" ,
         'start':"",
