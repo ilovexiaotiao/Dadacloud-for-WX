@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <table border = 1>
+      <tr>
+        <th>Status</th>
+        <th>CreatorName</th>
+        <th>Name</th>
+        <th>HasInstance</th>
+        <th>CreateTime</th>
+        <th>TplType</th>
+        <th>Id</th>
+    </tr><!DOCTYPE html>
+<html lang="en">
    <head>
 <title>pull to refresh</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -52,8 +68,8 @@ body, html {
 		<li>
 			<img src="{{ url_for('static', filename='img/game1.png') }}">
 			<div class="game-info" id="{{ i['Id'] }}">
-				<h1>{{ i['Name'] }} </h1>
-				<p> {{ i['CreatorName'] }}</p>
+				<h1>{{ i['Title'] }} </h1>
+				<p> {{ i['IsValid'] }}</p>
 				<p>{{ i['CreateTime'] }} </p>
 			</div>
 			<button>打开</button>
@@ -95,6 +111,7 @@ function Load() {
 	},3000);
 }
 </script>
+
 
 </body>
 </html>

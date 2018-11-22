@@ -11,7 +11,10 @@ START =""
 LIMIT =""
 SORT =""
 COUNT =""
-
+CLIENNT_ID='1812bf31d6e641dfb4a18d66b41e8cfc'
+CLIENT_SECRET='25a93e45e1a949edb5cda6125bd823af'
+USERNAME='userAdmin'
+PASSWORD='Xiaotiao1'
 class Dada_form(object):
     def __init__(self,token):
         if not isinstance(token,Dada_accesstoken):
@@ -65,7 +68,7 @@ class Dada_form(object):
 
     def get_entity_total(self,moduleid):
         headers = self.headers
-        url =  'https://api.dadayun.cn/v1/form/templates/'+moduleid+'/instance'
+        url =  'https://api.dadayun.cn/v1/form/templates/'+moduleid+'/instances'
         params = {
             'keyOpition':"",
             'fields': "",
@@ -81,7 +84,7 @@ class Dada_form(object):
 
     def get_entity(self,moduleid,entityid):
         headers = self.headers
-        url = 'https://api.dadayun.cn/v1/form/templates/' + moduleid + '/instance/'+entityid
+        url = 'https://api.dadayun.cn/v1/form/templates/' + moduleid + '/instances/'+entityid
         params = {
             'keyOpition': "",
             'fields': "",
@@ -92,4 +95,8 @@ class Dada_form(object):
         return result
 
 
-
+token=Dada_accesstoken(USERNAME,PASSWORD,CLIENNT_ID,CLIENT_SECRET)
+form=Dada_form(token)
+data=form.get_module_hasinstance()
+data1=form.get_entity_total('5636039f-5e43-44c4-89bf-b192ac49939d')
+print(data1)

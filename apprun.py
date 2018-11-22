@@ -16,12 +16,18 @@ PASSWORD='Xiaotiao1'
 token=Dada_accesstoken(USERNAME,PASSWORD,CLIENNT_ID,CLIENT_SECRET)
 form=Dada_form(token)
 data=form.get_module_hasinstance()
+data1=form.get_entity_total('5636039f-5e43-44c4-89bf-b192ac49939d')
 
 app = Flask(__name__)
 @app.route('/result',methods = ['POST', 'GET'])
 def result():
     if request.method == 'GET':
         return render_template("test.html",result = data)
+
+@app.route('/result1',methods = ['POST', 'GET'])
+def result1():
+    if request.method == 'GET':
+        return render_template("test1.html",result = data1)
 
 
 if __name__ == '__main__':
