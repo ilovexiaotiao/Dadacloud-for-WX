@@ -31,6 +31,8 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/iscroll.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/pullToRefresh.mini.js') }}"></script>
 
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.8.2.min.js') }}"></script>
+
 <style type="text/css" media="all">
 body, html {
 	padding: 0;
@@ -67,12 +69,12 @@ body, html {
         {% for i in result %}
 		<li>
 			<img src="{{ url_for('static', filename='img/game1.png') }}">
-			<div class="game-info" id="{{ i['Id'] }}">
+			<div class="game-info">
 				<h1>{{ i['Title'] }} </h1>
 				<p> {{ i['IsValid'] }}</p>
 				<p>{{ i['CreateTime'] }} </p>
 			</div>
-			<button>打开</button>
+			<button id="{{ i['Id'] }}" onclick="get_id(this)">打开</button>
 		</li>
         {% endfor %}
 	</ul>
@@ -110,6 +112,42 @@ function Load() {
 		wrapper.refresh();/****remember to refresh after action completed！！！   ---id.refresh(); --- ****/
 	},3000);
 }
+</script>
+
+<script type="text/javascript">
+    function get_id(element){
+        var entityid=element.id;
+        //alert(entityid);
+        var dataorigin={
+                    'entityid': entityid,
+            };
+        var data =JSON.stringify(dataorigin);
+         //alert(data);
+        $.ajax({
+                url:'/result1',
+                type:'POST',
+                data:data,
+                dataType: 'json',
+                contentType: 'application/json; charset=UTF-8',
+                success:function(res){
+                    console.log(res);
+                    console.log(0);
+                    alert('success!');
+
+                },
+                error:function (res) {
+                    console.log(res);
+                    console.log(1);
+                }
+         })
+         var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search
+        alert(r);
+         location.href=window.location.href+"/"+entityid
+    }
+
+
+
 </script>
 
 

@@ -3,7 +3,10 @@ import requests
 import json
 from datetime import datetime
 import time
-
+CLIENNT_ID='1812bf31d6e641dfb4a18d66b41e8cfc'
+CLIENT_SECRET='25a93e45e1a949edb5cda6125bd823af'
+USERNAME='userAdmin'
+PASSWORD='Xiaotiao1'
 
 class Dada_accesstoken(object):
     # 类的初始化

@@ -95,8 +95,8 @@ class Dada_form(object):
         return result
 
 
-token=Dada_accesstoken(USERNAME,PASSWORD,CLIENNT_ID,CLIENT_SECRET)
-form=Dada_form(token)
-data=form.get_module_hasinstance()
-data1=form.get_entity_total('5636039f-5e43-44c4-89bf-b192ac49939d')
-print(data1)
+#token=Dada_accesstoken(USERNAME,PASSWORD,CLIENNT_ID,CLIENT_SECRET)
+#form=Dada_form(token)
+#data=form.get_module_hasinstance()
+#data1=form.get_entity_total('5636039f-5e43-44c4-89bf-b192ac49939d')
+#print(data1)
