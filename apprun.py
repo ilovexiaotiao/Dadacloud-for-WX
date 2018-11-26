@@ -27,7 +27,7 @@ def initial():
 @app.route('/result',methods = ['POST', 'GET'])
 def result():
     if request.method == 'GET':
-        data = form.get_module_hasinstance()
+        data = form.get_module_total()
         return render_template("test.html", result=data)
     if request.method == 'POST':
         data = request.get_json()
