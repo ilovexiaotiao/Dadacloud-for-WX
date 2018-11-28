@@ -5,7 +5,7 @@ import time
 import conf.CONFIG
 import sys
 reload(sys)
-import core.others.login_exception
+import core.others.custom_exception
 
 
 # 搭搭云微信注册类：
@@ -39,9 +39,9 @@ class Dada_login(object):
             self.result = json.loads(self.response.content)
             #判断返回结果中是否有错误提示
             if self.result.has_key('error'):
-                raise (core.others.login_exception.Dada_login_exception(self.result['error']))
+                raise (core.others.custom_exception.Dada_login_exception(self.result['error']))
         #调用登录错误类，查看错误日志
-        except core.others.login_exception.Dada_login_exception,x:
+        except core.others.custom_exception.Dada_login_exception,x:
             print '错误概述--->', x
             print '错误类型--->', x.parameter
             print '错误原因--->', x.desc
@@ -101,18 +101,18 @@ class Dada_login(object):
             try:
                 #print self.get_refresh()
                 response = requests.post(url=url, data=params, headers=headers)
-                result = json.loads(response.content)
+                result_refresh = json.loads(response.content)
                 # 判断返回结果中是否有错误提示
-                if result.has_key('error'):
-                    raise (core.others.login_exception.Dada_login_exception(result['error']))
+                if result_refresh.has_key('error'):
+                    raise (core.others.custom_exception.Dada_login_exception(result_refresh['error']))
             # 调用登录错误类，查看错误日志
-            except core.others.login_exception.Dada_login_exception, x:
+            except core.others.custom_exception.Dada_login_exception, x:
                 print '错误概述--->', x
                 print '错误类型--->', x.parameter
                 print '错误原因--->', x.desc
             # 成功获取Access_Token和Refresh_Token， 并计算新的密匙生效时间和失效时间
             else:
-                self.result= result
+                self.result= result_refresh
                 self.start = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
                 self.end = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time() + self.result['expires_in']))
                 self.timestamp = time.mktime(time.localtime(time.time() + self.result['expires_in']))  # 获取失效时间戳
@@ -123,7 +123,7 @@ class Dada_login(object):
 
 
 
-
+#
 # a=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
 # print(a.result)
 

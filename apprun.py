@@ -4,7 +4,7 @@ import json
 from flask import Flask, render_template, request,redirect,url_for
 
 from core.login.login_dadayun import Dada_accesstoken
-from core.form.get_form import Dada_form
+from core.form.get_module import Dada_form
 from datetime import datetime
 
 CLIENNT_ID='1812bf31d6e641dfb4a18d66b41e8cfc'
