@@ -40,6 +40,7 @@ class Dada_entity(object):
 
     #通过MODULE_ID，获取指定单据模板
     def get_entity_fields(self):
+        result_fields_show=[]
         paramsstr = '?version=' + conf.CONFIG.MODULE_ID_PARAMS['version']
         headers = self.headers
         # 合成GET形式URL
@@ -60,7 +61,27 @@ class Dada_entity(object):
             print '错误原因--->', x.desc
         # 成功获取指定表单数据，返回JSON格式源
         else:
-            return result_entityfields
+            #print result_entityfields
+            nohidden = result_entityfields['Fields']
+            # 成功获取实体字段数据
+            for i in range( 0 , len(nohidden)):
+                if nohidden[i]['Hidden'] is not True:
+                     result_fields_show.append(nohidden[i])
+            # 生成新的字典，装在可读字段列表
+            #print result_fields_show
+            #print len(result_fields_show)
+        return result_fields_show
+
+    def get_entity_fields_name(self):
+        all_fields=self.get_entity_fields()
+        #print all_fields[0]
+        inlen=len(all_fields)
+        #print inlen
+        result_name=[]
+        #从实体内容中提取实体名称，并以列表形式输出
+        for i in range(1,inlen):
+            result_name.append(all_fields[i]['EntityPropertyName'])
+        return result_name
 
 
 
@@ -139,12 +160,9 @@ class Dada_entity(object):
             return result_revise
 
 
-#
-# token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
-# module=Dada_module(token)
-# entity=Dada_entity(token,'c083025d-c134-4c5c-846c-740af79b360c')
-# ss=entity.get_entity_fields()
-# for key,value in ss.items():
-#
-#     print key
-#
+
+token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
+module=Dada_module(token)
+entity=Dada_entity(token,'c083025d-c134-4c5c-846c-740af79b360c')
+ss=entity.get_entity_fields_name()
+print ss

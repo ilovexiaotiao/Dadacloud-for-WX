@@ -40,6 +40,9 @@ class Dada_fields(object):
                 #采用表头传参方式，将Access_Token发送至API平台
                 'Authorization': 'Bearer ' + self.accesstoken
             }
+
+
+
     #获取实体的所有字段
     def get_fields_all(self):
         paramsstr = '?keyOption=' + conf.CONFIG.MODULE_ENTITY_ID_PARAMS['keyOption'] \
@@ -168,7 +171,7 @@ class Dada_fields(object):
 
 
 
-
-token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
-fields=Dada_fields(token,'c083025d-c134-4c5c-846c-740af79b360c','1e813c4e-c770-4b57-992e-ce8798df9e86')
-print (fields.get_fields_all())
+#
+# token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
+# fields=Dada_fields(token,'c083025d-c134-4c5c-846c-740af79b360c','1e813c4e-c770-4b57-992e-ce8798df9e86')
+# print (fields.get_fields_all())

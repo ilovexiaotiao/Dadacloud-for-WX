@@ -83,7 +83,7 @@ class Dada_module(object):
         else:
             # 成功获取表单列表数据，返回JSON格式源
             inlen = len(hasinstance)
-            for i in range(0, inlen-1):
+            for i in range(0, inlen):
                 if hasinstance[i]['HasInstance'] is True and hasinstance[i]['Status']>0 :
                     result_hasinstance.append(hasinstance[i])
 

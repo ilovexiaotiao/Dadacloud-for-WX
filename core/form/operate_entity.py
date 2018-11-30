@@ -12,7 +12,7 @@ from get_fields import Dada_fields
 # 搭搭云实体操作类：
 # 1，此流程获取token适合开发者没有自己的web服务器，且应用为原生程序，即客户端应用（同时应用无法与浏览器交互，但是可以外调用浏览器）
 # 2，需先完成模板定义验证，才可以进行表单操作。
-# 3，分为两三个模块，新建、修改和删除模块，通过POST、DELETE形式，推送Access_Token和相应字段到API平台，返回JSON数据。
+# 3，分为两三个模块，新建、修改和删除模块，通过POST、PUT、DELETE形式，推送Access_Token和相应字段到API平台，返回JSON数据。
 
 
 class Dada_entity_operate(object):
@@ -37,56 +37,41 @@ class Dada_entity_operate(object):
                 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
                 "Content-Type": "application/json; charset=utf-8",
                 #采用表头传参方式，将Access_Token发送至API平台
+                #'Authorization':'Bearer 4450e9d4415202a907d0408d3193b749fe021c3bd9a8a76ef8e0817cddcc7247'
                 'Authorization': 'Bearer ' + self.accesstoken
                 }
+
+    #def get_instancedate(self):
+
+
 
     #新建实体
     def create_entity(self):
         paramsstr=     '?keyOption='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['keyOption']\
                     + '&containsAuthority='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['containsAuthority']
-        headers=self.headers
-        InstanceData={
-            "Title":"asdfisdfasdf",
-            'input':"asdfasdfsss111",
-            'Field1':"2018-05-25T02:04:24.567Z",
-                         # # 'Id':'',
-                         # # "ModifyByName": "系统管理员",
-                         # # 'ModifyTime': {'R': True, 'U': True, 'Value': '2018-11-30T08:53:25.437Z'},
-                         # # "IsBlock": 'False',
-                         # # 'ModifyBy':{'R': True, 'U': True, 'Value': 'a1e38673-ae69-4536-acac-a27dc46da856'},
-                         # 'Title': {"Value": "在sdfasdf职_系统管理员",
-                         #           "R": 'True',
-                         #           "U": 'True'},
-                         # # "IsValid": 'True',
-                         # # "CreatorName": "系统管理员",
-                         # 'Field1': {"Value": "2018-05-25T02:04:24.567Z",
-                         #            "R": 'True',
-                         #            "U": 'True'},
-                         # # 'CreateTime':{'R': True, 'U': True, 'Value': '2018-11-30T08:53:25.437Z'},
-                         # # 'Creator':{'R': True, 'U': True, 'Value': 'a1e38673-ae69-4536-acac-a27dc46da856'},
-                         # # 'RoleAction':{ 'D': True, 'R': True, 'U': True, 'Export': False},
-                         # # "DataEnable": 'True',
-                         # 'input': {"Value": "ceshi",
-                         #           "R": 'true',
-                         #           "U": 'true'},
-                         # # 'CreatorPositionId':{'R': True, 'U': True, 'Value': 'abb7fb51-fada-4608-bbea-4b35db75f2c7'},
-                         # # "CreatorPosition": "系统管理员",
-
-
-
-        }
-        datas={'IsSubmit':conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['IsSubmit'],
-               'InstanceData':InstanceData,
-               'AutoFillMode':conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['AutoFillMode'],
-               }
-
+        headers = self.headers
+        #生成JSONDATAFORM格式的表單
+        instancedate={
+                         "Title": "asdfasde1112",
+                         "Field1": "2018-05-25T02:04:24.567Z",
+                         "input": "ceshi1",
+                                 }
+        #生成POST Request Body
+        datas={
+                "IsSubmit": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['IsSubmit'],
+                "InstanceData":instancedate,
+                "AutoFillMode": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['AutoFillMode']
+                }
         #合成GET形式URL
         url ='https://api.dadayun.cn/v1/form/templates/'+self.moduleid+'/instances'+paramsstr
-        response = requests.post(url=url, data=datas, headers=headers)
-        result=json.loads(response.content)
-        print response.status_code
+        #对应的JSON格式，通过json-datas上传API平台
+        response = requests.post(url=url, json=datas, headers=headers)
+        result_create = json.loads(response.content)
+        #返回新申请的表单的信息
+        return result_create
 
-        #     result_entityfields = json.loads(response.content)
+
+
         # try:
         #     response = requests.get(url=url, data=datas,headers=headers)
         #     result_entityfields = json.loads(response.content)

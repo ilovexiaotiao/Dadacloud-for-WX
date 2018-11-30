@@ -138,9 +138,9 @@ function Load() {
                 }
          })
          var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-        var r = window.location.search.substr(1)
-        alert(r);
-         location.href="/result/"+entityid
+         var r = window.location.search.substr(1)
+         alert(r);
+         location.href=window.location.href+"/details"
     }
 
 

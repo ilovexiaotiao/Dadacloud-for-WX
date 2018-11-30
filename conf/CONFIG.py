@@ -28,15 +28,15 @@ MODULE_ENTITY_PARAMS = {
 MODULE_ENTITY_ID_PARAMS = {
     'keyOption': "Entity",#提交的实例数据和返回的实例数据以什么为属性名（键名）。- Entity 以实体属性名为属性名；- Caption 以[组名-]控件名为属性名；- Id 以字段的Id为属性名；- FieldName 以字段的FieldName为属性名，默
     'fields': "", # 返回字段，fields允许包含的字段：Id, Name, CreatorName, Status, HasInstance, CreateTime, TplType。默认值为空，返回所有字段。
-    'containsAuthority': "False" #containsAuthority=true，也可不带（不带默认containsAuthority=true）。
+    'containsAuthority': "false" #containsAuthority=true，也可不带（不带默认containsAuthority=true）。
 }
 
 #上传实体模板配置信息
 MODULE_ENTITY_SEND_PARAMS = {
     'keyOption': "Entity",#提交的实例数据和返回的实例数据以什么为属性名（键名）。- Entity 以实体属性名为属性名；- Caption 以[组名-]控件名为属性名；- Id 以字段的Id为属性名；- FieldName 以字段的FieldName为属性名，默
-    'IsSubmit': "True", # 返回字段，fields允许包含的字段：Id, Name, CreatorName, Status, HasInstance, CreateTime, TplType。默认值为空，返回所有字段。
-    'containsAuthority': "True", #containsAuthority=true，也可不带（不带默认containsAuthority=true）。
-    'AutoFillMode':""#新建的单据实例数据是否需后台完成自动填充： - 默认空为不填充； - forceempty填充空值（客户端未提交的或提交的值为空）；- forceall填充所有（即使客户端提交上来有值）； - forceautocode只填充关联了自动编码的字段。
+    'IsSubmit': "true", # 返回字段，fields允许包含的字段：Id, Name, CreatorName, Status, HasInstance, CreateTime, TplType。默认值为空，返回所有字段。
+    'containsAuthority': "false", #containsAuthority=true，也可不带（不带默认containsAuthority=true）。
+    'AutoFillMode':"forceempty"#新建的单据实例数据是否需后台完成自动填充： - 默认空为不填充； - forceempty填充空值（客户端未提交的或提交的值为空）；- forceall填充所有（即使客户端提交上来有值）； - forceautocode只填充关联了自动编码的字段。
 }
 
 #print MODULE_PARAMS['limit']
