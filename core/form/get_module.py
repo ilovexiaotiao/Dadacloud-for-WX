@@ -71,7 +71,7 @@ class Dada_module(object):
         #先获取所有表单模板
         hasinstance=self.get_module_list_all()
         result_hasinstance=[]
-        print(type(hasinstance))
+        #print(type(hasinstance))
         try:
             #判断列表是否为空，若为空，抛出异常
             if hasinstance is None:
@@ -84,7 +84,7 @@ class Dada_module(object):
             # 成功获取表单列表数据，返回JSON格式源
             inlen = len(hasinstance)
             for i in range(0, inlen-1):
-                if hasinstance[i]['HasInstance'] is True:
+                if hasinstance[i]['HasInstance'] is True and hasinstance[i]['Status']>0 :
                     result_hasinstance.append(hasinstance[i])
 
             return result_hasinstance
@@ -93,13 +93,13 @@ class Dada_module(object):
 
 
 
-
+#
 #
 # token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
 # form= Dada_module(token)
 # print (form.get_module_list_hasinstance())
-# form=Dada_form(token)
-# data=form.get_module_total()
+# form=Dada_module(token)
+# data=form.get_module_list_all()
 # # data1=form.get_entity_total('57c80ea2-cd30-4cce-9f58-6a25c505cc79')
 # # data2=form.get_entity('57c80ea2-cd30-4cce-9f58-6a25c505cc79','d1dd9137-e8ce-47f5-aed7-40cf1c841794')
-# print(len(data),data)
+# print(data)
