@@ -170,8 +170,8 @@ class Dada_fields(object):
 
 
 
-
+#
 #
 # token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
-# fields=Dada_fields(token,'c083025d-c134-4c5c-846c-740af79b360c','1e813c4e-c770-4b57-992e-ce8798df9e86')
-# print (fields.get_fields_all())
+# fields=Dada_fields(token,'c083025d-c134-4c5c-846c-740af79b360c','af63a31e-ebec-44e0-8e10-07cf60937e79')
+# print (fields.get_fields_read())

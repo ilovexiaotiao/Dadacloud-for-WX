@@ -37,11 +37,14 @@ class Dada_entity_operate(object):
                 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
                 "Content-Type": "application/json; charset=utf-8",
                 #采用表头传参方式，将Access_Token发送至API平台
-                #'Authorization':'Bearer 4450e9d4415202a907d0408d3193b749fe021c3bd9a8a76ef8e0817cddcc7247'
+                #'Authorization':'Bearer e088a54d2f426caec69016163b3080a57879410d5cd53848ebec480beea79609'
                 'Authorization': 'Bearer ' + self.accesstoken
                 }
+    #获取网页提交的表单
+    def get_instancedate(self,ajaxdata):
 
-    #def get_instancedate(self):
+        instancedate=ajaxdata
+        return  instancedate
 
 
 
@@ -51,7 +54,86 @@ class Dada_entity_operate(object):
                     + '&containsAuthority='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['containsAuthority']
         headers = self.headers
         #生成JSONDATAFORM格式的表單
+        instancedate = {
+            "Title": "asdfasde1dda112",
+            "Field1": "2018-05-25T02:04:24.567Z",
+            "input": "ceshi1",
+        }
+        getinstancedata=self.get_instancedate(instancedate)
+        #生成POST Request Body
+        datas={
+                "IsSubmit": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['IsSubmit'],
+                "InstanceData":getinstancedata,
+                "AutoFillMode": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['AutoFillMode']
+                }
+        #合成GET形式URL
+        url ='https://api.dadayun.cn/v1/form/templates/'+self.moduleid+'/instances'+paramsstr
+        #对应的JSON格式，通过json-datas上传API平台
+        try:
+            response = requests.post(url=url, json=datas, headers=headers)
+            result_create = json.loads(response.content)
+            #print response.status_code
+            if response.status_code>399:
+                raise core.others.custom_exception.Dada_notcorrectparam_exception(result_create)
+        except core.others.custom_exception.Dada_notcorrectparam_exception,x:
+            print '错误概述--->', x
+            print '错误类型--->', x.parameter
+            print '错误原因--->', x.desc
+        #返回新申请的表单的信息
+        else:
+            return result_create
+
+    #为实体的子表增加信息
+    def revise_entity(self,instanceid):
+        paramsstr=     '?keyOption='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['keyOption']\
+                    + '&containsAuthority='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['containsAuthority']
+        headers = self.headers
+        #生成JSONDATAFORM格式的表單
         instancedate={
+
+                         "Title": "asdfasdde1112",
+                         "Field1": "2018-05-25T02:04:24.567Z",
+                         "input": "ceshi1",
+                         "table":[
+                                {   "Action":"create",
+                                    "start":"111",
+                                  "end":"222"
+                                 }
+                                ]
+                    }
+        #生成POST Request Body
+        datas={
+                "IsSubmit": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['IsSubmit'],
+                "InstanceData":instancedate,
+                "AutoFillMode": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['AutoFillMode']
+                }
+        #合成GET形式URL
+        url ='https://api.dadayun.cn/v1/form/templates/'+self.moduleid+'/instances/'+instanceid+paramsstr
+        #对应的JSON格式，通过json-datas上传API平台
+        try:
+            response = requests.put(url=url, json=datas, headers=headers)
+            result_add = json.loads(response.content)
+            print response.status_code
+            if response.status_code>399:
+                raise core.others.custom_exception.Dada_notcorrectparam_exception(result_add)
+        except core.others.custom_exception.Dada_notcorrectparam_exception,x:
+            print '错误概述--->', x
+            print '错误类型--->', x.parameter
+            print '错误原因--->', x.desc
+        #返回新申请的表单的信息
+        else:
+            return result_add
+        #返回新申请的表单的信息
+
+
+    #修改实体信息
+    def revise_entity_sub(self,instanceid):
+        paramsstr=     '?keyOption='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['keyOption']\
+                    + '&containsAuthority='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['containsAuthority']
+        headers = self.headers
+        #生成JSONDATAFORM格式的表單
+        instancedate={
+                         "Action":"update",
                          "Title": "asdfasde1112",
                          "Field1": "2018-05-25T02:04:24.567Z",
                          "input": "ceshi1",
@@ -63,35 +145,44 @@ class Dada_entity_operate(object):
                 "AutoFillMode": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['AutoFillMode']
                 }
         #合成GET形式URL
-        url ='https://api.dadayun.cn/v1/form/templates/'+self.moduleid+'/instances'+paramsstr
+        url ='https://api.dadayun.cn/v1/form/templates/'+self.moduleid+'/instances/'+instanceid+paramsstr
         #对应的JSON格式，通过json-datas上传API平台
         response = requests.post(url=url, json=datas, headers=headers)
         result_create = json.loads(response.content)
         #返回新申请的表单的信息
         return result_create
 
+    #删除实体
+    def delete_entity(self,instanceid):
+        result_delete={}
+        headers=self.headers
+        #合成GET形式URL
+        url ='https://api.dadayun.cn/v1/form/templates/'+self.moduleid+'/instances/'+instanceid
+        #对应的JSON格式，通过json-datas上传API平台
+        try:
+            response = requests.delete(url=url,headers=headers)
+            if response.status_code!=204:
+                result_delete = json.loads(response.content)
+                raise core.others.custom_exception.Dada_nodelete_exception(result_delete)
+        except core.others.custom_exception.Dada_nodelete_exception,x:
+            print '错误概述--->', x
+            print '错误类型--->', x.parameter
+            print '错误原因--->', x.desc
+        else:
+            result_delete="DELETE OK"
+        #返回新申请的表单的信息
+            return result_delete
 
 
-        # try:
-        #     response = requests.get(url=url, data=datas,headers=headers)
-        #     result_entityfields = json.loads(response.content)
-        #     # print(type(result_entityfields))
-        #     if result_entityfields.has_key('Message'):
-        #         # print "OK"
-        #         raise (core.others.custom_exception.Dada_notcorrectparam_exception(result_entityfields))
-        #     # 调用参数错误类，查看错误日志
-        # except core.others.custom_exception.Dada_notcorrectparam_exception, x:
-        #     print '错误概述--->', x
-        #     print '错误类型--->', x.parameter
-        #     print '错误原因--->', x.desc
-        #     # 成功获取指定表单数据，返回JSON格式源
-        # else:
-        #     return result_entityfields
+
+
+
+
+
 
 tokens=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
 #form= Dada_entity_operate(tokens,'c083025d-c134-4c5c-846c-740af79b360c')
 form= Dada_entity_operate(tokens,'c083025d-c134-4c5c-846c-740af79b360c')
-form.create_entity()
-
+print form.delete_entity('4bf91b61-bf87-4626-80fc-107e73d3412a')
 
 

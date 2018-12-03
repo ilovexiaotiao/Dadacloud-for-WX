@@ -2,16 +2,16 @@
 import requests
 import json
 import time
-import conf.CONFIG
-import sys
-reload(sys)
 import core.others.custom_exception
+
 
 
 # 搭搭云微信注册类：
 # 1，此流程获取token适合开发者没有自己的web服务器，且应用为原生程序，即客户端应用（同时应用无法与浏览器交互，但是可以外调用浏览器）
 # 2，主要采用的是OAuth2.0请求签名机制，开发者可根据需要及应用场景使用其中一种认证即可调用搭搭云OpenAPI。
 # 3，通过POST形式，推送用户名，用户密码，客户ID，客户Secret到API平台，获取Access_Token和Refresh_Token。
+
+
 class Dada_login(object):
     # 类的初始化
     def __init__(self, username,password,clientid,clientsecret):
@@ -121,9 +121,4 @@ class Dada_login(object):
 
 
 
-
-
-#
-# a=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
-# print(a.result)
 

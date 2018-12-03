@@ -116,7 +116,7 @@ function Load() {
 
 <script type="text/javascript">
     function get_id(element){
-        var entityid=element.id;
+         var entityid=element.id;
         //alert(entityid);
         var dataorigin={
                     'entityid': entityid,
@@ -124,7 +124,7 @@ function Load() {
         var data =JSON.stringify(dataorigin);
          //alert(data);
         $.ajax({
-                url:'/'+,
+                url:'/',
                 type:'POST',
                 data:data,
                 dataType: 'json',
