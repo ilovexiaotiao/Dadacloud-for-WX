@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="730dffdf-7c88-49e8-bcec-252b09e37622" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/conf/CONFIG_REDIS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/others/save_redis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_from.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apprun.py" beforeDir="false" afterPath="$PROJECT_DIR$/apprun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/CONFIG.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf/CONFIG.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/form/get_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/form/get_entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/form/get_fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/form/get_fields.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/form/operate_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/form/operate_entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/form/get_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/form/get_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/login/login_dadayun.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/login/login_dadayun.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/others/custom_exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/others/custom_exception.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/others/save_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/others/save_redis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_from.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_login.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,21 +65,34 @@
     <session id="668988359">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="2" />
           <entry key="html" value="15" />
-          <entry key="py" value="972" />
+          <entry key="py" value="4524" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="15" />
-          <entry key="Python" value="972" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="4524" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
     </session>
@@ -125,12 +134,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_login.py">
+        <entry file="file://$PROJECT_DIR$/core/form/operate_entity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="114">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
@@ -139,48 +148,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/login/login_dadayun.py">
+        <entry file="file://$PROJECT_DIR$/test/test_form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+            <state relative-caret-position="304">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
-                <element signature="e#24#39#0" expanded="true" />
-                <marker date="1543831530745" expanded="true" signature="323:325" ph="..." />
+                <element signature="e#24#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/others/save_redis.py">
+        <entry file="file://$PROJECT_DIR$/core/form/get_entity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="293">
+              <caret line="256" column="23" lean-forward="true" selection-start-line="256" selection-start-column="23" selection-end-line="256" selection-end-column="23" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
-                <marker date="1543833813473" expanded="true" signature="198:1228" ph="..." />
+                <marker date="1544024122362" expanded="true" signature="2456:4168" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/others/custom_exception.py">
+        <entry file="file://$PROJECT_DIR$/conf/CONFIG.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
-              <folding>
-                <element signature="e#24#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/CONFIG_REDIS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+            <state relative-caret-position="285">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -224,25 +220,26 @@
         <option value="$PROJECT_DIR$/core/form/get_attachment.py" />
         <option value="$PROJECT_DIR$/core/form/create_entity.py" />
         <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/core/form/get_module.py" />
-        <option value="$PROJECT_DIR$/core/form/get_entity.py" />
-        <option value="$PROJECT_DIR$/conf/CONFIG.py" />
         <option value="$PROJECT_DIR$/templates/test1.html" />
         <option value="$PROJECT_DIR$/apprun.py" />
         <option value="$PROJECT_DIR$/templates/test2.html" />
         <option value="$PROJECT_DIR$/core/form/operate_entity.py" />
-        <option value="$PROJECT_DIR$/core/form/get_fields.py" />
-        <option value="$PROJECT_DIR$/test/test_from.py" />
-        <option value="$PROJECT_DIR$/test/test_login.py" />
-        <option value="$PROJECT_DIR$/core/login/login_dadayun.py" />
         <option value="$PROJECT_DIR$/conf/CONFIG_REDIS.py" />
         <option value="$PROJECT_DIR$/core/others/redis.py" />
-        <option value="$PROJECT_DIR$/core/others/custom_exception.py" />
         <option value="$PROJECT_DIR$/core/others/save_redis.py" />
+        <option value="$PROJECT_DIR$/core/others/custom_exception.py" />
+        <option value="$PROJECT_DIR$/test/test_from.py" />
+        <option value="$PROJECT_DIR$/test/test_login.py" />
+        <option value="$PROJECT_DIR$/conf/CONFIG.py" />
+        <option value="$PROJECT_DIR$/core/login/login_dadayun.py" />
+        <option value="$PROJECT_DIR$/core/form/get_fields.py" />
+        <option value="$PROJECT_DIR$/core/form/get_module.py" />
+        <option value="$PROJECT_DIR$/core/form/get_entity.py" />
+        <option value="$PROJECT_DIR$/test/test_form.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1438" />
@@ -254,6 +251,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,7 +300,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,7 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_fields">
+  <component name="RunManager" selected="Python.test_form">
     <configuration name="apprun" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Dadacloud4WX" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -397,27 +394,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="login_dadayun" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Dadacloud4WX" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/login" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/login/login_dadayun.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="operate_entity" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Dadacloud4WX" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -439,20 +415,95 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_form" type="PythonConfigurationType" factoryName="Python">
+      <module name="Dadacloud4WX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_form.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_login" type="PythonConfigurationType" factoryName="Python">
+      <module name="Dadacloud4WX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="tests" factoryName="py.test">
+      <module name="Dadacloud4WX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_login.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Dadacloud4WX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_login.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.get_entity" />
+      <item itemvalue="Python.test_login" />
+      <item itemvalue="Python.test_form" />
+      <item itemvalue="Python tests.Unnamed" />
       <item itemvalue="Python.get_fields" />
       <item itemvalue="Python.apprun" />
       <item itemvalue="Python.operate_entity" />
-      <item itemvalue="Python.login_dadayun" />
+      <item itemvalue="Python tests.pytest in test_login.py" />
+      <item itemvalue="Python.get_entity" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.get_entity" />
+        <item itemvalue="Python tests.pytest in test_login.py" />
         <item itemvalue="Python.get_fields" />
         <item itemvalue="Python.operate_entity" />
         <item itemvalue="Python.apprun" />
-        <item itemvalue="Python.login_dadayun" />
-        <item itemvalue="Python.get_entity" />
       </list>
     </recent_temporary>
   </component>
@@ -469,15 +520,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_test_login_py - 2018.12.05 at 18h 08m 42s.xml">
+      <configuration name="pytest in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_login_py - 2018.12.05 at 18h 10m 46s.xml">
+      <configuration name="pytest in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_login_py - 2018.12.05 at 18h 12m 12s.xml">
+      <configuration name="pytest in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_login_py - 2018.12.05 at 18h 14m 45s.xml">
+      <configuration name="pytest in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_login_py - 2018.12.05 at 18h 15m 09s.xml">
+      <configuration name="pytest in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_login_py - 2018.12.05 at 18h 27m 55s.xml">
+      <configuration name="pytest in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_login_py - 2018.12.05 at 19h 38m 56s.xml">
+      <configuration name="pytest in test_login.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18440464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18476728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32614556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -537,59 +611,31 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/requests/api.py" />
-    <entry file="file://$PROJECT_DIR$/core/form/get_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/test1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="121" column="41" lean-forward="true" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+        <state relative-caret-position="2755">
+          <caret line="145" column="56" selection-start-line="145" selection-start-column="56" selection-end-line="145" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/test2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        <state relative-caret-position="2698">
+          <caret line="142" column="53" selection-start-line="142" selection-start-column="53" selection-end-line="142" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/form/get_fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="172" column="2" lean-forward="true" selection-start-line="172" selection-start-column="2" selection-end-line="172" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/form/operate_entity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/form/get_entity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="1577">
+          <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apprun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="1178">
+          <caret line="71" column="57" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -603,26 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_from.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="47" />
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/CONFIG.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/CONFIG_REDIS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -632,32 +658,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/others/custom_exception.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+        <state relative-caret-position="323">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/login/login_dadayun.py">
+    <entry file="file://$PROJECT_DIR$/test/test_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        <state relative-caret-position="266">
+          <caret line="44" column="2" lean-forward="true" selection-start-line="44" selection-start-column="2" selection-end-line="46" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/form/operate_entity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
-            <marker date="1543831530745" expanded="true" signature="323:325" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/others/save_redis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="361">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
-            <marker date="1543833813473" expanded="true" signature="198:1228" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/CONFIG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/login/login_dadayun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="66" column="64" lean-forward="true" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1544020821716" expanded="true" signature="1195:1196" ph="..." />
+            <marker date="1544020821716" expanded="true" signature="3840:3849" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/form/get_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1039">
+          <caret line="163" column="18" lean-forward="true" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1544024056525" expanded="true" signature="2212:3892" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/form/get_fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2267">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/form/get_entity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="256" column="23" lean-forward="true" selection-start-line="256" selection-start-column="23" selection-end-line="256" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1544024122362" expanded="true" signature="2456:4168" ph="..." />
           </folding>
         </state>
       </provider>

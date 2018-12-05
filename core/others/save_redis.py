@@ -4,7 +4,7 @@ import json
 import time
 import core.others.custom_exception
 import redis
-from core.login.login_dadayun import Dada_login
+
 
 class Dada_redis(object):
     #类的初始化
@@ -27,16 +27,16 @@ class Dada_redis(object):
             #输出Value值
             return self.__redis.get(key)
 
-    def set(self, key, value):
+    def set(self, key, value,extime):
         try:
-            if type(key) is None or len(key) ==0:
-                raise core.others.custom_exception.Dada_norediskey_exception(key)
-        except core.others.custom_exception.Dada_norediskey_exception, x:
+            if type(key) is None or len(key) == 0:
+                raise core.others.custom_exception.Dada_emptykey_exception(key)
+        except core.others.custom_exception.Dada_emptykey_exception, x:
             print '错误概述--->', x
             print '错误类型--->', x.parameter
             print '错误原因--->', x.desc
         else:
             # 输出Value值
-            self.__redis.set(key, value)
+            self.__redis.set(key, value,extime)
 
 
