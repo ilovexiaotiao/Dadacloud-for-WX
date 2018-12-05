@@ -65,7 +65,7 @@ class Dada_emptylist_exception(Exception):
         self.desc = '列表为空，无法进行之后的操作'  # 定义错误原因
 
 
-# 获取空列表错误集
+# 获取搜索结果为空错误
 class Dada_noexactfiled_exception(Exception):
     '''
         Custom exception types
@@ -80,7 +80,7 @@ class Dada_noexactfiled_exception(Exception):
         self.desc = '搜索不到指定名称，无法进行之后的操作'  # 定义错误原因
 
 
-# 获取空列表错误集
+# 获取无权限操作错误集
 class Dada_noauthority_exception(Exception):
     '''
         Custom exception types
@@ -95,5 +95,32 @@ class Dada_noauthority_exception(Exception):
         self.desc = '无权限查看或者修改字段，无法进行之后的操作'  # 定义错误原因
 
 
+#获取空子表错误集合
 
+#获取删除失败错误集
+class Dada_nodelete_exception(Exception):
+    '''
+        Custom exception types
+        '''
 
+    # 类的初始化
+    def __init__(self, parameter):
+        # 定义错误描述
+        err = 'no authority to read or reviese "{0}'.format(parameter)
+        Exception.__init__(self, err)
+        self.parameter = "删除失败"  # 定义错误类型
+        self.desc = '删除失败，请查看是否有删除权限'  # 定义错误原因
+
+# 获取搜索结果为空错误
+class Dada_norediskey_exception(Exception):
+    '''
+        Custom exception types
+        '''
+
+    # 类的初始化
+    def __init__(self, parameter):
+        # 定义错误描述
+        err = 'no redis key called "{0}'.format(parameter)
+        Exception.__init__(self, err)
+        self.parameter = "空指针错误"  # 定义错误类型
+        self.desc = '搜索不到指定名称，无法进行之后的操作'  # 定义错误原因

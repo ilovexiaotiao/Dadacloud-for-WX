@@ -161,8 +161,8 @@ class Dada_entity(object):
 
 
 
-token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
-module=Dada_module(token)
-entity=Dada_entity(token,'c083025d-c134-4c5c-846c-740af79b360c')
-ss=entity.get_entity_fields_name()
-print ss
+# token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
+# module=Dada_module(token)
+# entity=Dada_entity(token,'c083025d-c134-4c5c-846c-740af79b360c')
+# ss=entity.get_entity_fields_name()
+# print ss
