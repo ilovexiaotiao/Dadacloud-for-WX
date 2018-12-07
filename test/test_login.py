@@ -31,7 +31,7 @@ def count_time(second):
     for i in range(0,second):
         second_count=i+1
         print "-----counting second-----:"+str(second_count)
-        time.sleep(second)
+        time.sleep(1)
 
 
 

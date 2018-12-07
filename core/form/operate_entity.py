@@ -6,7 +6,7 @@ import conf.CONFIG
 import core.others.custom_exception
 from get_entity import Dada_entity
 from get_module import Dada_module
-from core.login.login_dadayun import Dada_login
+from core.login.login_dadayun import Dada_token,Dada_login
 from get_fields import Dada_fields
 
 # 搭搭云实体操作类：
@@ -15,14 +15,14 @@ from get_fields import Dada_fields
 # 3，分为两三个模块，新建、修改和删除模块，通过POST、PUT、DELETE形式，推送Access_Token和相应字段到API平台，返回JSON数据。
 
 
-class Dada_entity_operate(object):
+class Dada_operate(object):
     # 类的初始化
     def __init__(self, token, moduleid):
         # 初始判断module参数是否为Dada_module类
         try:
             self.token=token
             self.moduleid = moduleid
-            intype = isinstance(self.token, Dada_login)
+            intype = isinstance(self.token, Dada_token)
             if not intype:
                 raise (core.others.custom_exception.Dada_notcorrecttype_exception(self.token))
             # 调用表单错误类，查看错误日志
@@ -53,17 +53,17 @@ class Dada_entity_operate(object):
         paramsstr=     '?keyOption='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['keyOption']\
                     + '&containsAuthority='+conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['containsAuthority']
         headers = self.headers
-        #生成JSONDATAFORM格式的表單
         instancedate = {
-            "Title": "asdfasde1dda112",
-            "Field1": "2018-05-25T02:04:24.567Z",
-            "input": "ceshi1",
+            "Title": 'title',
+            "Field1": 'field1',
+            "input": 'input',
         }
-        getinstancedata=self.get_instancedate(instancedate)
+        #生成JSONDATAFORM格式的表單
+        #getinstancedata=self.get_instancedate(instancedate)
         #生成POST Request Body
         datas={
                 "IsSubmit": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['IsSubmit'],
-                "InstanceData":getinstancedata,
+                "InstanceData":instancedate,
                 "AutoFillMode": conf.CONFIG.MODULE_ENTITY_SEND_PARAMS['AutoFillMode']
                 }
         #合成GET形式URL
@@ -72,7 +72,7 @@ class Dada_entity_operate(object):
         try:
             response = requests.post(url=url, json=datas, headers=headers)
             result_create = json.loads(response.content)
-            #print response.status_code
+            # print response.status_code
             if response.status_code>399:
                 raise core.others.custom_exception.Dada_notcorrectparam_exception(result_create)
         except core.others.custom_exception.Dada_notcorrectparam_exception,x:
@@ -180,9 +180,6 @@ class Dada_entity_operate(object):
 
 
 
-tokens=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
-#form= Dada_entity_operate(tokens,'c083025d-c134-4c5c-846c-740af79b360c')
-form= Dada_entity_operate(tokens,'c083025d-c134-4c5c-846c-740af79b360c')
-print form.delete_entity('4bf91b61-bf87-4626-80fc-107e73d3412a')
+
 
 

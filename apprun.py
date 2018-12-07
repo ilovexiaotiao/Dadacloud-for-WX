@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 import requests
 import json
-from flask import Flask, render_template, request,redirect,url_for
+from flask import Flask, render_template, request,redirect,url_for,sessions
 import threading
-from core.login.login_dadayun import Dada_login
+from core.others.save_redis import Dada_redis
+from core.login.login_dadayun import Dada_login,Dada_token
 from core.form.get_module import Dada_module
 from core.form.get_entity import Dada_entity
 from core.form.get_fields import Dada_fields
-import conf.CONFIG
+from core.form.operate_entity import Dada_operate
+import conf.CONFIG,conf.CONFIG_REDIS
 from datetime import datetime
 
 # class mythread(threading.Thread):
@@ -27,8 +29,10 @@ from datetime import datetime
 #             self.app.run(debug=True)
 
 
-token = Dada_login(conf.CONFIG.USERNAME, conf.CONFIG.PASSWORD, conf.CONFIG.CLIENNT_ID,
+login = Dada_login(conf.CONFIG.USERNAME, conf.CONFIG.PASSWORD, conf.CONFIG.CLIENNT_ID,
                    conf.CONFIG.CLIENT_SECRET)
+redis=Dada_redis(host=conf.CONFIG_REDIS.REDIS_HOST,port=conf.CONFIG_REDIS.REDIS_PORT)
+token=Dada_token(login,redis)
 
 app = Flask(__name__)
 @app.route('/',methods = ['POST', 'GET'])
@@ -36,7 +40,7 @@ def module_list():
     moduleid=''
     module=Dada_module(token)
     if request.method == 'GET':
-        data = module.get_module_list_all()
+        data = module.get_module_list_hasinstance_all()
         return render_template("test.html", result=data)
     if request.method == 'POST':
         data = request.get_json()
@@ -52,7 +56,7 @@ def module_list():
 def entity_list(moduleid):
     entityid=''
     entity=Dada_entity(token,moduleid)
-    data = entity.get_entity_list()
+    data = entity.get_entity_list_submit_all()
     if request.method == 'GET':
         return render_template("test1.html", result=data)
     if request.method == 'POST':
@@ -71,6 +75,25 @@ def fields_list(moduleid,entityid):
     if request.method == 'GET':
         return render_template("test2.html", result=data)
 
+
+@app.route('/<moduleid>/<entityid>/submit', methods=['POST','GET'])
+def fields_submit(moduleid,entityid):
+    if request.method == 'GET':
+        return render_template("test3.html")
+    if request.method == 'POST':
+        title = request.form.get('Title')
+        field1 = request.form.get('Field1')
+        input = request.form.get('input')
+        print title, field1, input
+        operate=Dada_operate(token,moduleid)
+        instancedata={
+            "Title": title,
+            "Field1": field1,
+            "input": input,
+        }
+        operate.create_entity()
+    return redirect(url_for('fields_list', moduleid=moduleid,entityid=entityid))
+        #return redirect(url_for('fields_list',moduleid=moduleid,entityid=entityid))
 
 
 if __name__ == '__main__':

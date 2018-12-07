@@ -30,38 +30,15 @@ class Dada_module(object):
             # 初始赋值
             self.accesstoken = token.get_token()
             # self.accesstoken = 'bf95f8c8cf18454779c4f2bc2a426cc01f69009536c4aea83cb2c2046a5278e8'
-            #获取总记录数，从而发起简单GET申请
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
-                # 'Content-Type': 'application/x-www-form-urlencoded',
-                # 采用表头传参方式，将Access_Token发送至API平台
-                'Authorization': 'Bearer ' + self.accesstoken
-            }
-            paramsstr = '?limit=' + conf.CONFIG.MODULE_PARAMS['limit'] \
-                        + '&fields=' + conf.CONFIG.MODULE_PARAMS['fields'] \
-                        + '&filter=' + conf.CONFIG.MODULE_PARAMS['filter'] \
-                        + '&start=' + conf.CONFIG.MODULE_PARAMS['start']\
-                        + '&sort=' + conf.CONFIG.MODULE_PARAMS['sort'] \
-                        + '&count=' + conf.CONFIG.MODULE_PARAMS['count']
 
-            # 合成GET形式URL
-            url = 'https://api.dadayun.cn/v1/form/templates' + paramsstr
-
-            # 将上述参数发送至API平台，获取表单模板列表
-            response = requests.get(url=url, headers=headers)
-            # 从HEADER部分提取总记录数
-            self.totalcount = response.headers['Total-Count']
-
-
-    def get_module_list_all(self):
-        # API平台报送表头、URL与参数
+    def  get_module_totalcount(self):
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
             # 'Content-Type': 'application/x-www-form-urlencoded',
             # 采用表头传参方式，将Access_Token发送至API平台
             'Authorization': 'Bearer ' + self.accesstoken
         }
-        paramsstr = '?limit=' + str(self.totalcount) \
+        paramsstr = '?limit=' + str(1)\
                     + '&fields=' + conf.CONFIG.MODULE_PARAMS['fields'] \
                     + '&filter=' + conf.CONFIG.MODULE_PARAMS['filter'] \
                     + '&start=' + str(0) \
@@ -75,7 +52,44 @@ class Dada_module(object):
         try:
             response = requests.get(url=url, headers=headers)
             # 从HEADER部分提取总记录数
-            #self.totalcount = response.headers['Total-Count']
+            result_totalcount = json.loads(json.dumps(dict(response.headers)))
+            # print type(result_totalcount)
+            # print (type(result))
+            if type(result_totalcount) is not dict:
+                raise (core.others.custom_exception.Dada_emptylist_exception(type(result_totalcount)))
+        # 调用参数错误类，查看错误日志
+        except core.others.custom_exception.Dada_notcorrectparam_exception, x:
+            print '错误概述--->', x
+            print '错误类型--->', x.parameter
+            print '错误原因--->', x.desc
+        # 成功获取表单列表数据，返回JSON格式源
+        else:
+            return result_totalcount['Total-Count']
+
+    def get_module_list_all(self):
+        # API平台报送表头、URL与参数
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+            # 'Content-Type': 'application/x-www-form-urlencoded',
+            # 采用表头传参方式，将Access_Token发送至API平台
+            'Authorization': 'Bearer ' + self.accesstoken
+        }
+        totalcount=self.get_module_totalcount()
+        paramsstr = '?limit=' + str(totalcount) \
+                    + '&fields=' + conf.CONFIG.MODULE_PARAMS['fields'] \
+                    + '&filter=' + conf.CONFIG.MODULE_PARAMS['filter'] \
+                    + '&start=' + str(0) \
+                    + '&sort=' + conf.CONFIG.MODULE_PARAMS['sort'] \
+                    + '&count=' + conf.CONFIG.MODULE_PARAMS['count']
+
+        # 合成GET形式URL
+        url = 'https://api.dadayun.cn/v1/form/templates' + paramsstr
+
+        # 将上述参数发送至API平台，获取表单模板列表
+        try:
+            response = requests.get(url=url, headers=headers)
+            # 从HEADER部分提取总记录数
+            module_totalcount = response.headers['Total-Count']
             result_modulelist = json.loads(response.content)
             # print (type(result))
             if type(result_modulelist) is dict:
@@ -117,7 +131,7 @@ class Dada_module(object):
         try:
             response = requests.get(url=url, headers=headers)
             #从HEADER部分提取总记录数
-            self.totalcount = response.headers['Total-Count']
+            # self.totalcount = response.headers['Total-Count']
             result_modulelist = json.loads(response.content)
             #print (type(result))
             if type(result_modulelist) is dict:

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>pull to refresh</title>
+    <title>Title</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -47,18 +47,15 @@ body, html {
 </style>
 </head>
 <body>
-<button type="button" onclick="get_operate()"> 点我</button>
+
 <div id="wrapper">
-	<ul>
-        {% for key,value in result.items() %}
-		<li>
+	<form method="post" action="submit">
+    Title:<input type="text" name="Title"/>
+    Field1:<input type="text" name="Field1"/>
+    input:<input type="text" name="input"/>
+    <input type="submit" value="Submit"/>
+</form>
 
-				<p> {{ key }}</p>
-				<p>{{ value }} </p>
-
-		</li>
-        {% endfor %}
-	</ul>
 </div>
 
 <script type="text/javascript">
@@ -130,10 +127,7 @@ function Load() {
 
 
 </script>
-<script>
-    function get_operate(){
-        location.href=window.location.href+"/submit"
-    }
-</script>
+
+
 </body>
 </html>

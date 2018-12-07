@@ -6,7 +6,7 @@ import conf.CONFIG
 import core.others.custom_exception
 from get_entity import Dada_entity
 from get_module import Dada_module
-from core.login.login_dadayun import Dada_login
+from core.login.login_dadayun import Dada_login,Dada_token
 
 # 搭搭云图表实体类：
 # 1，此流程获取token适合开发者没有自己的web服务器，且应用为原生程序，即客户端应用（同时应用无法与浏览器交互，但是可以外调用浏览器）
@@ -23,7 +23,7 @@ class Dada_fields(object):
             self.entityid=entityid
             self.moduleid = moduleid
             self.token = token
-            intype = isinstance(self.token, Dada_login)
+            intype = isinstance(self.token, Dada_token)
             if not intype:
                 raise (core.others.custom_exception.Dada_notcorrecttype_exception(self.token))
             # 调用表单错误类，查看错误日志

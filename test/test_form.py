@@ -13,7 +13,7 @@ def output_form(module,entity,field):
     print "测试结果如下："
     print "--------------MODULE类------------------------"
     print "ACCESSTOKEN-->" + module.accesstoken
-    print "总记录数-->" + str(module.totalcount)
+    print "总记录数-->" + str(module.get_module_totalcount())
     print "第一页记录数-->" + str(len(module.get_module_list_index(1)))
     print "第一页记录数(有实例）-->" + str(len(module.get_module_list_hasinstance_index(1)))
     print "第一页内容（有实例）-->"
@@ -23,7 +23,7 @@ def output_form(module,entity,field):
         print module.get_module_list_hasinstance_index(1)[i]
     print "--------------ENTITY类------------------------"
     print "ACCESSTOKEN-->" + entity.accesstoken
-    print "总记录数-->" + str(entity.totalcount)
+    print "总记录数-->" + str(entity.get_entity_totalcount())
     print "第一页记录数(已提交）-->" + str(len(entity.get_entity_list_submit_index(1)))
     print "第一页内容（已提交）-->"
     for i in range(0, len(entity.get_entity_list_submit_index(1))):
@@ -56,8 +56,8 @@ login = Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT
 redis=Dada_redis(host=conf.CONFIG_REDIS.REDIS_HOST,port=conf.CONFIG_REDIS.REDIS_PORT)
 token = Dada_token(login,redis)
 module=Dada_module(token)
-entity=Dada_entity(token,'57c80ea2-cd30-4cce-9f58-6a25c505cc79')
-field=Dada_fields(token,'57c80ea2-cd30-4cce-9f58-6a25c505cc79','d1dd9137-e8ce-47f5-aed7-40cf1c841794')
+entity=Dada_entity(token,'c083025d-c134-4c5c-846c-740af79b360c')
+field=Dada_fields(token,'c083025d-c134-4c5c-846c-740af79b360c','4f9fd1f0-abeb-4161-ba70-c1396fd64c29')
 output_form(module,entity,field)
 
 

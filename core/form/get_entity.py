@@ -32,32 +32,52 @@ class Dada_entity(object):
             # 初始赋值
             self.accesstoken = token.get_token()
             # self.accesstoken = 'bf95f8c8cf18454779c4f2bc2a426cc01f69009536c4aea83cb2c2046a5278e8'
-            #通过发送简单GET请求，获取总记录数
-            paramsstr = '?limit=' + conf.CONFIG.MODULE_ENTITY_PARAMS['limit'] \
-                        + '&fields=' + conf.CONFIG.MODULE_ENTITY_PARAMS['fields'] \
-                        + '&filter=' + conf.CONFIG.MODULE_ENTITY_PARAMS['filter'] \
-                        + '&start=' + conf.CONFIG.MODULE_ENTITY_PARAMS['start']\
-                        + '&sort=' + conf.CONFIG.MODULE_ENTITY_PARAMS['sort'] \
-                        + '&count=' + conf.CONFIG.MODULE_ENTITY_PARAMS['count'] \
-                        + '&keyOption' + conf.CONFIG.MODULE_ENTITY_PARAMS['keyOption']
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
-                # 'Content-Type': 'application/x-www-form-urlencoded',
-                # 采用表头传参方式，将Access_Token发送至API平台
-                'Authorization': 'Bearer ' + self.accesstoken
-            }
-            # 合成GET形式URL
-            url = 'https://api.dadayun.cn/v1/form/templates/' + self.moduleid + '/instances' + paramsstr
-            # 将上述参数发送至API平台，获取指定表单实体列表
+
+    # 获取指定MODULE_ID的所有表单实体列表
+    def get_entity_totalcount(self):
+        # 获取列表页码数
+        paramsstr = '?limit=' + str(1) \
+                    + '&fields=' + conf.CONFIG.MODULE_ENTITY_PARAMS['fields'] \
+                    + '&filter=' + conf.CONFIG.MODULE_ENTITY_PARAMS['filter'] \
+                    + '&start=' + str(0) \
+                    + '&sort=' + conf.CONFIG.MODULE_ENTITY_PARAMS['sort'] \
+                    + '&count=' + conf.CONFIG.MODULE_ENTITY_PARAMS['count'] \
+                    + '&keyOption' + conf.CONFIG.MODULE_ENTITY_PARAMS['keyOption']
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+            # 'Content-Type': 'application/x-www-form-urlencoded',
+            # 采用表头传参方式，将Access_Token发送至API平台
+            'Authorization': 'Bearer ' + self.accesstoken
+        }
+        # 合成GET形式URL
+        url = 'https://api.dadayun.cn/v1/form/templates/' + self.moduleid + '/instances' + paramsstr
+        # 将上述参数发送至API平台，获取指定表单实体列表
+        try:
             response = requests.get(url=url, headers=headers)
-            self.totalcount = response.headers['Total-Count']
+            result_totalcount = json.loads(json.dumps(dict(response.headers)))
+            #print type(result)
+            if type(result_totalcount) is not dict:
+                raise (core.others.custom_exception.Dada_emptylist_exception(result_totalcount))
+        # 调用参数错误类，查看错误日志
+        except core.others.custom_exception.Dada_notcorrectparam_exception, x:
+            print '错误概述--->', x
+            print '错误类型--->', x.parameter
+            print '错误原因--->', x.desc
+
+        # 成功获取指定表单数据，返回JSON格式源
+        else:
+            return result_totalcount['Total-Count']
+
+
+
+
 
 
     # 获取指定MODULE_ID的所有表单实体列表
     def get_entity_list_all(self):
         # 获取列表页码数
-        index=page-1
-        paramsstr = '?limit=' + str(self.totalcount) \
+        totalcount=self.get_entity_totalcount()
+        paramsstr = '?limit=' + str(totalcount) \
                     + '&fields=' + conf.CONFIG.MODULE_ENTITY_PARAMS['fields'] \
                     + '&filter=' + conf.CONFIG.MODULE_ENTITY_PARAMS['filter'] \
                     + '&start=' + str(0) \
@@ -113,7 +133,7 @@ class Dada_entity(object):
         # 将上述参数发送至API平台，获取指定表单实体列表
         try:
             response = requests.get(url=url, headers=headers)
-            self.totalcount=response.headers['Total-Count']
+            # self.totalcount=response.headers['Total-Count']
             result_entitylist = json.loads(response.content)
             #print type(result)
             if type(result_entitylist) is dict:
