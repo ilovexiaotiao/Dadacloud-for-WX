@@ -2,7 +2,7 @@
 import requests
 import json
 from flask import Flask, render_template, request
-from core.login.login_dadayun import Dada_login
+from core.login.login_dadayun import Dada_token
 import conf.CONFIG
 import core.others.custom_exception
 
@@ -15,59 +15,130 @@ import core.others.custom_exception
 class Dada_module(object):
     #类的初始化
     def __init__(self,token):
-        #初始判断token参数是否为Dada_login类
+        #初始判断token参数是否为Dada_token类
         try:
-            self.token= token
-            intype=isinstance(self.token,Dada_login)
+            self.token = token
+            intype=isinstance(self.token,Dada_token)
             if not intype:
                 raise (core.others.custom_exception.Dada_notcorrecttype_exception(self.token))
             # 调用表单错误类，查看错误日志
-        except core.others.custom_exception.Dada_notcorrecttype_exception,a:
+        except core.others.custom_exception.Dada_notcorrecttype_exception , a:
             print '错误概述--->', a
             print '错误类型--->', a.parameter
             print '错误原因--->', a.desc
         else:
             # 初始赋值
             self.accesstoken = token.get_token()
-            # API平台报送表头、URL与参数
-            self.headers = {
+            # self.accesstoken = 'bf95f8c8cf18454779c4f2bc2a426cc01f69009536c4aea83cb2c2046a5278e8'
+            #获取总记录数，从而发起简单GET申请
+            headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
                 # 'Content-Type': 'application/x-www-form-urlencoded',
-                #采用表头传参方式，将Access_Token发送至API平台
+                # 采用表头传参方式，将Access_Token发送至API平台
                 'Authorization': 'Bearer ' + self.accesstoken
             }
+            paramsstr = '?limit=' + conf.CONFIG.MODULE_PARAMS['limit'] \
+                        + '&fields=' + conf.CONFIG.MODULE_PARAMS['fields'] \
+                        + '&filter=' + conf.CONFIG.MODULE_PARAMS['filter'] \
+                        + '&start=' + conf.CONFIG.MODULE_PARAMS['start']\
+                        + '&sort=' + conf.CONFIG.MODULE_PARAMS['sort'] \
+                        + '&count=' + conf.CONFIG.MODULE_PARAMS['count']
 
-    #获取所有的表单模板列表
+            # 合成GET形式URL
+            url = 'https://api.dadayun.cn/v1/form/templates' + paramsstr
+
+            # 将上述参数发送至API平台，获取表单模板列表
+            response = requests.get(url=url, headers=headers)
+            # 从HEADER部分提取总记录数
+            self.totalcount = response.headers['Total-Count']
+
+
     def get_module_list_all(self):
-        headers = self.headers
-        paramsstr=     '?limit='+conf.CONFIG.MODULE_PARAMS['limit']\
-                    + '&fields='+conf.CONFIG.MODULE_PARAMS['fields']\
-                    + '&filter='+conf.CONFIG.MODULE_PARAMS['filter'] \
-                    + '&start=' + conf.CONFIG.MODULE_PARAMS['start']\
+        # API平台报送表头、URL与参数
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+            # 'Content-Type': 'application/x-www-form-urlencoded',
+            # 采用表头传参方式，将Access_Token发送至API平台
+            'Authorization': 'Bearer ' + self.accesstoken
+        }
+        paramsstr = '?limit=' + str(self.totalcount) \
+                    + '&fields=' + conf.CONFIG.MODULE_PARAMS['fields'] \
+                    + '&filter=' + conf.CONFIG.MODULE_PARAMS['filter'] \
+                    + '&start=' + str(0) \
                     + '&sort=' + conf.CONFIG.MODULE_PARAMS['sort'] \
                     + '&count=' + conf.CONFIG.MODULE_PARAMS['count']
-        #合成GET形式URL
-        url = 'https://api.dadayun.cn/v1/form/templates'+paramsstr
+
+        # 合成GET形式URL
+        url = 'https://api.dadayun.cn/v1/form/templates' + paramsstr
+
         # 将上述参数发送至API平台，获取表单模板列表
         try:
             response = requests.get(url=url, headers=headers)
+            # 从HEADER部分提取总记录数
+            #self.totalcount = response.headers['Total-Count']
+            result_modulelist = json.loads(response.content)
+            # print (type(result))
+            if type(result_modulelist) is dict:
+                raise (core.others.custom_exception.Dada_notcorrectparam_exception(result_modulelist))
+        # 调用参数错误类，查看错误日志
+        except core.others.custom_exception.Dada_notcorrectparam_exception, x:
+            print '错误概述--->', x
+            print '错误类型--->', x.parameter
+            print '错误原因--->', x.desc
+        # 成功获取表单列表数据，返回JSON格式源
+        else:
+            # if result_modulelist['count']==0:
+            #     return ""
+            # else:
+            return result_modulelist
+
+    #获取所有的表单模板列表
+    def get_module_list_index(self,page):
+        #获取列表页码数
+        index=page-1
+        # API平台报送表头、URL与参数
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+            # 'Content-Type': 'application/x-www-form-urlencoded',
+            # 采用表头传参方式，将Access_Token发送至API平台
+            'Authorization': 'Bearer ' + self.accesstoken
+        }
+        paramsstr=     '?limit='+conf.CONFIG.MODULE_PARAMS['limit']\
+                    + '&fields='+conf.CONFIG.MODULE_PARAMS['fields']\
+                    + '&filter='+conf.CONFIG.MODULE_PARAMS['filter'] \
+                    + '&start=' + str(index)\
+                    + '&sort=' + conf.CONFIG.MODULE_PARAMS['sort'] \
+                    + '&count=' + conf.CONFIG.MODULE_PARAMS['count']
+
+        #合成GET形式URL
+        url = 'https://api.dadayun.cn/v1/form/templates'+paramsstr
+
+        # 将上述参数发送至API平台，获取表单模板列表
+        try:
+            response = requests.get(url=url, headers=headers)
+            #从HEADER部分提取总记录数
+            self.totalcount = response.headers['Total-Count']
             result_modulelist = json.loads(response.content)
             #print (type(result))
-            if  type(result_modulelist) is dict:
+            if type(result_modulelist) is dict:
                 raise (core.others.custom_exception.Dada_notcorrectparam_exception(result_modulelist))
         #调用参数错误类，查看错误日志
         except core.others.custom_exception.Dada_notcorrectparam_exception,x:
             print '错误概述--->', x
             print '错误类型--->', x.parameter
             print '错误原因--->', x.desc
-
         #成功获取表单列表数据，返回JSON格式源
         else:
-
+            # if result_modulelist['count']==0:
+            #     return ""
+            # else:
             return result_modulelist
 
+
+
+
     #获取带有实例的表单模板列表
-    def get_module_list_hasinstance(self):
+    def get_module_list_hasinstance_all(self):
         #先获取所有表单模板
         hasinstance=self.get_module_list_all()
         result_hasinstance=[]
@@ -86,20 +157,30 @@ class Dada_module(object):
             for i in range(0, inlen):
                 if hasinstance[i]['HasInstance'] is True and hasinstance[i]['Status']>0 :
                     result_hasinstance.append(hasinstance[i])
+            return result_hasinstance
 
+    #获取带有实例的表单模板列表
+    def get_module_list_hasinstance_index(self,page):
+        #先获取所有表单模板
+        hasinstance=self.get_module_list_index(page)
+        result_hasinstance=[]
+        #print(type(hasinstance))
+        try:
+            #判断列表是否为空，若为空，抛出异常
+            if hasinstance is None:
+                raise (core.others.custom_exception.Dada_emptylist_exception(hasinstance))
+        except core.others.custom_exception.Dada_emptylist_exception,x:
+            print '错误类型--->', x.parameter
+            print '错误原因--->', x.desc
+        #循环判断表单模板的“HasInstance”字段是否为True,若为真，则有表单有实例
+        else:
+            # 成功获取表单列表数据，返回JSON格式源
+            inlen = len(hasinstance)
+            for i in range(0, inlen):
+                if hasinstance[i]['HasInstance'] is True and hasinstance[i]['Status']>0 :
+                    result_hasinstance.append(hasinstance[i])
             return result_hasinstance
 
 
 
 
-
-#
-#
-# token=Dada_login(conf.CONFIG.USERNAME,conf.CONFIG.PASSWORD,conf.CONFIG.CLIENNT_ID,conf.CONFIG.CLIENT_SECRET)
-# form= Dada_module(token)
-# print (form.get_module_list_hasinstance())
-# form=Dada_module(token)
-# data=form.get_module_list_all()
-# # data1=form.get_entity_total('57c80ea2-cd30-4cce-9f58-6a25c505cc79')
-# # data2=form.get_entity('57c80ea2-cd30-4cce-9f58-6a25c505cc79','d1dd9137-e8ce-47f5-aed7-40cf1c841794')
-# print(data)

@@ -6,7 +6,7 @@ MODULE_PARAMS = {
             'fields': "",           #返回字段，fields允许包含的字段：Id, Name, CreatorName, Status, HasInstance, CreateTime, TplType。默认值为空，返回所有字段。
             'filter': "",           #筛选条件，	筛选条件，目前只支持按单据名称模糊搜索；
             'start': '0',           #页码，0-2147483647范围内某个整数值，默认值为0。
-            'limit': '100',         #每页显示记录条数，0-2147483647范围内某个整数值，默认值为20。
+            'limit': '5',         #每页显示记录条数，0-2147483647范围内某个整数值，默认值为20。
             'sort': "-CreateTime",              #排序方法，可选字段：Name, Status, CreateTime, TplType。默认值为-CreateTime。
             'count': "true"         #是否包含总记录数
         }
@@ -20,7 +20,7 @@ MODULE_ENTITY_PARAMS = {
             'fields': "",  # 返回字段，fields允许包含的字段：Id, Name, CreatorName, Status, HasInstance, CreateTime, TplType。默认值为空，返回所有字段。
             'filter': "",  # 筛选条件，	筛选条件，目前只支持按单据名称模糊搜索；
             'start': '0',  # 页码，0-2147483647范围内某个整数值，默认值为0。
-            'limit': '100',  # 每页显示记录条数，0-2147483647范围内某个整数值，默认值为20。
+            'limit': '5',  # 每页显示记录条数，0-2147483647范围内某个整数值，默认值为20。
             'sort': "",  # 排序方法，可选字段：Name, Status, CreateTime, TplType。默认值为-CreateTime。
             'count': "true"  # 是否包含总记录数
         }
