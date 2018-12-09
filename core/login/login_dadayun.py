@@ -14,12 +14,12 @@ import core.others.save_redis
 
 class Dada_login(object):
     # 类的初始化
-    def __init__(self, username,password,clientid,clientsecret):
+    def __init__(self, username,password, clientid, clientsecret):
         # 初始赋值
         self.username = username
         self.password = password
-        self.clientid=  clientid
-        self.clientsecret=clientsecret
+        self.clientid = clientid
+        self.clientsecret =clientsecret
         #API平台报送表头、URL与参数
 
 
@@ -35,7 +35,8 @@ class Dada_login(object):
         }
         url = 'https://api.dadayun.cn/connect/token'
         headers={
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/58.0.3029.110 Safari/537.36',
             'Content-Type': 'application/x-www-form-urlencoded',
         }
         try:
