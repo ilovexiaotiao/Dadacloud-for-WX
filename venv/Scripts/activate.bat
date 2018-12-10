@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=E:\NICHOL~1\DADACL~1\venv"
+set "VIRTUAL_ENV=E:\Dadacloud-for-WX-rv\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

@@ -2,35 +2,39 @@
 import requests
 import json
 import time
+import sys
 from conf.confException import LOGIN_ERRORS
 
 
+
+# 错误日志的输出
+class RaizeCurrentException(Exception):
+
+    def __init__(self, err):
+        # 定义错误描述
+        self.desc = 'error type is "{0}"'.format(err)
+        self.name = err
+        self.reason = LOGIN_ERRORS[err]  # 获取Access_Token错误集
+        self.location = sys._getframe().f_code.co_name   # 定义错误所在位置
+        self.function = sys._getframe().f_back.f_code.co_name  # 定义错误所在函数
+
+
 # 获取Access_Token错误集
-# 后续添加错误日志的输出功能
-
-
 class LoginException(Exception):
 
     # 类的初始化
     # 传入dict类，'Message'标签内标注错误类型
-    def __init__(self, parameter):
+    def __init__(self, err):
         # 定义错误描述
-        err = 'error type is "{0}"'.format(parameter)
-        Exception.__init__(self, err)
-        self.parameter = parameter  # 定义错误类型
-        self.desc = LOGIN_ERRORS[parameter]  # 获取Access_Token错误集
+        self.desc = 'error type is "{0}"'.format(err)
+        self.name = err
+        self.reason = LOGIN_ERRORS[err]  # 获取Access_Token错误集
+        self.location = sys._getframe().f_code.co_name   # 定义错误所在位置
+        self.function = sys._getframe().f_back.f_code.co_name  # 定义错误所在函数
 
-# 失效函数
-class TimeException(Exception):
+    # def output_error
 
-    # 类的初始化
-    # 传入dict类，'Message'标签内标注错误类型
-    def __init__(self, parameter):
-        # 定义错误描述
-        err = 'error type is "{0}"'.format(parameter)
-        Exception.__init__(self, err)
-        self.parameter = parameter  # 定义错误类型
-        self.desc = LOGIN_ERRORS[parameter]  # 获取Access_Token错误集
+
 
 
 class Dada_Redis_exception(Exception):

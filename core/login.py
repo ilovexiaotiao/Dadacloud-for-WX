@@ -2,9 +2,10 @@
 import requests
 import json
 import time
-from exception import LoginException,TypeException,TimeException
+from exception import LoginException,TypeException
 from others import DadaRedis
 from conf.confLogin import LOGIN_PRARM
+from conf.confRedis import REDIS_PARAM
 
 
 
@@ -39,57 +40,77 @@ class DadaLogin(object):
         self.expireTime = time.strftime(
             '%Y-%m-%d %H:%M:%S',
             time.localtime(
-                time.time()+LOGIN_PRARM['expireSecond']))
+                time.time()+int(LOGIN_PRARM['expireSecond'])))
+        self.expireTimeStrut = time.localtime(
+                time.time()+int(LOGIN_PRARM['expireSecond']))
+
+
+    #判断LOGIN类是否有效
+    def get_expire(self):
+        #获取当前时间
+        now = time.localtime(
+            time.time())
+        # 判断返回结果中是否有错误提示
+        get_expire = now > self.expireTimeStrut
+        return get_expire
+
+
 
     # 首次获取Token信息
-
     def get_connect(self):
-        params = {
-            'client_id': self.clientId,
-            'client_secret': self.clientSecret,
-            'grant_type': "password",
-            'username': self.userName,
-            'password': self.passWord,
-        }
-        url = 'https://api.dadayun.cn/connect/token'
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) '
-                          'Chrome/58.0.3029.110 Safari/537.36',
-            'Content-Type': 'application/x-www-form-urlencoded',
-        }
+        time.sleep(3)
         try:
-            response = requests.post(url=url, data=params, headers=headers)
-            result_connect = json.loads(response.content)
-            # 判断返回结果中是否有错误提示
-            if 'error' in result_connect:
+            if self.get_expire():
                 raise (
-                    LoginException(
-                        result_connect['error']))
+                    LoginException('expire_error'))
         # 调用登录错误类，查看错误日志
         except LoginException as x:
-            print '错误概述--->', x
-            print '错误类型--->', x.parameter
+            print '错误概述--->', x.function
+            print '错误类型--->', x.location
             print '错误原因--->', x.desc
-        # 成功获取Access_Token和Refresh_Token
         else:
-            return result_connect
+            params = {
+                'client_id': self.clientId,
+                'client_secret': self.clientSecret,
+                'grant_type': "password",
+                'username': self.userName,
+                'password': self.passWord,
+            }
+            url = 'https://api.dadayun.cn/connect/token'
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) '
+                              'Chrome/58.0.3029.110 Safari/537.36',
+                'Content-Type': 'application/x-www-form-urlencoded',
+            }
+            try:
+                response = requests.post(url=url, data=params, headers=headers)
+                result_connect = json.loads(response.content)
+                # 判断返回结果中是否有错误提示
+                if 'error' in result_connect:
+                    raise (
+                        LoginException(
+                            result_connect['error']))
+            # 调用登录错误类，查看错误日志
+            except LoginException as x:
+                print '错误概述--->', x
+                print '错误类型--->', x.location
+                print '错误原因--->', x.desc
+            # 成功获取Access_Token和Refresh_Token
+            else:
+                return result_connect
 
     # 后期重复获取Token
 
     def get_refresh(self, refresh):
         try:
-            # 获取当前时间
-            now = time.localtime(
-                time.time())
-            # 判断返回结果中是否有错误提示
-            if now>self.expireTime:
+            if self.get_expire():
                 raise (
-                    TimeException(
-                        self.expireTime))
+                    LoginException(
+                        self.get_expire()))
         # 调用登录错误类，查看错误日志
-        except TimeException as x:
+        except LoginException as x:
             print '错误概述--->', x
-            print '错误类型--->', x.parameter
+            print '错误类型--->', x.column
             print '错误原因--->', x.desc
         else:
             params = {
@@ -119,7 +140,7 @@ class DadaLogin(object):
                 # 调用登录错误类，查看错误日志
             except LoginException as x:
                 print '错误概述--->', x
-                print '错误类型--->', x.parameter
+                print '错误类型--->', x.column
                 print '错误原因--->', x.desc
             # 成功更新Access_Token和Refresh_Token
             else:
@@ -137,7 +158,6 @@ class DadaToken(object):
     def __init__(self, login, redis):
         try:
             intype_login=isinstance(login, DadaLogin)
-
             if not intype_login:
                 raise (
                     TypeException(
@@ -158,10 +178,22 @@ class DadaToken(object):
             print '错误概述--->', b
             print '错误类型--->', b.parameter
             print '错误原因--->', b.desc
-        else:
+        try:
             self.redisInstance = redis
             self.loginInstance = login
-            result=login.get_connect
+            # 判断返回结果中是否有错误提示
+            if self.loginInstance.get_expire():
+                raise (
+                    LoginException(
+                        self.loginInstance.get_expire()))
+        # 调用登录错误类，查看错误日志
+        except LoginException as x:
+            print '错误概述--->', x
+            print '错误类型--->', x.column
+            print '错误原因--->', x.desc
+        # 在redis里面查找key值，如有，直接输出
+        else:
+            result=login.get_connect()
             # 获取初始的Token和refreshtoken
             self.accessToken = result['access_token']
             self.refreshToken = result['refresh_token']
@@ -174,13 +206,23 @@ class DadaToken(object):
                 '%Y-%m-%d %H:%M:%S',
                 time.localtime(
                     time.time() +
-                    result['expires_in']))
+                    REDIS_PARAM['expiresecond']))
+            self.expireTimeStruct = time.localtime(
+                time.time()+int(LOGIN_PRARM['expireSecond']))
             # 刷新次数
             self.refreshCount = 0
             # 将初始值存入Redis数据库
             self.keyName = login.clientId + "/" + login.userName
-            redis.set(self.keyName, self.accessToken, result['expires_in'] -1)
+            redis.set(self.keyName, self.accessToken, REDIS_PARAM['expiresecond'])
 
+
+    #获取TOKEN有效期
+    def get_expire(self):
+        # 获取当前时间
+        now = time.localtime(
+            time.time())
+        # 判断返回结果中是否有错误提示
+        return now > self.expireTimeStruct
 
 
 
@@ -190,18 +232,14 @@ class DadaToken(object):
 
     def insert_token(self):
         try:
-            # 获取当前时间
-            now = time.localtime(
-                time.time())
-            # 判断返回结果中是否有错误提示
-            if now>self.expireTime:
+            if self.get_expire():
                 raise (
-                    TimeException(
-                        self.expireTime))
+                    LoginException(
+                        self.get_expire()))
         # 调用登录错误类，查看错误日志
-        except TimeException as x:
+        except LoginException as x:
             print '错误概述--->', x
-            print '错误类型--->', x.parameter
+            print '错误类型--->', x.column
             print '错误原因--->', x.desc
         # 在redis里面查找key值，如有，直接输出
         else:
@@ -220,7 +258,9 @@ class DadaToken(object):
                     '%Y-%m-%d %H:%M:%S',
                     time.localtime(
                         time.time() +
-                        result['expire_in']))
+                        REDIS_PARAM['expiresecond']))
+                self.expireTimeStruct = time.localtime(
+                time.time()+int(LOGIN_PRARM['expireSecond']))
                 # 将更新Token值存入Redis数据库
-                self.redisInstance.set(self.keyName, self.accessToken, result['expire_in'] -1)
+                self.redisInstance.set(self.keyName, self.accessToken, REDIS_PARAM['expiresecond'] )
                 return result['access_token']

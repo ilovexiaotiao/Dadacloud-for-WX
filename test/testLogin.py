@@ -39,16 +39,18 @@ class TestLogin(object):
         print "用户名称-->" + self.login.userName
         print "客户密码-->" + self.login.clientSecret
         print "用户密码-->" + self.login.passWord
+        print "LOGIN生效时间-->" + self.login.initialTime
+        print "LOGIN失效时间-->" + self.login.expireTime
         print "--------------TOKEN类------------------------"
-        print "TOKEN生效时间-->" + self.token.start
-        print "TOKEN失效时间-->" + self.token.end
-        print "EXPIRE时间-->" + str(self.token.expiretime)
-        print "ACCESSTOKEN-->" + self.token.accesstoken
-        print "REFRESHTOKEN-->" + self.token.refreshtoken
+        print "TOKEN生效时间-->" + self.token.initialTime
+        print "TOKEN失效时间-->" + self.token.expireTime
+        print "TOKEN刷新次数-->" + str(self.token.refreshCount)
+        print "ACCESSTOKEN-->" + self.token.accessToken
+        print "REFRESHTOKEN-->" + self.token.refreshToken
         print "--------------REDIS类------------------------"
-        print"REDIS的KEY值-->" + self.token.key
-        if self.redis.get(self.token.key):
-            print "REDIS的VALUE值-->" + self.redis.get(self.token.key)
+        print"REDIS的KEY值-->" + self.token.keyName
+        if self.redis.get(self.token.keyName):
+            print "REDIS的VALUE值-->" + self.redis.get(self.token.keyName)
         else:
             print "没有REDIS的Value值"
 

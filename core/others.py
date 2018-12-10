@@ -18,9 +18,9 @@ class DadaRedis(object):
         try:
             # 判断是否存在该Key值
             if not self.__redis.exists(key):
-                raise core.others.custom_exception.Dada_norediskey_exception(
+                raise exception.Dada_norediskey_exception(
                     key)
-        except core.others.custom_exception.Dada_norediskey_exception as x:
+        except exception.Dada_norediskey_exception as x:
             print '错误概述--->', x
             print '错误类型--->', x.parameter
             print '错误原因--->', x.desc
@@ -30,9 +30,9 @@ class DadaRedis(object):
 
     def set(self, key, value, extime):
         try:
-            if isinstance(key, None) or len(key) == 0:
-                raise core.others.custom_exception.Dada_emptykey_exception(key)
-        except core.others.custom_exception.Dada_emptykey_exception as x:
+            if len(key) == 0:
+                raise exception.Dada_emptykey_exception(key)
+        except exception.Dada_emptykey_exception as x:
             print '错误概述--->', x
             print '错误类型--->', x.parameter
             print '错误原因--->', x.desc
