@@ -2,11 +2,11 @@
 import requests
 import json
 import time
-from exception import LoginException,TypeException
+from exception import LoginException, TypeException, RaizeCurrentException
 from others import DadaRedis
 from conf.confLogin import LOGIN_PRARM
 from conf.confRedis import REDIS_PARAM
-
+from conf.confConstant import ConstantTime
 
 
 # 搭搭云微信注册：
@@ -16,13 +16,13 @@ from conf.confRedis import REDIS_PARAM
 
 
 # 搭搭云Login类，包含基本用户信息、关联起止时间。
-# 创建搭搭注册类，意味服务器与username用户创建关联（已实现）
+# 创建搭搭注册类，意味服务器与username用户创建关联,关联时间不可延长（已实现）
 # 初始创建需要输入用户名、密码等信息，Token有效期内，免密关联。（已实现）
 # 若用户未续约Token，则关联类自动取消（已实现）
 # 若用户登录Cookie被清除，则关联类自动取消（未实现）
 # 若用户修改用户名，则关联类自动取消（未实现）
 # 若用户未登录时间超过180天，则关联自动取消（已实现）
-
+# 所有行为都需引入LOGIN类(重要）
 
 
 class DadaLogin(object):
@@ -33,42 +33,28 @@ class DadaLogin(object):
         self.passWord = password  # 密码（加密显示未实现）
         self.clientId = client  # 搭搭云对应产品的APIKEY
         self.clientSecret = secret  # 搭搭云对应产品的APISECRET
-        self.initialTime = time.strftime(
-            '%Y-%m-%d %H:%M:%S',
-            time.localtime(
-                time.time()))
-        self.expireTime = time.strftime(
-            '%Y-%m-%d %H:%M:%S',
-            time.localtime(
-                time.time()+int(LOGIN_PRARM['expireSecond'])))
-        self.expireTimeStrut = time.localtime(
-                time.time()+int(LOGIN_PRARM['expireSecond']))
-
-
-    #判断LOGIN类是否有效
-    def get_expire(self):
-        #获取当前时间
-        now = time.localtime(
-            time.time())
-        # 判断返回结果中是否有错误提示
-        get_expire = now > self.expireTimeStrut
-        return get_expire
-
-
+        # 创建时间常量
+        self.conTime = ConstantTime(LOGIN_PRARM['expireSecond'])
+        self.initialTime = self.conTime.now_time_string()
+        self.expireTimeStrut = self.conTime.expire_time()
+        self.expireTime = self.conTime.expire_time_string()
 
     # 首次获取Token信息
+
     def get_connect(self):
-        time.sleep(3)
         try:
-            if self.get_expire():
+            print self.conTime
+            print self.expireTime
+            print self.conTime.get_expire()
+            if self.conTime.get_expire():
                 raise (
                     LoginException('expire_error'))
         # 调用登录错误类，查看错误日志
         except LoginException as x:
-            print '错误概述--->', x.function
-            print '错误类型--->', x.location
-            print '错误原因--->', x.desc
+            output2 = RaizeCurrentException(x, self)
+            output2.output()
         else:
+            # 组合GET参数
             params = {
                 'client_id': self.clientId,
                 'client_secret': self.clientSecret,
@@ -83,6 +69,7 @@ class DadaLogin(object):
                 'Content-Type': 'application/x-www-form-urlencoded',
             }
             try:
+                # 通过Get方式获取Token信息
                 response = requests.post(url=url, data=params, headers=headers)
                 result_connect = json.loads(response.content)
                 # 判断返回结果中是否有错误提示
@@ -92,9 +79,9 @@ class DadaLogin(object):
                             result_connect['error']))
             # 调用登录错误类，查看错误日志
             except LoginException as x:
-                print '错误概述--->', x
-                print '错误类型--->', x.location
-                print '错误原因--->', x.desc
+                # 输出错误日志
+                output1 = RaizeCurrentException(x, self)
+                output1.output()
             # 成功获取Access_Token和Refresh_Token
             else:
                 return result_connect
@@ -103,16 +90,16 @@ class DadaLogin(object):
 
     def get_refresh(self, refresh):
         try:
-            if self.get_expire():
+            if self.conTime.get_expire():
                 raise (
                     LoginException(
-                        self.get_expire()))
+                        'expire_error'))
         # 调用登录错误类，查看错误日志
         except LoginException as x:
-            print '错误概述--->', x
-            print '错误类型--->', x.column
-            print '错误原因--->', x.desc
+            output = RaizeCurrentException(x, self)
+            output.output()
         else:
+            # 组合get参数
             params = {
                 'client_id': self.clientId,
                 'client_secret': self.clientSecret,
@@ -130,6 +117,7 @@ class DadaLogin(object):
             # 通过Refresh_Token延长授权时间
             # 将上述参数发送至API平台，获取新的Access_Token和Refresh_Token
             try:
+                # 发送GET请求
                 response = requests.post(url=url, data=params, headers=headers)
                 result_refresh = json.loads(response.content)
                 # 判断返回结果中是否有错误提示
@@ -139,9 +127,8 @@ class DadaLogin(object):
                             result_refresh['error']))
                 # 调用登录错误类，查看错误日志
             except LoginException as x:
-                print '错误概述--->', x
-                print '错误类型--->', x.column
-                print '错误原因--->', x.desc
+                output = RaizeCurrentException(x, self)
+                output.output()
             # 成功更新Access_Token和Refresh_Token
             else:
                 return result_refresh
@@ -149,98 +136,88 @@ class DadaLogin(object):
 # 搭搭云Token类，包含Token信息、获取时间。初始创建需要输入Login类和Redis类，Token在Redis里的字段是client/username
 # 创建搭搭Token类，将自动获取初始ACCESSTOKEN和REFRESHTOKEN，并存入Redis数据库内（已实现）
 # 若用户登录Cookie被清除，则login类和Redis自动清除（未实现）
-# 若用户insert_token日期大于Token失效日期，Token自动失效（未实现）
-# Token有效期不超过Login类的有效期。
+# 若用户insert_token日期大于Token失效日期，Token自动失效（已实现）
+# Token有效期不超过Login类的有效期（已实现）
 
 
 class DadaToken(object):
     # 类的初始化
     def __init__(self, login, redis):
+        self.conTime = ConstantTime(
+            LOGIN_PRARM['expireSecond'],
+            types=1,
+            expire_time_login=login.expireTimeStrut)
+        self.initialTime = self.conTime.now_time_string()
+        self.expireTimeStruct = self.conTime.expire_time()
+        self.expireTime = self.conTime.expire_time_string()
+        self.redisInstance = redis
+        self.loginInstance = login
+        # 刷新次数
+        self.refreshCount = 0
+        self.accessToken = ""
+        self.refreshToken = ""
+        # 将初始值存入Redis数据库
+        self.keyName = ""
         try:
-            intype_login=isinstance(login, DadaLogin)
+            intype_login = isinstance(login, DadaLogin)
             if not intype_login:
                 raise (
                     TypeException(
-                        login))
+                        'not_login_type'))
             # 调用表单错误类，查看错误日志
         except TypeException as a:
-            print '错误概述--->', a
-            print '错误类型--->', a.parameter
-            print '错误原因--->', a.desc
-        try:
-            intype_redis=isinstance(redis, DadaRedis)
-            if not intype_redis:
-                raise (
-                    TypeException(
-                        redis))
-            # 调用表单错误类，查看错误日志
-        except TypeException as b:
-            print '错误概述--->', b
-            print '错误类型--->', b.parameter
-            print '错误原因--->', b.desc
-        try:
-            self.redisInstance = redis
-            self.loginInstance = login
-            # 判断返回结果中是否有错误提示
-            if self.loginInstance.get_expire():
-                raise (
-                    LoginException(
-                        self.loginInstance.get_expire()))
-        # 调用登录错误类，查看错误日志
-        except LoginException as x:
-            print '错误概述--->', x
-            print '错误类型--->', x.column
-            print '错误原因--->', x.desc
-        # 在redis里面查找key值，如有，直接输出
+            output = RaizeCurrentException(a, self)
+            output.output()
         else:
-            result=login.get_connect()
-            # 获取初始的Token和refreshtoken
-            self.accessToken = result['access_token']
-            self.refreshToken = result['refresh_token']
-            # self.expiretime = 4
-            self.initialTime = time.strftime(
-                '%Y-%m-%d %H:%M:%S',
-                time.localtime(
-                    time.time()))
-            self.expireTime = time.strftime(
-                '%Y-%m-%d %H:%M:%S',
-                time.localtime(
-                    time.time() +
-                    REDIS_PARAM['expiresecond']))
-            self.expireTimeStruct = time.localtime(
-                time.time()+int(LOGIN_PRARM['expireSecond']))
-            # 刷新次数
-            self.refreshCount = 0
-            # 将初始值存入Redis数据库
-            self.keyName = login.clientId + "/" + login.userName
-            redis.set(self.keyName, self.accessToken, REDIS_PARAM['expiresecond'])
-
-
-    #获取TOKEN有效期
-    def get_expire(self):
-        # 获取当前时间
-        now = time.localtime(
-            time.time())
-        # 判断返回结果中是否有错误提示
-        return now > self.expireTimeStruct
-
-
+            try:
+                intype_redis = isinstance(redis, DadaRedis)
+                if not intype_redis:
+                    raise (
+                        TypeException(
+                            'not_redis_type'))
+                # 调用表单错误类，查看错误日志
+            except TypeException as b:
+                output1 = RaizeCurrentException(b, self)
+                output1.output()
+            else:
+                try:
+                    # 判断返回结果中是否有错误提示
+                    result = login.get_connect()
+                    if self.conTime.get_expire():
+                        raise (
+                            LoginException(
+                                'expire_error'))
+                # 调用登录错误类，查看错误日志
+                except LoginException as x:
+                    output2 = RaizeCurrentException(x, login)
+                    output2.output()
+                # 在redis里面查找key值，如有，直接输出
+                else:
+                    # 获取初始的Token和refreshtoken
+                    self.accessToken = result['access_token']
+                    self.refreshToken = result['refresh_token']
+                    # 将初始值存入Redis数据库
+                    self.keyName = login.clientId + "/" + login.userName
+                    redis.set(
+                        self.keyName,
+                        self.accessToken,
+                        REDIS_PARAM['expiresecond'])
 
     # 获取Access_Token
     # 若Token在redis有效期内，在Redis查找ACCESSTOKEN
     # 若Token在redis有效期外，通过REFRESHTOKEN刷新Token，实现无密码登录
 
     def insert_token(self):
+        time.sleep(3)
         try:
-            if self.get_expire():
+            if self.conTime.get_expire():
                 raise (
                     LoginException(
-                        self.get_expire()))
+                        'expire_error'))
         # 调用登录错误类，查看错误日志
         except LoginException as x:
-            print '错误概述--->', x
-            print '错误类型--->', x.column
-            print '错误原因--->', x.desc
+            output2 = RaizeCurrentException(x, self.loginInstance)
+            output2.output()
         # 在redis里面查找key值，如有，直接输出
         else:
             token = self.redisInstance.get(self.keyName)
@@ -254,13 +231,16 @@ class DadaToken(object):
                 self.refreshToken = result['refresh_token']
                 # 计算token时间
                 self.refreshCount = self.refreshCount + 1
-                self.expireTime = time.strftime(
-                    '%Y-%m-%d %H:%M:%S',
-                    time.localtime(
-                        time.time() +
-                        REDIS_PARAM['expiresecond']))
-                self.expireTimeStruct = time.localtime(
-                time.time()+int(LOGIN_PRARM['expireSecond']))
+                contime = self.conTime = ConstantTime(
+                    LOGIN_PRARM['expireSecond'],
+                    types=1,
+                    expire_time_login=self.loginInstance.expireTimeStrut)
+                self.conTime = contime
+                self.expireTimeStruct = contime.expire_time()
+                self.expireTime = contime.expire_time_string()
                 # 将更新Token值存入Redis数据库
-                self.redisInstance.set(self.keyName, self.accessToken, REDIS_PARAM['expiresecond'] )
+                self.redisInstance.set(
+                    self.keyName,
+                    self.accessToken,
+                    REDIS_PARAM['expiresecond'])
                 return result['access_token']

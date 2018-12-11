@@ -4,11 +4,14 @@
       <w>accesstoken</w>
       <w>apikey</w>
       <w>apisecret</w>
+      <w>expiresecond</w>
       <w>expiretime</w>
       <w>intype</w>
+      <w>keyname</w>
       <w>khtml</w>
       <w>openapi</w>
       <w>refreshtoken</w>
+      <w>struct</w>
       <w>typelist</w>
     </words>
   </dictionary>
