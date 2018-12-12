@@ -1,0 +1,232 @@
+2018-12-12 12:51:58,917 testLogger.py[line:48] DEBUG zhetame
+
+2018-12-12 12:52:22,095 testLogger.py[line:48] DEBUG debug
+
+2018-12-12 12:52:35,657 testLogger.py[line:48] DEBUG debug
+
+2018-12-12 12:53:30,825 testLogger.py[line:48] WARNING debug
+
+2018-12-12 13:18:33,799 testLogger.py[line:48] WARNING debug
+
+2018-12-12 13:21:21,881 testLogger.py[line:48] WARNING debug
+2018-12-12 13:26:06,265 testLogger.py[line:75] WARNING sdfasdfadsf
+2018-12-12 13:29:01,240 testLogger.py[line:75] INFO sdfasdfadsf
+2018-12-12 13:29:19,207 testLogger.py[line:75] INFO sdfasdfadsf
+2018-12-12 13:29:53,956 testLogger.py[line:48] INFO userAdmin
+2018-12-12 13:29:59,956 testLogger.py[line:48] INFO userAdmin
+2018-12-12 13:30:41,723 testLogger.py[line:48] INFO sadfas
+2018-12-12 13:30:57,250 testLogger.py[line:48] INFO sadfas
+2018-12-12 13:33:22,684 testLogger.py[line:75] INFO sdfasdfadsf
+2018-12-12 13:33:22,684 testLogger.py[line:48] INFO sadfas
+2018-12-12 13:33:46,875 testLogger.py[line:75] INFO userAdmin
+2018-12-12 13:33:46,875 testLogger.py[line:48] INFO sadfas
+2018-12-12 13:34:40,816 testLogger.py[line:75] INFO userAdmin/n
+2018-12-12 13:34:40,818 testLogger.py[line:48] INFO sadfas
+2018-12-12 13:35:03,674 testLogger.py[line:75] INFO userAdmin/n
+
+2018-12-12 13:37:04,302 testLogger.py[line:75] INFO userAdmin
+2018-12-12 13:37:40,082 testLogger.py[line:75] INFO userAdmin
+2018-12-12 13:57:03,581 testLogger.py[line:58] INFO ddd/r
+2018-12-12 13:57:28,640 testLogger.py[line:40] INFO userAdmin
+2018-12-12 13:57:34,641 testLogger.py[line:40] INFO userAdmin
+2018-12-12 13:57:40,641 testLogger.py[line:40] INFO userAdmin
+2018-12-12 14:14:22,101 logger.py[line:69] INFO Created by1812bf31d6e641dfb4a18d66b41e8cfc/userAdminin2018-12-12 14:14:22and expire till2019-01-11 14:14:22
+2018-12-12 14:21:48,151 logger.py[line:72] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdminnow and will expire in 2019-01-11 14:21:48
+2018-12-12 14:25:43,926 logger.py[line:72] INFO DadaLogin.init is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdminnow and will expire in 2019-01-11 14:25:43
+2018-12-12 16:49:29,187 logger.py[line:72] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdminnow and will expire in 2019-01-11 16:49:29/r
+2018-12-12 17:09:36,707 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:09:36/r
+2018-12-12 17:10:10,641 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:10:10/r
+2018-12-12 17:11:20,237 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:11:20/r
+2018-12-12 17:12:06,424 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:12:06/r
+2018-12-12 17:13:00,581 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:13:00/r
+2018-12-12 17:13:17,173 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:13:17/r
+2018-12-12 17:13:40,398 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:13:40/r
+2018-12-12 17:13:41,280 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:13:40/r
+2018-12-12 17:13:41,280 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:13:40/r
+2018-12-12 17:13:57,842 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:13:57/r
+2018-12-12 17:14:03,819 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:13:57/r
+2018-12-12 17:14:03,819 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:13:57/r
+2018-12-12 17:18:42,207 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:18:42
+2018-12-12 17:18:43,095 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:18:42
+2018-12-12 17:18:43,095 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:18:42
+2018-12-12 17:18:43,095 logger.py[line:80] INFO AccessToken : 880f8329142692d674e68af01fca80af8dbced8e970f647b8d9475392fae11fc is acquired
+2018-12-12 17:18:43,095 logger.py[line:80] INFO AccessToken : 880f8329142692d674e68af01fca80af8dbced8e970f647b8d9475392fae11fc is acquired
+2018-12-12 17:18:43,095 logger.py[line:85] INFO RefreshToken : ebade6aa570724e254b1fbf01edd604ed44e5dd3257f5ae3ae776a43da9ec6f5 is acquired
+2018-12-12 17:18:43,095 logger.py[line:85] INFO RefreshToken : ebade6aa570724e254b1fbf01edd604ed44e5dd3257f5ae3ae776a43da9ec6f5 is acquired
+2018-12-12 17:20:06,150 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:20:06
+2018-12-12 17:20:07,086 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:20:06
+2018-12-12 17:20:07,086 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:20:06
+2018-12-12 17:20:07,088 logger.py[line:80] INFO AccessToken : 08a4aec9321b4afbf2dc634291d2fb2e7753fb942d2f30fca9e2ea5fed89b5cc is acquired
+2018-12-12 17:20:07,088 logger.py[line:80] INFO AccessToken : 08a4aec9321b4afbf2dc634291d2fb2e7753fb942d2f30fca9e2ea5fed89b5cc is acquired
+2018-12-12 17:20:07,088 logger.py[line:85] INFO RefreshToken : 071b9fe8c03f8859d7805845beeedeb79e51b434ecdc7d3edc27f6dc6012a751 is acquired
+2018-12-12 17:20:07,088 logger.py[line:85] INFO RefreshToken : 071b9fe8c03f8859d7805845beeedeb79e51b434ecdc7d3edc27f6dc6012a751 is acquired
+2018-12-12 17:21:33,632 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:21:33
+2018-12-12 17:21:34,512 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:21:33
+2018-12-12 17:21:34,512 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:21:33
+2018-12-12 17:21:34,512 logger.py[line:80] INFO AccessToken : 5e24410ca06424f610f397635fecb5608288513f26eb56f4ffb4beb3bc7aed0a is acquired
+2018-12-12 17:21:34,512 logger.py[line:80] INFO AccessToken : 5e24410ca06424f610f397635fecb5608288513f26eb56f4ffb4beb3bc7aed0a is acquired
+2018-12-12 17:21:34,513 logger.py[line:85] INFO RefreshToken : f62cf0a6cb477822fee51e0d54132eee5f25b04c24b937b218ba467d2f406227 is acquired
+2018-12-12 17:21:34,513 logger.py[line:85] INFO RefreshToken : f62cf0a6cb477822fee51e0d54132eee5f25b04c24b937b218ba467d2f406227 is acquired
+2018-12-12 17:22:16,628 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:22:16
+2018-12-12 17:22:17,598 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:22:16
+2018-12-12 17:22:17,598 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:22:16
+2018-12-12 17:22:17,599 logger.py[line:80] INFO AccessToken : 3decf5259464ac34894c29ef7782ec46e6c08f81ad217d649067fe72ded09c55 is acquired
+2018-12-12 17:22:17,599 logger.py[line:80] INFO AccessToken : 3decf5259464ac34894c29ef7782ec46e6c08f81ad217d649067fe72ded09c55 is acquired
+2018-12-12 17:22:17,599 logger.py[line:85] INFO RefreshToken : 42e0cf0d1824bd0c59a13186c3549a5b2040d8d465695153c39244f28c6072a6 is acquired
+2018-12-12 17:22:17,599 logger.py[line:85] INFO RefreshToken : 42e0cf0d1824bd0c59a13186c3549a5b2040d8d465695153c39244f28c6072a6 is acquired
+2018-12-12 17:22:53,470 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:22:53
+2018-12-12 17:25:41,089 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin now and will expire in 2019-01-11 17:25:41
+2018-12-12 17:25:41,986 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:25:41
+2018-12-12 17:25:41,986 logger.py[line:80] INFO AccessToken : 6fb8024e1d8c5b14f960bddeef57ddfdbe31df76c8ded2bcc1d4085d020a38d6 is acquired
+2018-12-12 17:25:41,986 logger.py[line:85] INFO RefreshToken : 038a382a5c7cc6db24c145ba83b1d14064a28d77a66ee48363e7d9ddc724c034 is acquired
+2018-12-12 17:27:04,367 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2018-12-12 17:27:07
+2018-12-12 17:27:25,569 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2018-12-12 17:27:28
+2018-12-12 17:27:26,470 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2018-12-12 17:27:28
+2018-12-12 17:27:26,470 logger.py[line:80] INFO AccessToken : 6110740f0da9411468aaa012dc610c98d930af132308a426b01f07fdf2237244 is acquired
+2018-12-12 17:27:26,470 logger.py[line:85] INFO RefreshToken : bd1266b74e58742a207d76ae2a26233533873ecd093b6013fcb5180e40c9b40b is acquired
+2018-12-12 17:27:46,092 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:27:46
+2018-12-12 17:27:47,015 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:27:46
+2018-12-12 17:27:47,016 logger.py[line:80] INFO AccessToken : 8e33df7babc100f684bde5d6c9750c093ae1615c4ff6069ead6321d8866e1477 is acquired
+2018-12-12 17:27:47,016 logger.py[line:85] INFO RefreshToken : b12ee0267c28db1862f7b225f6b9ae8fa702b7d04ccf48374e629704fbc49bd8 is acquired
+2018-12-12 17:27:51,479 logger.py[line:80] INFO AccessToken : 994878c8d0d922e2ba59390dda94680ebe1cc21d11679e4ed43f02b002d0dd9f is acquired
+2018-12-12 17:27:51,479 logger.py[line:85] INFO RefreshToken : 639f884e28803388c057a7dc85e27e5b08b5f94921369e5c9d5bae470234b29c is acquired
+2018-12-12 17:28:00,865 logger.py[line:80] INFO AccessToken : 5fa1f21663a2eba10c1d08b045d31b276d7f5d6c5ff43616b23fe5f28ddabc0e is acquired
+2018-12-12 17:28:00,867 logger.py[line:85] INFO RefreshToken : 2cb8a44fdaa190e1de8e7476389e63757f6b83f765556b35c770e0607b34c841 is acquired
+2018-12-12 17:28:10,188 logger.py[line:80] INFO AccessToken : 7d0ef68630eaf8c6adb790c49d068c53b21a3230e488668ade45567edb487043 is acquired
+2018-12-12 17:28:10,188 logger.py[line:85] INFO RefreshToken : 93fca287d9682cb240d46f9952eea6af14f827e9c3df4c22faf8514f602777d8 is acquired
+2018-12-12 17:28:19,470 logger.py[line:80] INFO AccessToken : ffd3b19a36c99ededab9f0896247d325a47d0ae8e5cb167ebd0c7909e13d2212 is acquired
+2018-12-12 17:28:19,470 logger.py[line:85] INFO RefreshToken : 901ac5b263e1d15bf5a245a78cd688b241707e25252a1d4697fefab602f334ee is acquired
+2018-12-12 17:41:20,165 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:41:20
+2018-12-12 17:42:16,661 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:42:16
+2018-12-12 17:43:20,454 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:43:20
+2018-12-12 17:44:31,713 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:44:31
+2018-12-12 17:45:38,862 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:45:38
+2018-12-12 17:45:58,500 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:45:58
+2018-12-12 17:45:58,500 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:45:58
+2018-12-12 17:46:14,467 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:46:14
+2018-12-12 17:48:50,414 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:48:50
+2018-12-12 17:49:27,447 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:49:27
+2018-12-12 17:49:38,336 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:49:38
+2018-12-12 17:49:38,336 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 17:49:39,257 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:49:38
+2018-12-12 17:49:39,257 logger.py[line:80] INFO AccessToken : 78e1eb17fdb9924db710e13641b038fa9e12dd885a8455e8c7b541dd68baa8b4 is acquired
+2018-12-12 17:49:39,257 logger.py[line:85] INFO RefreshToken : ee0a955f97087508e3a3fe04a38223ffc9720367cbb2c080c461931dc31805c0 is acquired
+2018-12-12 17:50:03,667 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:50:03
+2018-12-12 17:50:03,667 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 17:50:04,599 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:50:03
+2018-12-12 17:50:04,601 logger.py[line:80] INFO AccessToken : b9db3ee58891aa1441d38ad1f311cf365a28da355c0122a6551ad4b19411f008 is acquired
+2018-12-12 17:50:04,601 logger.py[line:85] INFO RefreshToken : 70a2354089eb611e4d55b6a59e8602c74057b7c3165abd3a5539eee5601e4204 is acquired
+2018-12-12 17:50:08,882 logger.py[line:80] INFO AccessToken : f37df5264341d97f50c653391b58ae58b777a6c6fcaa238b2beae7c6f35e6ca1 is acquired
+2018-12-12 17:50:08,882 logger.py[line:85] INFO RefreshToken : 5278a3d8b951124ac168a37438d13c7d300c1826e67cad557d97d050a1f9a28a is acquired
+2018-12-12 17:50:18,292 logger.py[line:80] INFO AccessToken : 7bae0a06e8f7cb272e7e4db09d5a8f16779f28d710dc2aadb64ed40374091c3d is acquired
+2018-12-12 17:50:18,292 logger.py[line:85] INFO RefreshToken : b4c24e0dff7db7809be2516cf638c78023c1e100e0e89c10b67244e6f05a0c1f is acquired
+2018-12-12 17:50:27,617 logger.py[line:80] INFO AccessToken : 9669e9601acbbab6f76e6254c92d8c1ce574ecf85540f3321de3d9fd172458f0 is acquired
+2018-12-12 17:50:27,618 logger.py[line:85] INFO RefreshToken : f3493c430d9b62757e5547e8c62801616b84276505dccf18b2e55d297a1b0a55 is acquired
+2018-12-12 17:50:36,917 logger.py[line:80] INFO AccessToken : 0dd9c2781f9275a630efac7cc1f80d91000d011304ac4333d8d7e045aaeb835c is acquired
+2018-12-12 17:50:36,918 logger.py[line:85] INFO RefreshToken : 372137d6f6ce2de6c7803a11417b349401309644447d307c14dd16fb4b5e958a is acquired
+2018-12-12 17:51:30,674 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:51:30
+2018-12-12 17:51:30,674 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 17:51:31,928 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:51:30
+2018-12-12 17:51:31,930 logger.py[line:80] INFO AccessToken : 6366287f32e8ea506d6535b4e16f7719e240d9ec255ee1f9daeaef3429f3032a is acquired
+2018-12-12 17:51:31,930 logger.py[line:85] INFO RefreshToken : 37f2ce308672531195547461737be42cbd5bdb117ff41f20f46091ddaa34fb32 is acquired
+2018-12-12 17:51:41,226 logger.py[line:80] INFO AccessToken : 0a369324659009a73094f2e645785722fc319310448309b7bd79e8b20131bd03 is acquired
+2018-12-12 17:51:41,226 logger.py[line:85] INFO RefreshToken : 9ae50216431a0d85111bee2e4dbd9c858b221f616727e85e1790c62151f5a7a3 is acquired
+2018-12-12 17:52:37,255 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:52:37
+2018-12-12 17:52:37,256 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 17:52:38,158 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:52:37
+2018-12-12 17:52:38,158 logger.py[line:80] INFO AccessToken : 0985596fed14f5d6539a91481e179ae476d2b96514e29740265b86863d7d09ea is acquired
+2018-12-12 17:52:38,158 logger.py[line:85] INFO RefreshToken : 1a14b1a956ec08468f4635d20f982a115a07fe5594511481a94461c39ea2c8b5 is acquired
+2018-12-12 17:52:42,436 logger.py[line:80] INFO AccessToken : 1993b8e9a11672eac09a3c0402f0e9151fa94d7907c18ad3553a073c154c2c3f is acquired
+2018-12-12 17:52:42,437 logger.py[line:85] INFO RefreshToken : ce7593ee7bc602a66edb5af75e2035b3a941ad41949076d1b5cbe4c8857c9131 is acquired
+2018-12-12 17:53:31,387 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:53:31
+2018-12-12 17:53:31,387 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 17:53:49,480 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:53:49
+2018-12-12 17:53:49,480 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 17:54:15,510 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:54:15
+2018-12-12 17:54:15,512 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 17:54:16,398 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 17:54:16,398 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:54:15
+2018-12-12 17:54:16,398 logger.py[line:80] INFO AccessToken : 0f968c4a91b3db8d4877fc63579a49130e9616066cbbb650f7b0a358069e9f5d is acquired
+2018-12-12 17:54:16,398 logger.py[line:85] INFO RefreshToken : be7b46623a5142c5b1c5ffeec5c39db0f502abdf6bd1ef7a361d057089459cc6 is acquired
+2018-12-12 17:54:21,707 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 17:54:21,707 logger.py[line:80] INFO AccessToken : 56374de5f3e0c4e2f85c3b33fee7b0dd3666b35066ad3882e7d0d63e1ab0849a is acquired
+2018-12-12 17:54:21,709 logger.py[line:85] INFO RefreshToken : 89313ba61485986cada8741a58cf16d15c665e49ba39fd8e26fadcc39d375547 is acquired
+2018-12-12 17:54:31,292 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 17:54:31,292 logger.py[line:80] INFO AccessToken : a1b0056beddce1b9d7af48752dc9b5b925f79619d7eae3092a679b80390541bd is acquired
+2018-12-12 17:54:31,292 logger.py[line:85] INFO RefreshToken : dbad1dfd9a42db4622b1915869ceb148544ab2f82c2360de95bdf085c66cef29 is acquired
+2018-12-12 17:54:40,585 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 17:54:40,586 logger.py[line:80] INFO AccessToken : 0605ac3806b532180e8da74f19aae96136f82860ba59e9850ad3e1a3fb4446b3 is acquired
+2018-12-12 17:54:40,586 logger.py[line:85] INFO RefreshToken : 79591743533d37c69da13b3fa5e84834bbbd7c478187130462afbbd6d7797984 is acquired
+2018-12-12 17:54:49,882 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 17:54:49,884 logger.py[line:80] INFO AccessToken : 875cd1ccf051b25363de9f4950a367c61cec0c0c33aba3f735f8cf150d0128db is acquired
+2018-12-12 17:54:49,884 logger.py[line:85] INFO RefreshToken : 7d118f836e25ba719e08b43f76f0042b6090b25621b516a09f1ff2f01d220a79 is acquired
+2018-12-12 17:57:48,559 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:57:48
+2018-12-12 17:57:48,559 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 17:57:49,484 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 17:57:49,486 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 17:57:48
+2018-12-12 17:57:49,486 logger.py[line:80] INFO AccessToken : 8fd82f2223a46663c859d9a5679d49dd7a879780586fc3c4a2a6726bce789259 is acquired
+2018-12-12 17:57:49,486 logger.py[line:85] INFO RefreshToken : eec2cc3423cae2c531bd1a2f1430dbc898e9c8cb264854d4968b1a6515ff045c is acquired
+2018-12-12 18:00:46,688 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:00:46
+2018-12-12 18:00:46,688 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 18:00:47,660 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 18:00:47,660 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:00:46
+2018-12-12 18:00:47,661 logger.py[line:80] INFO AccessToken : 61fc6babcadab9d854986c74892754b58875c3f4ffd215844a205050f77f9f14 is acquired
+2018-12-12 18:00:47,661 logger.py[line:85] INFO RefreshToken : 28c8453c29c1e63828e7900c15793c4a8cb3ac9631a202b6bdedf6e4e94f8dde is acquired
+2018-12-12 18:01:23,040 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:01:23
+2018-12-12 18:01:23,042 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 18:01:23,944 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 18:01:23,946 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:01:23
+2018-12-12 18:01:23,947 logger.py[line:80] INFO AccessToken : 630d83ced8c4c0a02ce1948812fed0c81ff2a12a8147a777cccb276ccab9c563 is acquired
+2018-12-12 18:01:23,947 logger.py[line:85] INFO RefreshToken : 4e217e7382ceab9257e0111cc36d9f025e9bdb65cb74d1fd30d744220478b804 is acquired
+2018-12-12 18:02:36,773 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:02:36
+2018-12-12 18:02:36,775 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 18:02:37,746 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 18:02:37,746 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:02:36
+2018-12-12 18:02:37,746 logger.py[line:80] INFO AccessToken : 2a3a74275817f0cce57f2a43167383cafbd27e1e803936ad428d76006b8321e1 is acquired
+2018-12-12 18:02:37,746 logger.py[line:85] INFO RefreshToken : ea8ef8b8d4e2d5ba2686d171c9841dd845efcfd5807742d2488bc01d1225231e is acquired
+2018-12-12 18:03:19,897 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:03:19
+2018-12-12 18:03:19,897 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 18:03:25,926 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 18:03:25,926 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:03:19
+2018-12-12 18:03:25,926 logger.py[line:80] INFO AccessToken : 4ff4151a8e14932e557baa2073d9bfd24ba67c01728b22bfb35e13154fe773df is acquired
+2018-12-12 18:03:25,926 logger.py[line:85] INFO RefreshToken : c11069d4098346e8cee0f38f5d27e6acabbc540295946b298367f4c063abf4d4 is acquired
+2018-12-12 18:04:31,776 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:04:31
+2018-12-12 18:04:31,776 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 18:04:32,707 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 18:04:32,709 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:04:31
+2018-12-12 18:04:32,709 logger.py[line:80] INFO AccessToken : 09dbf08ba3bc03f9d62ede7392f6f81df008f51a12116e4a5d8d5bc239142b3f is acquired
+2018-12-12 18:04:32,709 logger.py[line:85] INFO RefreshToken : bf9e476ee98a3420a6f632ddf5f7e2db1010ccb01b2ce578af0cabe28bf38e3f is acquired
+2018-12-12 18:05:42,788 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:05:42
+2018-12-12 18:05:42,788 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 18:05:43,917 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 18:05:43,917 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:05:42
+2018-12-12 18:05:43,918 logger.py[line:80] INFO AccessToken : c37ae3b1ad872ebc90d0b6c237293a571d955e4ae8282e804469746ddb285e03 is acquired
+2018-12-12 18:05:43,918 logger.py[line:85] INFO RefreshToken : e8055330ec033234bb78553da13233ea8942824783eb43ee1e39d5b29e8c3cd4 is acquired
+2018-12-12 18:05:44,924 logger.py[line:111] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : c37ae3b1ad872ebc90d0b6c237293a571d955e4ae8282e804469746ddb285e03 in redis
+2018-12-12 18:05:44,928 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:05:44,930 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:05:47,934 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:05:53,936 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:05:53,937 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:05:56,938 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:06:02,941 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:06:02,944 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:06:05,947 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:06:11,950 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:06:11,951 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:06:14,953 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:09:32,957 logger.py[line:61] INFO DadaLogin is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:09:32
+2018-12-12 18:09:32,957 logger.py[line:100] INFO DadaRedis is created within host : localhost and port ;6379
+2018-12-12 18:09:44,190 logger.py[line:68] INFO HTTP Request is recieved with a status code of 200
+2018-12-12 18:09:44,190 logger.py[line:75] INFO DadaToken is created by 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and will expire in 2019-01-11 18:09:32
+2018-12-12 18:09:44,190 logger.py[line:80] INFO AccessToken : 87112b057f97a91bf799bfab56d838c9d50b976f3d13abd0e078cf580df1d8fd is acquired
+2018-12-12 18:09:44,191 logger.py[line:85] INFO RefreshToken : 218195db845b86fc7dfd89a02565f701ca95fef971c27b2c23c0c226219791d2 is acquired
+2018-12-12 18:09:45,197 logger.py[line:111] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 87112b057f97a91bf799bfab56d838c9d50b976f3d13abd0e078cf580df1d8fd in redis
+2018-12-12 18:09:45,200 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:09:48,203 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:09:54,207 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:09:57,207 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:10:03,210 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:10:06,213 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:10:12,217 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2018-12-12 18:10:15,217 logger.py[line:104] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis

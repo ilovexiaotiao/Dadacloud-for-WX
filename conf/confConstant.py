@@ -33,12 +33,6 @@ class ConstantTime(object):
             return time.localtime(
                 time.time() + int(self.second))
 
-    #
-    # #Time类型Login类失效时间
-    # def expire_time(self):
-    #     return time.localtime(
-    #         time.time() + int(self.second))
-
     # 字符串类型失效时间
     def expire_time_string(self):
         return time.strftime(

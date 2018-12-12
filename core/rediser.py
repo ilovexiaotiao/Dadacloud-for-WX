@@ -2,8 +2,10 @@
 import requests
 import json
 import time
+import logging
 from exception import EmptyException, RaizeCurrentException
 import redis
+from core.logger import DadaLogger
 
 # 搭搭云微信其他：
 # 1，包括Redis设置，Sql设置，Log设置，线程设置。
@@ -18,16 +20,22 @@ import redis
 # 若用户未登录时间超过180天，则关联自动取消（已实现）
 
 
+
 class DadaRedis(object):
     # 类的初始化
-    def __init__(self, host, port, login):
+    def __init__(self,logger, login,host, port, ):
         # 实现StrictRedis的连接池
+        self.host=host
+        self.port=port
         self.__redis = redis.StrictRedis(host, port)
         self.loginInstance = login
+        self.logger = logger
+        self.logger.log_redis_connect(host,port)
+
+
 
     # 获取指定key的Value，需要引入login类
     def get(self, key):
-
         try:
             # 判断是否存在该Key值
             if not self.__redis.exists(key):
@@ -38,6 +46,7 @@ class DadaRedis(object):
             output.output()
         finally:
             # 输出Value值
+            self.logger.log_redis_findkey(key)
             return self.__redis.get(key)
 
     # 给指定key设置Value，需要引入login类
@@ -51,3 +60,4 @@ class DadaRedis(object):
         else:
             # 输出Value值
             self.__redis.set(key, value, extime)
+            self.logger.log_redis_setkey(key,value)

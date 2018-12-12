@@ -5,6 +5,6 @@
 REDIS_PARAM = {
     'host': 'localhost',  # Redis地址
     'port': '6379',  # Redis端口
-    # 'expiresecond': 2591000,
-    'expiresecond': 1,
+    'expiresecond': 648000,
+    # 'expiresecond': 1,
 }

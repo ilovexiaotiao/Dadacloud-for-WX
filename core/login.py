@@ -3,10 +3,11 @@ import requests
 import json
 import time
 from exception import LoginException, TypeException, RaizeCurrentException
-from others import DadaRedis
-from conf.confLogin import LOGIN_PRARM
+from rediser import DadaRedis
+from conf.confLogin import LOGIN_PRARM,LOGIN_URL,LOGIN_HEADERS
 from conf.confRedis import REDIS_PARAM
 from conf.confConstant import ConstantTime
+from core.logger import DadaLogger
 
 
 # 搭搭云微信注册：
@@ -25,9 +26,11 @@ from conf.confConstant import ConstantTime
 # 所有行为都需引入LOGIN类(重要）
 
 
+
+
 class DadaLogin(object):
     # 类的初始化
-    def __init__(self, username, password, client, secret):
+    def __init__(self,logger,username, password, client, secret):
         # 初始赋值
         self.userName = username  # 用户名
         self.passWord = password  # 密码（加密显示未实现）
@@ -38,14 +41,14 @@ class DadaLogin(object):
         self.initialTime = self.conTime.now_time_string()
         self.expireTimeStrut = self.conTime.expire_time()
         self.expireTime = self.conTime.expire_time_string()
+        self.logger = logger
+        self.logger.log_login(self)
+
 
     # 首次获取Token信息
 
     def get_connect(self):
         try:
-            print self.conTime
-            print self.expireTime
-            print self.conTime.get_expire()
             if self.conTime.get_expire():
                 raise (
                     LoginException('expire_error'))
@@ -62,12 +65,8 @@ class DadaLogin(object):
                 'username': self.userName,
                 'password': self.passWord,
             }
-            url = 'https://api.dadayun.cn/connect/token'
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) '
-                              'Chrome/58.0.3029.110 Safari/537.36',
-                'Content-Type': 'application/x-www-form-urlencoded',
-            }
+            url = LOGIN_URL
+            headers = LOGIN_HEADERS
             try:
                 # 通过Get方式获取Token信息
                 response = requests.post(url=url, data=params, headers=headers)
@@ -84,6 +83,7 @@ class DadaLogin(object):
                 output1.output()
             # 成功获取Access_Token和Refresh_Token
             else:
+                self.logger.log_http_response(response)
                 return result_connect
 
     # 后期重复获取Token
@@ -107,12 +107,8 @@ class DadaLogin(object):
                 'refresh_token': refresh,
                 'scope': 'openapi offline_access',
             }
-            url = 'https://api.dadayun.cn/connect/token'
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)'
-                              ' Chrome/58.0.3029.110 Safari/537.36',
-                'Content-Type': 'application/x-www-form-urlencoded',
-            }
+            url = LOGIN_URL
+            headers = LOGIN_HEADERS
             # Refresh的POST参数，与Access的有所不同
             # 通过Refresh_Token延长授权时间
             # 将上述参数发送至API平台，获取新的Access_Token和Refresh_Token
@@ -120,6 +116,7 @@ class DadaLogin(object):
                 # 发送GET请求
                 response = requests.post(url=url, data=params, headers=headers)
                 result_refresh = json.loads(response.content)
+                # print response.status_code
                 # 判断返回结果中是否有错误提示
                 if 'error' in result_refresh:
                     raise (
@@ -131,6 +128,7 @@ class DadaLogin(object):
                 output.output()
             # 成功更新Access_Token和Refresh_Token
             else:
+                self.logger.log_http_response(response)
                 return result_refresh
 
 # 搭搭云Token类，包含Token信息、获取时间。初始创建需要输入Login类和Redis类，Token在Redis里的字段是client/username
@@ -142,7 +140,7 @@ class DadaLogin(object):
 
 class DadaToken(object):
     # 类的初始化
-    def __init__(self, login, redis):
+    def __init__(self, logger,login, redis):
         self.conTime = ConstantTime(
             LOGIN_PRARM['expireSecond'],
             types=1,
@@ -194,8 +192,12 @@ class DadaToken(object):
                 # 在redis里面查找key值，如有，直接输出
                 else:
                     # 获取初始的Token和refreshtoken
+                    self.logger = logger
+                    self.logger.log_token(self)
                     self.accessToken = result['access_token']
+                    self.logger.log_get_accesstoken(self.accessToken)
                     self.refreshToken = result['refresh_token']
+                    self.logger.log_get_refreshtoken(self.refreshToken)
                     # 将初始值存入Redis数据库
                     self.keyName = login.clientId + "/" + login.userName
                     redis.set(
@@ -228,7 +230,9 @@ class DadaToken(object):
                 result = self.loginInstance.get_refresh(self.refreshToken)
                 # 获取更新的Token和refreshtoken,替代初始Token信息
                 self.accessToken = result['access_token']
+                self.logger.log_get_accesstoken(self.accessToken)
                 self.refreshToken = result['refresh_token']
+                self.logger.log_get_refreshtoken(self.refreshToken)
                 # 计算token时间
                 self.refreshCount = self.refreshCount + 1
                 contime = self.conTime = ConstantTime(

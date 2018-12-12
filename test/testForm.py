@@ -3,9 +3,7 @@ from core.login import DadaLogin, DadaToken
 from core.rediser import DadaRedis
 from conf.confLogin import LOGIN_PRARM
 from conf.confRedis import REDIS_PARAM
-from core.logger import DadaLogger
 import time
-
 
 # 测试计数器类
 class TestClock(object):
@@ -52,28 +50,27 @@ class TestLogin(object):
         print "REFRESHTOKEN-->" + self.token.refreshToken
         print "--------------REDIS类------------------------"
         print"REDIS的KEY值-->" + self.token.keyName
-        print "REDIS的VALUE值-->" + self.redis.get(self.token.keyName)
-
+        if self.redis.get(self.token.keyName):
+            print "REDIS的VALUE值-->" + self.redis.get(self.token.keyName)
+        else:
+            print "没有REDIS的Value值"
         # self.token.insert_token()
         # time.sleep(3)
 
 
 # 开始测试登录
 if __name__ == '__main__':
-    logger = DadaLogger()
-    login = DadaLogin(logger,
+    login = DadaLogin(
         username=LOGIN_PRARM['userName'],
         password=LOGIN_PRARM['passWord'],
         client=LOGIN_PRARM['clientId'],
         secret=LOGIN_PRARM['clientSecret'])
-    redis = DadaRedis(logger,login,
+    redis = DadaRedis(
         host=REDIS_PARAM['host'],
         port=REDIS_PARAM['port'],
-        )
-    token = DadaToken(logger,login, redis)
-
+        login=login)
+    token = DadaToken(login, redis)
     login_test = TestLogin(login, redis, token)
-
     # 新建测试登录的计时器
     clock = TestClock(login_test)
     # 共测试两次，间隔6秒
