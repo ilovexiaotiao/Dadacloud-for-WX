@@ -1,0 +1,73 @@
+/*3D轮播样式*/
+
+.swiper-container {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 110px;
+	height: 150px;
+}
+
+/*地址栏样式*/
+#address_bar{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+/*地图图标样式*/
+#map_row{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+#map_row_icon{
+	height: 60px;
+	text-align: center;
+}
+
+#swift_entry{
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+#sport_name{
+	text-align: center;
+}
+
+.lesson_time{
+	width: 40%;
+}
+
+.lesson_coach{
+	width: 30%;
+	text-align: right;
+}
+
+.lesson_detail{
+	 width:25%;
+	 text-align: right;
+}
+
+#lesson_ad{
+	margin-top: 30px; 
+	margin-bottom: 80px;
+}
+
+
+/*
+.right_topbar_button{
+	padding-right: 15px; !important
+    padding-left: 15px;!important
+}*/

@@ -1,0 +1,40 @@
+
+					<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<!--选择栏-->
+						{% for key,value in result.items() %}
+						<a id='gotoitem1' class="mui-control-item" href="#{{key}}">{{key}}</a>
+						{%endfor%}
+					</div>
+					<!--选择光标-->
+					<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+					<!--列表页-->
+					<div class="mui-slider-group">
+						{% for key,value in result.items() %}
+
+						<div id="{{key}}" class="mui-slider-item mui-control-content mui-active">
+							<ul class="mui-table-view">
+								<!--整个row-->
+								{% for i in value %}
+
+								<li class="mui-table-view-cell">
+									<div class="mui-row">
+										<!--时间row-->
+										<div class="mui-col-xl-3 lesson_time">
+											<a href="#">
+												<h4>{{i["teacher"]}}</h4>
+												<div class="mui-collapse-content">
+													<h6>{{i}}结束</h6>
+												</div>
+											</a>
+										</div>
+
+									</div>
+								</li>
+
+									{% endfor%}
+							</ul>
+						</div>
+
+
+						{% endfor%}
+					</div>
