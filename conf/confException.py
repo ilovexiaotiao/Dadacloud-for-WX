@@ -10,7 +10,7 @@ LOGIN_ERRORS = {
     'invalid_scope': 'Scope验证失败',
     'temporarily_unavailable': '服务暂时无法访问',
     'server_error': '服务器内部错误，请联系管理员',
-    'expire_error': 'LOGIN类已失效，请重新创建'
+    'expire_error': '类已失效，请重新创建'
 }
 
 
@@ -33,11 +33,11 @@ TYPE_ERRORS = {
 # 空指针错误描述集合
 EMPTY_ERRORS = {
     'function_return_empty': '函数返回值为None',
-    'redis_key_empty': 'Redis中指定Key值的Value为None',
+    'redis_key_empty': 'Redis中指定Key值为空',
     'dict_key_empty': '提供的凭证验证失败',
     'list_empty': '客户端没有权限',
     'dict_empty': '不支持的 GrantType',
-    'param_empty': 'Scope验证失败',
+    'redis_key_notexsit': 'Redis中指定Key值为空',
     'temporarily_unavailable': '服务暂时无法访问',
     'server_error': '服务器内部错误，请联系管理员',
     'expire_error': 'LOGIN类已失效，请重新创建'

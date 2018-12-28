@@ -2,6 +2,7 @@
 
 from exception import TypeException,RaizeCurrentException
 import logging
+import os,sys
 from logging import handlers
 from conf.confException import LOGIN_ERRORS, TYPE_ERRORS, EMPTY_ERRORS
 from conf.confLogger import LOGGER_FORMAT_PARAM,LOGGER_PARAM
@@ -11,13 +12,14 @@ from conf.confLogger import LOGGER_FORMAT_PARAM,LOGGER_PARAM
 
 
 # 搭搭云微信日志：
-# 1，此流程获取token适合开发者没有自己的web服务器，且应用为原生程序，即客户端应用（同时应用无法与浏览器交互，但是可以外调用浏览器）
-# 2，主要采用的是OAuth2.0请求签名机制，开发者可根据需要及应用场景使用其中一种认证即可调用搭搭云OpenAPI。
-# 3，通过POST形式，推送用户名，用户密码，客户ID，客户Secret到API平台，获取Access_Token和Refresh_Token。
+# 1，获取用户各个操作节点的操作记录，比如Login，Form等
+# 2，获取用户访问页面信息和停留时间，如Lesson_lists等
+# 3，规定平台错误和警告输出格式，如LoginException等
+# 4，一个Login类只保留一个Logger，之后的Token，form都使用这个Logger类
 
 
 class DadaLogger(object):
-    # 日志级别关系映射
+    # 定义日志级别关系映射
     level_relations = {
         'debug': logging.DEBUG,
         'info': logging.INFO,
@@ -26,10 +28,22 @@ class DadaLogger(object):
         'crit': logging.CRITICAL
     }
 
-    # 类的初始化
-    def __init__(self,filename=LOGGER_PARAM['filename'],level='info',when='D',backCount=1,fmt=LOGGER_FORMAT_PARAM):
+    # 类的初始化，默认为info集，日志备份数为1
+    def __init__(self,login,level='info',when='D',backCount=1,fmt=LOGGER_FORMAT_PARAM):
+        # 引入Login类信息的主要信息
+        self.userName =  login.clientId+'-'+login.userName  # 搭搭云对应产品的APIKEY
+        self.initialTime = login.initialTime
+        self.expireTimeStrut = login.expireTimeStrut
+        self.expireTime = login.expireTime
+        # 以“客户编号+用户ID”作为Login类日志文件名
+        filename = LOGGER_PARAM['filepath']+self.userName+'.txt'
+        if not (os.path.exists(filename)):
+            print os.path.exists(filename)
+            file = open(filename, 'w')
+            file.close()
+            print('Done')
         #生成log实例
-        self.logger = logging.getLogger(LOGGER_PARAM['filename'])
+        self.logger = logging.getLogger(filename)
         #确定log格式
         format_str=logging.Formatter(fmt)
         #确定显示等级
@@ -53,25 +67,64 @@ class DadaLogger(object):
         # 将log结果写入file
         self.logger.addHandler(th)
 
-    #DadaLogin类日志输出
-    def log_login(self,login):
-        userName = login.clientId+'/'+login.userName
-        expireTime = login.expireTime
-        login_statement = "DadaLogin is created by "+userName+" and will expire in "+expireTime+'\r'
-        self.logger.info(login_statement)
+    # DadaLogin类日志
+    # 请求Login类日志
+    def log_login_request(self):
+        userName = self.userName
+        logger_statement = "DadaLogin Request is created by "+userName+".\r"
+        self.logger.info(logger_statement)
         return True
 
 
-    def log_http_response(self,responeses):
-        httpcode = str(responeses.status_code)
-        statement = "HTTP Request is recieved with a status code of "+httpcode+'\r'
+    # ExpiredException中的Login类错误日志
+    def log_loginexpiredexception(self,err):
+        userName = self.userName
+        logger_statement = "Dadalogin is expired in function('"+ err.function + "') in class('"+ err.location +"').\r"
+        self.logger.error(logger_statement)
+        return True
+
+    # LoginException错误日志
+    def log_loginexception(self,err):
+        userName = self.userName
+        logger_statement = "DadaLogin is invalid in function('"+ err.function + "') in class('"+ err.location +"')\r"
+        self.logger.info(logger_statement)
+        self.logger.error(err)
+        return True
+
+
+    # LOGIN类HTTP返回日志
+    def log_http_response(self,httpcode):
+        statement = "HTTP response is recieved with a status code of "+str(httpcode)+'\r'
         self.logger.info(statement)
         return True
 
-    def log_token(self, tokens):
-        userName = tokens.loginInstance.clientId + '/' + tokens.loginInstance.userName
-        expireTime = tokens.expireTime
-        statement = "DadaToken is created by " + userName + " and will expire in " + expireTime+'\r'
+    # LOGIN类建立成功
+    def log_login_success(self):
+        userName = self.userName
+        logger_statement = "DadaLogin is successfully created by "+userName+" and will expired in"+ self.expireTime+"\r"
+        self.logger.info(logger_statement)
+        return True
+
+
+    # DaDaToken类日志
+    # 请求Token类日志
+    def log_token_request(self):
+        userName = self.userName
+        logger_statement = "DadaToken Request is created by "+userName+".\r"
+        self.logger.info(logger_statement)
+        return True
+
+    # TypeException错误日志
+    def log_typeexception(self,err):
+        userName = self.userName
+        logger_statement = "ClassType is incorrect in function('"+ err.function + "') in class('"+ err.location +"')\r"
+        self.logger.info(logger_statement)
+        self.logger.error(err)
+        return True
+
+
+    def log_token_success(self):
+        statement = "DadaLogin Request is successfully created by "+self.userName+" and will expired in"+ self.expireTime+"\r"
         self.logger.info(statement)
         return True
 
@@ -85,6 +138,12 @@ class DadaLogger(object):
         self.logger.info(statement)
         return True
 
+    def log_tokenexpiredexception(self,err):
+        userName = self.userName
+        logger_statement = "DadaToken created by "+userName+" is expired in function('"+ err.function + "') in class('"+ err.location +"').\r"
+        self.logger.info(logger_statement)
+        self.logger.error(err)
+        return True
 
 
     def log_insert_token(self,tokens):
@@ -109,4 +168,16 @@ class DadaLogger(object):
     def log_redis_setkey(self,keyname,value):
         statement = "Write keyName : " + keyname + " and Value : "+value+" in redis\r"
         self.logger.info(statement)
+        return True
+
+    def key_emptyexception(self,err):
+        statement = "Redis key is empty \r"
+        self.logger.info(statement)
+        self.logger.error(err)
+        return True
+
+    def key_notexsitexception(self,err):
+        statement = "Redis key is not exsit \r"
+        self.logger.info(statement)
+        self.logger.error(err)
         return True

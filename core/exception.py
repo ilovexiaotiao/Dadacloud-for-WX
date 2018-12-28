@@ -44,21 +44,28 @@ class RaizeCurrentException(Exception):
 
 
 
+# 失效错误集，作用在DadaLogin和DadaToken类上
+class ExpiredException(Exception):
+
+    # 类的初始化
+    # 错误返回标签为'expire_error'
+    def __init__(self, err):
+        # 定义错误原因，捕捉错误发生的函数和类
+        self.reason = LOGIN_ERRORS[err]  # 获取Access_Token错误集
+        self.location = sys._getframe().f_code.co_name   # 定义错误所在位置
+        self.function = sys._getframe().f_back.f_code.co_name  # 定义错误所在函数
+
+    # def output_error
 # 登录错误集
 class LoginException(Exception):
 
     # 类的初始化
     # 传入dict类，'Message'标签内标注错误类型
     def __init__(self, err):
-        # 定义错误描述
-        self.desc = 'error type is login class ---- "{0}"'.format(err)
-        self.type = err
+        # 定义错误原因，捕捉错误发生的函数和类
         self.reason = LOGIN_ERRORS[err]  # 获取Access_Token错误集
         self.location = sys._getframe().f_code.co_name   # 定义错误所在位置
         self.function = sys._getframe().f_back.f_code.co_name  # 定义错误所在函数
-
-    # def output_error
-
 
 # 类别错误集
 class TypeException(Exception):

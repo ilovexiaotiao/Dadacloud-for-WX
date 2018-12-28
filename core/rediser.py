@@ -23,13 +23,14 @@ from core.logger import DadaLogger
 
 class DadaRedis(object):
     # 类的初始化
-    def __init__(self,logger, login,host, port, ):
+    def __init__(self, login,host, port, ):
         # 实现StrictRedis的连接池
         self.host=host
         self.port=port
         self.__redis = redis.StrictRedis(host, port)
         self.loginInstance = login
-        self.logger = logger
+        self.logger = login.logger
+
         self.logger.log_redis_connect(host,port)
 
 
@@ -40,10 +41,9 @@ class DadaRedis(object):
             # 判断是否存在该Key值
             if not self.__redis.exists(key):
                 raise EmptyException(
-                    'redis_key_empty')
+                    'redis_key_notexsit')
         except EmptyException as x:
-            output = RaizeCurrentException(x, self.loginInstance)
-            output.output()
+            self.logger.key_notexsitexception(x)
         finally:
             # 输出Value值
             self.logger.log_redis_findkey(key)
@@ -53,10 +53,9 @@ class DadaRedis(object):
     def set(self, key, value, extime):
         try:
             if len(key) == 0:
-                raise EmptyException('param_empty')
+                raise EmptyException('redis_key_empty')
         except EmptyException as x:
-            output = RaizeCurrentException(x, self.loginInstance)
-            output.output()
+            self.logger.key_emptyexception(x)
         else:
             # 输出Value值
             self.__redis.set(key, value, extime)

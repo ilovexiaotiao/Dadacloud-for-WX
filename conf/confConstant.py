@@ -4,6 +4,7 @@ import time
 
 # 公共函数时间常量
 
+
 class ConstantTime(object):
     # 类的初始化,type=0,则为LOGIN类时间常量，其他情况，为非LOGIN类常量,需要补全expire_time
     def __init__(self, second, types=0, expire_time_login=time.localtime(

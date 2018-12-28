@@ -11,6 +11,13 @@ LOGIN_PRARM = {
 }
 
 
+#TOKEN信息
+TOKEN_PARAM = {
+    'expireSecond': 2592000,
+    'accessToken' : "",
+    'refreshToken' : ""
+}
+
 # 获取ACCESSTOKEN的地址
 LOGIN_URL = 'https://api.dadayun.cn/connect/token'
 
