@@ -100,7 +100,7 @@ class FormModule(object):
                 for i in range(0, inlen):
                     if result_modulelist[i]['HasInstance'] is True and result_modulelist[i]['Status'] > 0:
                         result_hasinstance.append(result_modulelist[i])
-                    return result_hasinstance
+                return result_hasinstance
             else:
                 return result_modulelist
 
@@ -159,7 +159,7 @@ class FormEntity(object):
                 for i in range(0, inlen):
                     if result_modulelist[i]['IsValid'] is True:
                         result_submit.append(result_modulelist[i])
-                    return result_submit
+                return result_submit
             else:
                 return result_modulelist
 

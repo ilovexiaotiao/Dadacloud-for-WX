@@ -394,3 +394,152 @@
 2019-01-09 15:22:52,835 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
 2019-01-09 15:22:53,163 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
 2019-01-09 15:22:53,548 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:13:17,400 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 22:13:17,414 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 22:13:17
+2019-01-09 22:13:17,414 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-01-09 22:13:17,414 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 22:13:20,552 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:13:20,562 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 22:13:17
+2019-01-09 22:13:20,562 logger.py[line:133] INFO AccessToken : 987c516ef88cf5c931b1dec772b0bd908311ee588bba0a34f5af2fe6afb7b000 is acquired
+2019-01-09 22:13:20,562 logger.py[line:138] INFO RefreshToken : a4452d4ae06ef2133873128ea7239616c18f25d044ff8284feceeb179b03bd62 is acquired
+2019-01-09 22:13:21,581 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 987c516ef88cf5c931b1dec772b0bd908311ee588bba0a34f5af2fe6afb7b000 in redis
+2019-01-09 22:13:21,581 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-01-09 22:13:39,308 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:13:45,154 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:13:52,770 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:13:53,071 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:13:53,815 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:13:57,805 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:13:58,628 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:14:04,288 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:14:05,040 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:14:07,233 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:14:08,720 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:14:09,720 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:14:10,484 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:14:13,549 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:14:13,924 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:14:14,244 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:14:22,576 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:14:23,365 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:14:25,285 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:15:05,003 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 22:15:05,003 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 22:15:05
+2019-01-09 22:15:05,005 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-01-09 22:15:05,005 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 22:15:05,967 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:15:05,967 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 22:15:05
+2019-01-09 22:15:05,969 logger.py[line:133] INFO AccessToken : f3918e7df5512827ef59ccba02eb532187dd719ff082a190de3590b4474cb068 is acquired
+2019-01-09 22:15:05,969 logger.py[line:138] INFO RefreshToken : 37245b1032103e6992d875a70f316cc9c24f385eef7b1be8cabc7e60fea0e100 is acquired
+2019-01-09 22:15:06,971 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : f3918e7df5512827ef59ccba02eb532187dd719ff082a190de3590b4474cb068 in redis
+2019-01-09 22:15:06,973 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-01-09 22:15:59,134 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:15:59,884 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:17:45,775 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 22:17:45,776 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 22:17:45
+2019-01-09 22:17:45,776 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-01-09 22:17:45,776 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 22:17:46,687 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:17:46,687 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 22:17:45
+2019-01-09 22:17:46,687 logger.py[line:133] INFO AccessToken : 183e85fb92d2fa43217b0c52391850a1e7165ba6928c6f722224417b20c80334 is acquired
+2019-01-09 22:17:46,687 logger.py[line:138] INFO RefreshToken : 7b0daa1e45b986f39ed917bfa715da4cda0f7f35abaea050428ef5bf9483456e is acquired
+2019-01-09 22:17:47,694 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 183e85fb92d2fa43217b0c52391850a1e7165ba6928c6f722224417b20c80334 in redis
+2019-01-09 22:17:47,694 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-01-09 22:19:07,374 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:19:08,211 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:44:56,088 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:44:56,450 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:44:56,832 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:45:04,845 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:45:05,566 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:45:08,694 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:45:09,288 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 22:45:10,076 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 22:45:10,763 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:12,703 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 23:33:12,704 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 23:33:12
+2019-01-09 23:33:12,704 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-01-09 23:33:12,704 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 23:33:13,528 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:13,529 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 23:33:12
+2019-01-09 23:33:13,529 logger.py[line:133] INFO AccessToken : 4c24ee2540e7c2ec71e17873b30480fe784695254b0528d1908c431e0734b3d7 is acquired
+2019-01-09 23:33:13,529 logger.py[line:138] INFO RefreshToken : 1687c5e21bc9558458c05e45243e949971de3d34f6b66f724bfc76eee83db7e9 is acquired
+2019-01-09 23:33:14,556 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 4c24ee2540e7c2ec71e17873b30480fe784695254b0528d1908c431e0734b3d7 in redis
+2019-01-09 23:33:14,556 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-01-09 23:33:17,898 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:18,819 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:23,979 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:24,394 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:24,757 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:27,545 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:28,325 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:32,346 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:33,151 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:33,555 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:34,302 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:35,645 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:36,016 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:36,490 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:37,338 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:38,007 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:38,778 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:39,131 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:39,568 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:42,030 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:42,775 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:45,098 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:45,773 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:46,634 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:47,002 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:47,282 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:50,496 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:51,197 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:52,177 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:52,509 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:52,990 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:55,586 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:56,326 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:57,137 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:57,798 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:33:58,134 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:33:58,815 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:34:00,075 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:34:00,380 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:34:00,961 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:34:03,335 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:34:04,025 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:34:07,292 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:34:08,187 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:34:23,519 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:34:24,398 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:34:26,117 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:34:26,434 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:34:26,818 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:35:24,213 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:35:25,134 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:35:26,321 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:35:26,647 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:35:27,096 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:35:29,607 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:35:30,489 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:35:33,141 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:35:34,049 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:36:44,697 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 23:36:44,697 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 23:36:44
+2019-01-09 23:36:44,697 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-01-09 23:36:44,698 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-01-09 23:36:45,496 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:36:45,496 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-02-08 23:36:44
+2019-01-09 23:36:45,496 logger.py[line:133] INFO AccessToken : 80e6fd10e65ba1c942c5c60cd61845f4c8fd2f49a141cf61db4500c6c5e34d72 is acquired
+2019-01-09 23:36:45,496 logger.py[line:138] INFO RefreshToken : 683bf2b1bcb7397c7acb5fb425dad6bd59ac49d0e8543de4bcfcbb4360771df5 is acquired
+2019-01-09 23:36:46,512 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 80e6fd10e65ba1c942c5c60cd61845f4c8fd2f49a141cf61db4500c6c5e34d72 in redis
+2019-01-09 23:36:46,513 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-01-09 23:36:52,967 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:36:53,858 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:36:55,558 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:36:55,967 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:36:56,374 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:36:59,657 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:37:00,349 logger.py[line:98] INFO HTTP response is recieved with a status code of 400
+2019-01-09 23:37:06,766 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-01-09 23:37:07,585 logger.py[line:98] INFO HTTP response is recieved with a status code of 400

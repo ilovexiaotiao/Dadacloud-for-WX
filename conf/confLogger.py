@@ -2,7 +2,8 @@
 
 # 日志输出设置
 LOGGER_PARAM = {
-'filepath':"E:\\Dadacloud-for-WX-rv\\log\\",# 用指定的文件名创建FiledHandler（后边会具体讲解handler的概念），这样日志会被存储在指定的文件中。
+# 'filepath':"E:\\Dadacloud-for-WX-rv\\log\\",# 用指定的文件名创建FiledHandler（后边会具体讲解handler的概念），这样日志会被存储在指定的文件中。
+'filepath':"E:\\Nicholas Shan\\Dadacloud-for-WX\\log\\",
 'filemode':"",# 文件打开方式，在指定了filename时使用这个参数，默认值为“a”还可指定为“w”。
 'format':"",#指定handler使用的日志显示格式。
 'datefmt':"",#指定日期时间格式。

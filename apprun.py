@@ -2,41 +2,32 @@
 import requests
 import json
 from flask import Flask, render_template, request,redirect,url_for,sessions
-import threading
-from core.others.save_redis import Dada_redis
-from core.login.login_dadayun import Dada_login,Dada_token
-from core.form.get_module import Dada_module
-from core.form.get_entity import Dada_entity
-from core.form.get_fields import Dada_fields
-from core.form.operate_entity import Dada_operate
-import conf.CONFIG,conf.CONFIG_REDIS
-from datetime import datetime
-
-# class mythread(threading.Thread):
-#     def __init__(self, token, interval):
-#         threading.Thread.__init__(self)
-#
-#         self.token = token
-#         self.clientid=token.clientid
-#         self.username=token.username
-#         self.start=token.start
-#         self.end=token.end
-#         self.interval = interval
-#         self.app=Flask(__name__)
-#
-#     def run(self):
-#         for x in filter(lambda x: x % self.interval == 0, range(10)):
-#             self.app.run(debug=True)
+from core.login import DadaLogin,DadaToken,DadaLogger,DadaRedis
+from core.form import DadaForm,FormEntity,FormFields,FormModule
+from conf.confLogin import LOGIN_PRARM
+from conf.confRedis import REDIS_PARAM
 
 
+login = DadaLogin(
+    username=LOGIN_PRARM['userName'],
+    password=LOGIN_PRARM['passWord'],
+    client=LOGIN_PRARM['clientId'],
+    secret=LOGIN_PRARM['clientSecret'])
+redis = DadaRedis(login,
+                  host=REDIS_PARAM['host'],
+                  port=REDIS_PARAM['port'],
+                  )
+token = DadaToken(login, redis)
+accesstoken = token.insert_token()
+form =DadaForm(login,accesstoken)
 
 app = Flask(__name__)
 @app.route('/',methods = ['POST', 'GET'])
 def module_list():
     moduleid=''
-    module=Dada_module(token)
+    module=FormModule(form)
     if request.method == 'GET':
-        data = module.get_module_list_hasinstance_all()
+        data = module.get_module_list()
         return render_template("test.html", result=data)
     if request.method == 'POST':
         data = request.get_json()
@@ -51,8 +42,8 @@ def module_list():
 @app.route('/<moduleid>',methods = ['POST', 'GET'])
 def entity_list(moduleid):
     entityid=''
-    entity=Dada_entity(token,moduleid)
-    data = entity.get_entity_list_submit_all()
+    entity=FormEntity(form,moduleid)
+    data = entity.get_entity_list()
     if request.method == 'GET':
         return render_template("test1.html", result=data)
     if request.method == 'POST':
@@ -66,8 +57,8 @@ def entity_list(moduleid):
 
 @app.route('/<moduleid>/<entityid>', methods=['POST', 'GET'])
 def fields_list(moduleid,entityid):
-    fields=Dada_fields(token,moduleid,entityid)
-    data = fields.get_fields_read()
+    fields=FormFields(form,moduleid,entityid)
+    data = fields.get_fields_list()
     if request.method == 'GET':
         return render_template("test2.html", result=data)
 
