@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import requests
 import json
-import time
 from exception import LoginException, TypeException, RaizeCurrentException,ExpiredException
 from rediser import DadaRedis
 from conf.confLogin import LOGIN_PRARM,LOGIN_URL,LOGIN_HEADERS,TOKEN_PARAM

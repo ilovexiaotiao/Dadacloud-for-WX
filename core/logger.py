@@ -181,3 +181,12 @@ class DadaLogger(object):
         self.logger.info(statement)
         self.logger.error(err)
         return True
+
+        # DadaForm类日志
+        # 请求Form类日志
+
+    def log_form_request(self):
+        userName = self.userName
+        logger_statement = "DadaLogin Request is created by " + userName + ".\r"
+        self.logger.info(logger_statement)
+        return True

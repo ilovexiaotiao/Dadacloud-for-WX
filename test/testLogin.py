@@ -24,8 +24,6 @@ class TestClock(object):
 
 
 # 激活登录状态
-
-
 class TestLogin(object):
     # 类的初始化
     def __init__(self, logins, rediss, tokens):
