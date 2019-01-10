@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>课程首页</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link href="{{ url_for('static', filename='css/mui.min.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/mui.picker.min.css') }}" rel="stylesheet"/>
+
+    <!--Swiper's CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.min.css') }}">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/lesson_index.css') }}"/>
+</head>
+
+<body>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mui.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/mui.picker.min.js') }}"></script>
+<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			//MUI初始化完毕
+			mui.ready(function() {
+				//Scroll初始化
+				mui('.mui-scroll-wrapper').scroll({
+					bounce: true,
+					indicators: true,
+					deceleration: mui.os.ios ? 0.003 : 0.0009
+				});
+				//添加mui类监听器，捕捉tab的点击事件
+				mui('.mui-scroll').on('tap', '.mui-control-item:not(.mui-active)', function() {
+					mui('.mui-slider').slider().gotoItem(this.getAttribute('data-index'));
+				});
+				mui('.mui-scroll-wrapper').scroll();
+			});
+
+
+
+</script>
+
+<!--首栏标题部分-->
+<header id="header" class="mui-bar mui-bar-transparent">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 id="titlename" class="mui-title">金港健身会所<span class="mui-icon mui-icon-arrowdown"
+                                                     style="font-size: 14px;"></span></h1>
+    <h4 id='titledate' data-options='{"type":"date","beginYear":2018,"endYear":2018}' class="mui-pull-right"
+        style="margin: 10px auto;">
+        日期</h4>
+    <!--<button id='demo2' data-options='{"type":"date","beginYear":2014,"endYear":2016}' class="btn mui-btn mui-btn-block">选择日期 ...</button>-->
+    <!--<div id='userResult' class="ui-alert"></div>-->
+</header>
+
+<!--主体部分-->
+<div class="mui-content">
+
+    <!--置顶图片部分-->
+    <div class="mui-row" style="width: 100%;">
+        <img id="top-pic" src="{{ url_for('static', filename='img/健美操.jpg')}}"/></img>
+    </div>
+
+    <!--搜索部分-->
+    <!--<div class="mui-input-row mui-search">
+        <input type="search" class="mui-input-clear" placeholder="">
+    </div>
+    -->
+
+    <!--主题组件-->
+    <div class="mui-row mui-slider">
+        <!--课程大类-->
+        <div id="lesson_first"
+             class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+            <div class="mui-scroll">
+                <a class="mui-control-item mui-active" data-index="0">
+                    推荐
+                </a>
+                <a class="mui-control-item" data-index="1">
+                    健美
+                </a>
+                <a class="mui-control-item" data-index="2">
+                    瑜伽
+                </a>
+                <a class="mui-control-item" data-index="3">
+                    舞蹈
+                </a>
+                <a class="mui-control-item" data-index="4">
+                    动感单车
+                </a>
+            </div>
+        </div>
+        <div class="mui-slider-group">
+            <!--第一个内容区容器-->
+            <div class="mui-slider-item ">
+                <div class="film_list">
+                    {% for i in result %}
+                    <div class="film_tmpl">
+                        <div class="film_tmpl_t mui-row">
+                            <div class="film_tmpl_t_l">
+                                <img src="{{ url_for('static', filename='img/健身套餐.jpg')}}"/>
+                            </div>
+                            <div class="film_tmpl_t_r">
+                                <h2><span>{{i['neirong']}}</span></h2>
+                                <h5>{{i['louceng']}}</h5>
+                                <h5>{{i['xingqi']}}</h5>
+                                <p>最近场次: <span>{{i['start']}}-{{i['end']}}</span>
+                                </p>
+                                <p>教练: <span>{{i['laoshi']}}</span>
+                                </p>
+                                <p>
+                                    <button>课表<span class="mui-icon mui-icon-arrowdown" style="font-size: 14px;"></span>
+                                    </button>
+                                </p>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!--<div class="film_tmpl">-->
+                        <!--<div class="film_tmpl_t mui-row">-->
+                            <!--<div class="film_tmpl_t_l">-->
+                                <!--<img src="{{ url_for('static', filename='img/健身套餐.jpg')}}"/>-->
+                            <!--</div>-->
+                            <!--<div class="film_tmpl_t_r">-->
+                                <!--<h2><span>燃脂收腹操</span></h2>-->
+                                <!--<h5>收腹</h5>-->
+                                <!--<h5>瘦腿</h5>-->
+                                <!--<p>最近场次: <span>19:00</span>-->
+                                <!--</p>-->
+                                <!--<p>教练: <span>阿威</span>-->
+                                <!--</p>-->
+                                <!--<p>-->
+                                    <!--<button>课表<span class="mui-icon mui-icon-arrowdown" style="font-size: 14px;"></span>-->
+                                    <!--</button>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                            <!--<div style="clear:both;"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="film_tmpl">-->
+                        <!--<div class="film_tmpl_t mui-row">-->
+                            <!--<div class="film_tmpl_t_l">-->
+                                <!--<img src="{{ url_for('static', filename='img/健身套餐.jpg')}}"/>-->
+                            <!--</div>-->
+                            <!--<div class="film_tmpl_t_r">-->
+                                <!--<h2><span>燃脂收腹操</span></h2>-->
+                                <!--<h5>收腹</h5>-->
+                                <!--<h5>瘦腿</h5>-->
+                                <!--<p>最近场次: <span>19:00</span>-->
+                                <!--</p>-->
+                                <!--<p>教练: <span>阿威</span>-->
+                                <!--</p>-->
+                                <!--<p>-->
+                                    <!--<button>课表<span class="mui-icon mui-icon-arrowdown" style="font-size: 14px;"></span>-->
+                                    <!--</button>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                            <!--<div style="clear:both;"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="film_tmpl">-->
+                        <!--<div class="film_tmpl_t mui-row">-->
+                            <!--<div class="film_tmpl_t_l">-->
+                                <!--<img src="{{ url_for('static', filename='img/健身套餐.jpg')}}"/>-->
+                            <!--</div>-->
+                            <!--<div class="film_tmpl_t_r">-->
+                                <!--<h2><span>燃脂收腹操</span></h2>-->
+                                <!--<h5>收腹</h5>-->
+                                <!--<h5>瘦腿</h5>-->
+                                <!--<p>最近场次: <span>19:00</span>-->
+                                <!--</p>-->
+                                <!--<p>教练: <span>阿威</span>-->
+                                <!--</p>-->
+                                <!--<p>-->
+                                    <!--<button>课表<span class="mui-icon mui-icon-arrowdown" style="font-size: 14px;"></span>-->
+                                    <!--</button>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                            <!--<div style="clear:both;"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--第二个内容区-->
+            <div class="mui-slider-item">
+                <div class="mui-slider-item ">
+                    <div class="film_list">
+                        <div class="film_tmpl">
+                            <div class="film_tmpl_t mui-row">
+                                <div class="film_tmpl_t_l">
+                                    <img src="{{ url_for('static', filename='img/健身套餐.jpg')}}"/>
+                                </div>
+                                <div class="film_tmpl_t_r">
+                                    <h2><span>燃脂收腹操</span></h2>
+                                    <h5>收腹</h5>
+                                    <h5>瘦腿</h5>
+                                    <p>最近场次: <span>19:00</span>
+                                    </p>
+                                    <p>教练: <span>阿威</span>
+                                    </p>
+                                    <p>
+                                        <button>详情</button>
+                                    </p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第三个内容区容器-->
+            <div class="mui-slider-item">
+                <div class="mui-slider-item ">
+                    <div class="film_list">
+                        <div class="film_tmpl">
+
+                            <div class="film_tmpl_t mui-row">
+                                <div class="film_tmpl_t_l">
+                                    <img src="{{ url_for('static', filename='img/健身套餐.jpg')}}"/>
+                                </div>
+                                <div class="film_tmpl_t_r">
+                                    <h2><span>燃脂收腹操</span></h2>
+                                    <h5>收腹</h5>
+                                    <h5>瘦腿</h5>
+                                    <p>最近场次: <span>19:00</span>
+                                    </p>
+                                    <p>教练: <span>阿威</span>
+                                    </p>
+                                    <p>
+                                        <button>详情</button>
+                                    </p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第四个内容区容器-->
+            <div class="mui-slider-item">
+                <div class="mui-slider-item ">
+                    <div class="film_list">
+                        <div class="film_tmpl">
+
+                            <div class="film_tmpl_t mui-row">
+                                <div class="film_tmpl_t_l">
+                                    <img src="{{ url_for('static', filename='img/健身套餐.jpg')}}"/>
+                                </div>
+                                <div class="film_tmpl_t_r">
+                                    <h2><span>燃脂收腹操</span></h2>
+                                    <h5>收腹</h5>
+                                    <h5>瘦腿</h5>
+                                    <p>最近场次: <span>19:00</span>
+                                    </p>
+                                    <p>教练: <span>阿威</span>
+                                    </p>
+                                    <p>
+                                        <button>详情</button>
+                                    </p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第五个内容区容器-->
+            <div class="mui-slider-item">
+                <div class="mui-slider-item ">
+                    <div class="film_list">
+                        <div class="film_tmpl">
+
+                            <div class="film_tmpl_t mui-row">
+                                <div class="film_tmpl_t_l">
+                                    <img src="{{ url_for('static', filename='img/健身套餐.jpg')}}"/>
+                                </div>
+                                <div class="film_tmpl_t_r">
+                                    <h2><span>燃脂收腹操</span></h2>
+                                    <h5>收腹</h5>
+                                    <h5>瘦腿</h5>
+                                    <p>最近场次: <span>19:00</span>
+                                    </p>
+                                    <p>教练: <span>阿威</span>
+                                    </p>
+                                    <p>
+                                        <button>详情</button>
+                                    </p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--课程小类-->
+
+<!-- Swiper JS -->
+<script src="{{ url_for('static', filename='js/swiper.min.js')}}"></script>
+
+<!-- Initialize Swiper -->
+<script>
+				var swiper = new Swiper('.swiper-container', {
+					effect: 'coverflow',
+					grabCursor: true,
+					centeredSlides: true,
+					slidesPerView: 'auto',
+
+					coverflowEffect: {
+						rotate: 50,
+						stretch: 0,
+						depth: 100,
+						modifier: 1,
+						slideShadows: true
+					},
+					//调用Swiper过渡函数，在滑动结束后选定元素
+					//				on: {
+					//					transitionEnd: function() {
+					//						var index = "gotoitem" + (this.activeIndex + 1)
+					//						var swipertriger = document.getElementById(index);
+					//						//alert(swipertriger.id)
+					//						mui.trigger(swipertriger, 'touchstart');
+					//						mui.trigger(swipertriger, 'tap');
+					//						mui('#row-list').refresh();
+					//						mui().refresh(true)
+					//						//alert("OK")
+					//						var current = document.querySelector(".mui-slider-item .mui-control-content .mui-active");
+					//						// 						    alert(current);
+					//						// 						    if(swipertriger !== current) {
+					//						//              				current.classList.remove('mui-active');
+					//						//              				swipertriger.classList.add('mui-active');
+					//					}
+					//				},
+
+					pagination: {
+						el: '.swiper-pagination',
+					},
+					//
+				});
+
+
+
+</script>
+
+<!--点名级联菜单-->
+<script>
+				(function($, doc) {
+					$.init();
+					$.ready(function() {
+						/**
+						 * 获取对象属性的值
+						 * 主要用于过滤三级联动中，可能出现的最低级的数据不存在的情况，实际开发中需要注意这一点；
+						 * @param {Object} obj 对象
+						 * @param {String} param 属性名
+						 */
+						var _getParam = function(obj, param) {
+							return obj[param] || '';
+						};
+						//普通示例
+						var userPicker = new $.PopPicker();
+						userPicker.setData([{
+							value: 'ywj',
+							text: '金港健身会所'
+						}, {
+							value: 'aaa',
+							text: '银港健身会所'
+						}, {
+							value: 'gezh',
+							text: '金港二店'
+						}]);
+						var showUserPickerButton = doc.getElementById('titlename');
+						var userResult = doc.getElementById('titlename');
+						showUserPickerButton.addEventListener('tap', function(event) {
+							userPicker.show(function(items) {
+								userResult.innerText = JSON.stringify(items[0].text);
+								//返回 false 可以阻止选择框的关闭
+								//return false;
+							});
+						}, false);
+
+					});
+				})(mui, document);
+
+
+
+</script>
+
+<!--时间选择器-->
+<script>
+				(function($) {
+						$.init();
+						var result = $('#titledate')[0];
+						result.addEventListener('tap', function() {
+							var _self = this;
+							if(_self.picker) {
+								_self.picker.show(function(rs) {
+									result.innerText = rs.m.text+"月"+rs.d.text+"日";
+									_self.picker.dispose();
+									_self.picker = null;
+								});
+							} else {
+								var optionsJson = this.getAttribute('data-options') || '{}';
+								var options = JSON.parse(optionsJson);
+								var id = this.getAttribute('id');
+								/*
+								 * 首次显示时实例化组件
+								 * 示例为了简洁，将 options 放在了按钮的 dom 上
+								 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+								 */
+								_self.picker = new $.DtPicker(options);
+								_self.picker.show(function(rs) {
+									/*
+									 * rs.value 拼合后的 value
+									 * rs.text 拼合后的 text
+									 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+									 * rs.m 月，用法同年
+									 * rs.d 日，用法同年
+									 * rs.h 时，用法同年
+									 * rs.i 分（minutes 的第二个字母），用法同年
+									 */
+									result.innerText = rs.m.text+"月"+rs.d.text+"日";
+									/*
+									 * 返回 false 可以阻止选择框的关闭
+									 * return false;
+									 */
+									/*
+									 * 释放组件资源，释放后将将不能再操作组件
+									 * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+									 * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+									 * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+									 */
+									_self.picker.dispose();
+									_self.picker = null;
+								});
+							}
+						}, false);
+
+				})(mui);
+
+
+
+</script>
+</body>
+
+</html>

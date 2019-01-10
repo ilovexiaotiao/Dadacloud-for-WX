@@ -48,7 +48,7 @@ def entity_list(moduleid):
         return render_template("test1.html", result=data)
     if request.method == 'POST':
         data = request.get_json()
-        print(data)
+        # print(data)
         entityid = data['entityid']
     # data=form.get_entity_total('e91542af-f10b-47ef-84c6-8537566830fa')
     return redirect(url_for('fields_list', entityid=entityid))
@@ -71,7 +71,7 @@ def fields_submit(moduleid,entityid):
         title = request.form.get('Title')
         field1 = request.form.get('Field1')
         input = request.form.get('input')
-        print title, field1, input
+        # print title, field1, input
         operate=Dada_operate(token,moduleid)
         instancedata={
             "Title": title,
@@ -81,6 +81,18 @@ def fields_submit(moduleid,entityid):
         operate.create_entity()
     return redirect(url_for('fields_list', moduleid=moduleid,entityid=entityid))
         #return redirect(url_for('fields_list',moduleid=moduleid,entityid=entityid))
+
+
+
+@app.route('/lesson_index', methods=['POST','GET'])
+def lesson_index():
+    moduleid = 'd7aa8b5a-71d0-419d-8893-d112ad5ff266'
+    entityid = 'c3b6a8ab-618b-4328-85b5-16b39e2cd7ec'
+    fields_list = FormFields(form,moduleid,entityid).get_fields_list()
+    print fields_list['plan']
+    fields_list = fields_list['plan']
+    return render_template("lesson_index.html",result = fields_list)
+
 
 
 if __name__ == '__main__':

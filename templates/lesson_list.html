@@ -1,189 +1,245 @@
 <!doctype html>
 <html>
 
-	<head>
+<head>
 
-			<meta charset="UTF-8">
-			<title>课程列表</title>
-			<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-			<link href="{{ url_for('static', filename='css/mui.min.css') }}" rel="stylesheet" />
-			<!-- Link Swiper's CSS -->
-			<link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.min.css')}}">
-			<!-- Custom styles -->
-			<link rel="stylesheet" href="{{ url_for('static', filename='css/lesson_list.css')}}">
-			<!--Jquery-->
-			<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.8.2.min.js') }}"></script>
-		</head>
+    <meta charset="UTF-8">
+    <title>课程列表</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link href="{{ url_for('static', filename='css/mui.min.css') }}" rel="stylesheet"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.min.css')}}">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/lesson_list.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/move.min.css')}}">
+    <!--Jquery-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+</head>
 
-		<body>
-			<!--MUI INIT-->
-			<script src="{{ url_for('static', filename='js/mui.min.js')}}"></script>
-			<script type="text/javascript">
+<body>
+<!--MUI INIT-->
+<script src="{{ url_for('static', filename='js/mui.min.js')}}"></script>
+<script type="text/javascript">
 				mui.init()
-			</script>
 
-			<!--HEADER Part-->
-			<!--导航栏-->
-			<header class="mui-bar mui-bar-nav">
-				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-				<h1 class="mui-title">课程列表</h1>
-				<!--右侧按钮组-->
-				<a class="mui-icon mui-icon-bars mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
-				<a class="mui-icon mui-icon-paperplane mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
-				<a class="mui-icon mui-icon-star mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
-			</header>
 
-			<!--BODY PART-->
-			<div class="mui-content">
-				<!--首栏部分-->
-				<div id="first_row" class="mui-content">
-					<div class="mui-row">
-						<!--地址栏-->
-						<div id="address_bar" class="mui-col-xs-9">
-							<ul class="mui-table-view ">
-								<li class="mui-table-view-cell ">
-									<a class="mui-navigate-right " href="# ">
-										<h4>店面地址</h4>
-										<div class="mui-collapse-content ">
-											<p>详细地址</p>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!--地图栏-->
-						<div id="map_row" class="mui-col-xs-2 ">
-							<ul class="mui-table-view ">
-								<li class="mui-table-view-cell ">
-									<a href="# ">
-										<a id="map_row_icon" class="mui-icon mui-icon-map ">
-										</a>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
 
-				<!--快捷入口部分-->
-				<div id="swift_entry" class="mui-row ">
-					<div class="mui-col-xs-12 ">
-						<!--推广按钮组-->
-						<div class="mui-table-view ">
-							<button type="button " class="mui-btn mui-btn-negative " style="width: 40%;padding-right: 3%; height: 50px; margin:5px; ">推荐课程1</button>
-							<button type="button " class="mui-btn mui-btn-success " style="width: 40%;padding-right: 3%; height: 50px; margin:5px; ">推荐课程2</button>
-						</div>
-					</div>
-				</div>
+</script>
 
-				<!--缩略图部分-->
-				<div class="swiper-container mui-row ">
-					<div class="swiper-wrapper ">
-						<div id="tab-item1" class="swiper-slide " style="background-image:url({{ url_for('static', filename='img/lisimg3.png')}})"></div>
-						<div id="tab-item2" class="swiper-slide " style="background-image:url({{ url_for('static', filename='img/lisimg4.png')}})"></div>
-						<div id="tab-item3" class="swiper-slide " style="background-image:url({{ url_for('static', filename='img/lisimg5.png')}})"></div>
-						<div id="tab-item4" class="swiper-slide " style="background-image:url({{ url_for('static', filename='img/lisimg6.png')}})"></div>
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination "></div>
-				</div>
+<!--HEADER Part-->
+<!--导航栏-->
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">课程列表</h1>
+    <!--右侧按钮组-->
+    <a class="mui-icon mui-icon-bars mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
+    <a class="mui-icon mui-icon-paperplane mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
+    <a class="mui-icon mui-icon-star mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
+</header>
 
-				<!--运动标题部分-->
-				<div id="sport-name" class="mui-row">
-					<h4>运动名称</h4>
-					<div id="sport-desc" class="mui-collapse-content">
-						<p>运动时间|运动类型|运动名人</p>
-					</div>
-				</div>
+<!--BODY PART-->
+<div class="mui-content">
+    <!--首栏部分-->
+    <div id="first_row" class="mui-content">
+        <div class="mui-row">
+            <!--地址栏-->
+            <div id="address_bar" class="mui-col-xs-9">
+                <ul class="mui-table-view ">
+                    <li class="mui-table-view-cell ">
+                        <a class="mui-navigate-right " href="{{url_for('store_desc')}}">
+                            <h4>金港健身会所</h4>
+                            <div class="mui-collapse-content ">
+                                <p>深圳市福田区水围村金港豪庭F座1-4楼</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--地图栏-->
+            <div id="map_row" class="mui-col-xs-2 ">
+                <ul class="mui-table-view ">
+                    <li class="mui-table-view-cell ">
+                        <a>
+                            <a id="map_row_icon" class="mui-icon mui-icon-map " href="{{ url_for('store_map') }}">
+                            </a>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-				<!--项目列表-->
-				<div id="list-row">
+    <!--快捷入口部分-->
+    <div id="swift_entry" class="mui-row ">
+        <div class="mui-col-xs-12 ">
+            <!--推广按钮组-->
+            <div class="mui-table-view ">
+                <button type="button " class="mui-btn mui-btn-negative "
+                        style="width: 40%;padding-right: 3%; height: 50px; margin:5px; " onclick="window.location.href='{{url_for('lesson_desc')}}'">推荐课程1
+                </button>
+                <button type="button " class="mui-btn mui-btn-success "
+                        style="width: 40%;padding-right: 3%; height: 50px; margin:5px; " onclick="window.location.href='{{url_for('lesson_desc')}}'">推荐课程2
+                </button>
+            </div>
+        </div>
+    </div>
 
-				</div>
+    <!--缩略图部分-->
+    <div class="swiper-container mui-row ">
+        <div class="swiper-wrapper ">
+            <div id="tab-item1" class="swiper-slide "
+                 style="background-image:url({{ url_for('static', filename='img/健身.jpg')}})"><a href="#middlePopover">
+                <div style="width: 110px;height: 150px;"></div>
+            </a></div>
+            <div id="tab-item2" class="swiper-slide "
+                 style="background-image:url({{ url_for('static', filename='img/瑜伽.jpg')}})"><a href="#middlePopover">
+                <div style="width: 110px;height: 150px;"></div>
+            </a></div>
+            <div id="tab-item3" class="swiper-slide "
+                 style="background-image:url({{ url_for('static', filename='img/舞蹈.jpg')}})"><a href="#middlePopover">
+                <div style="width: 110px;height: 150px;"></div>
+            </a></div>
+            <div id="tab-item4" class="swiper-slide "
+                 style="background-image:url({{ url_for('static', filename='img/动感单车.jpg')}})"><a href="#middlePopover">
+                <div style="width: 110px;height: 150px;"></div>
+            </a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination "></div>
+    </div>
 
-				<!--课程推广-->
-				<div id="lesson_ad" class="mui-row">
-					<ul class="mui-table-view">
-						<li class="mui-table-view-cell">
-							<h4 class="mui-navigate-right" href="#">推广</h4>
 
-						</li>
-					</ul>
+    <!--运动标题部分和项目列表-->
+    <div id="list-row">
 
-					<ul class="mui-table-view">
-						<li class="mui-table-view-cell mui-media">
-							<a href="javascript:;">
-								<img class="mui-media-object mui-pull-left" src="../../img/lisimg6.png">
-								<div class="mui-media-body">
-									幸福
-									<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
-								</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media">
-							<a href="javascript:;">
-								<img class="mui-media-object mui-pull-left" src="../../img/lisimg5.png">
-								<div class="mui-media-body">
-									木屋
-									<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
-								</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media">
-							<a href="javascript:;">
-								<img class="mui-media-object mui-pull-left" src="../../img/lisimg3.png">
-								<div class="mui-media-body">
-									CBD
-									<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
-								</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media">
-							<a href="javascript:;">
-								<img class="mui-media-object mui-pull-left" src="../../img/lisimg4.png">
-								<div class="mui-media-body">
-									CBD
-									<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
-								</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media">
-							<a href="javascript:;">
-								<img class="mui-media-object mui-pull-left" src="../../img/lisimg5.png">
-								<div class="mui-media-body">
-									CBD
-									<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
+    </div>
 
-				<!--底部栏-->
-				<nav class="mui-bar mui-bar-tab">
-					<a class="mui-tab-item mui-active">
-						<span class="mui-icon mui-icon-home"></span>
-						<span class="mui-tab-label">首页</span>
-					</a>
-					<a class="mui-tab-item">
-						<span class="mui-icon mui-icon-phone"></span>
-						<span class="mui-tab-label">课程</span>
-					</a>
-					<a class="mui-tab-item">
-						<span class="mui-icon mui-icon-email"></span>
-						<span class="mui-tab-label">教练</span>
-					</a>
-					<a class="mui-tab-item">
-						<span class="mui-icon mui-icon-gear"></span>
-						<span class="mui-tab-label">个人</span>
-					</a>
-				</nav>
-			</div>
-				<!-- Swiper JS -->
-				<script src="{{ url_for('static', filename='js/swiper.min.js')}}"></script>
+    <!--课程推广-->
+    <div class="mui-content" style="margin-top;15px;margin-bottom:60px">
+        <ul class="mui-table-view" style="font-size: 14px;">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    <img class="mui-media-object mui-pull-right" src="{{ url_for('static', filename='img/健身套餐.jpg')}}"
+                         style="width: 20px;height: 20px;">
+                    <span style="font-size: 14px;font-weight: bold;">健身课程</span>
+                    <span class="mui-pull-right" id="movetipe">专业健身教练团队服务</span>
+                </a>
+            </li>
+            <ul class="mui-table-view">
 
-				<!-- Initialize Swiper -->
-				<script>
+
+                <li class="mui-table-view-cell mui-media">
+                    <a href="{{url_for('lesson_desc')}}">
+                        <img class="mui-media-object mui-pull-left"
+                             src="{{ url_for('static', filename='img/健身套餐.jpg')}}" id="movepicture">
+                        <button type="button" class="mui-btn mui-pull-right"
+                                style="color: red;border: 1px solid red;height: 28px;" onclick="window.location.href='{{url_for('lesson_desc')}}'">详情
+                        </button>
+                        <div class="mui-media-body">
+                            专业健身教练团队服务
+                            <div style="margin-top:20px;">
+                                <b style="color:lightseagreen;">￥6000</b>
+                                <del style="opacity: 0.5;margin-left: 8px;">￥8000</del>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+
+    <!--缩略图介绍-->
+    <div id="middlePopover" class="mui-popover" style="height: 420px;font-size: 12px;font-family:" 宋体
+    ">
+    <div class="mui-popover-arrow"></div>
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-left"
+                             src="{{ url_for('static', filename='img/健美操.jpg')}}">
+                        <p class="haiwang">健身</p>
+                    </a>
+                </li>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="#">
+                        <div style=" word-wrap:break-word;word-break:break-all;white-space:normal;
+    "><!--div自动换行-->
+                            健身是一种体育项目，如各种徒手健美操、韵律操、形体操以及各种自抗力动作，体操可以增强力量、柔韧性，增加耐力，提高协调，控制身体各部分的能力，从而使身体强健。如果要达到缓解压力的目的，至少一周锻炼3次。
+                        </div>
+                    </a>
+                </li>
+                </li>
+                <li class="mui-table-view-cell" style="height: 120px;">
+                    <ul class="mui-table-view mui-grid-view">
+                        <li class="mui-table-view-cell mui-media mui-col-xs-3" style="top: 5px;">
+                            <a href="#">
+                                <img class="mui-media-object" src="{{ url_for('static', filename='img/健美操.jpg')}}"
+                                     style="width: 40px;height: 40px;">
+                                <div class="mui-media-body" id="haiwang">健美操</div>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell mui-media mui-col-xs-3" style="top: 5px;">
+                            <a href="#">
+                                <img class="mui-media-object" src="{{ url_for('static', filename='img/健美操.jpg')}}"
+                                     style="width: 40px;height: 40px;">
+                                <div class="mui-media-body" id="haiwang">搏击操</div>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell mui-media mui-col-xs-3" style="top: 5px;">
+                            <a href="#">
+                                <img class="mui-media-object" src="{{ url_for('static', filename='img/健美操.jpg')}}"
+                                     style="width: 40px;height: 40px;">
+                                <div class="mui-media-body" id="haiwang">燃脂操</div>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell mui-media mui-col-xs-3" style="top: 5px;">
+                            <a href="#">
+                                <img class="mui-media-object" src="{{ url_for('static', filename='img/健美操.jpg')}}"
+                                     style="width: 40px;height: 40px;">
+                                <div class="mui-media-body" id="haiwang">力量训练</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mui-table-view-cell"><a href="accordion.html"
+                                                   style="text-align: center;color: cornflowerblue;">查看更多健身项目</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--底部栏-->
+<nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item">
+        <span class="mui-icon mui-icon-phone"></span>
+        <span class="mui-tab-label">课程</span>
+    </a>
+    <a class="mui-tab-item">
+        <span class="mui-icon mui-icon-email"></span>
+        <span class="mui-tab-label">教练</span>
+    </a>
+    <a class="mui-tab-item">
+        <span class="mui-icon mui-icon-gear"></span>
+        <span class="mui-tab-label">个人</span>
+    </a>
+</nav>
+</div>
+<!-- Swiper JS -->
+<script src="{{ url_for('static', filename='js/swiper.min.js')}}"></script>
+
+<!-- Initialize Swiper -->
+<script>
 					var checkres;
 					var swiper = new Swiper('.swiper-container', {
 						effect: 'coverflow',
@@ -201,8 +257,8 @@
 						//调用Swiper过渡函数，在滑动结束后选定元素
 						on: {
 							transitionEnd: function() {
-								var index = (20181214 + this.activeIndex) .toString();
-								alert(this.activeIndex);
+								var index = (this.activeIndex) .toString();
+								//alert(this.activeIndex);
 								var dataorigin={
                    					 'index': index,
             						};
@@ -218,13 +274,13 @@
 									success:function(res){
 										console.log(res);
 										console.log(0);
-										document.getElementById("list-row").innerHTML = res;
+										document.getElementById("list-row").innerHTML = res.responseText;
 
 									},
 									error:function (res) {
 										console.log(res);
 										console.log(1);
-										alert(res.responseText);
+										<!--alert(res.responseText);-->
 										document.getElementById("list-row").innerHTML = res.responseText;
 
 										}
@@ -246,12 +302,13 @@
 						},
 						//
 					});
-				</script>
 
 
 
+</script>
 
-		</body>
+
+</body>
 
 </html>
 

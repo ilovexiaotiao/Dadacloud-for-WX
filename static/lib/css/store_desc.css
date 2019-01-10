@@ -1,0 +1,32 @@
+
+	#wuz{
+		margin-top: -100px;
+		background-color: #ACACB4;
+		opacity: 0.7;
+		color: white;
+		border: 1px solid #ACACB4;
+		width: 60px;
+	}
+	#namea{
+		margin-top: -63px;
+		font-size: 14px;
+	}
+	#nameab{
+		word-wrap:break-word;word-break:break-all;white-space:normal;width: 80%;margin:-25px -5px 0px 30px;
+    font-size: 12px;
+    
+	}
+	#nameac{
+margin: 0;padding: 0;
+font-size: 11px;
+line-height: 20px;
+font-family: "宋体";
+border:1px solid #87b6c4;color: #87b6c4;
+}
+#namead{
+	margin: 0;padding: 0;
+font-size: 11px;
+line-height: 20px;
+font-family: "宋体";
+border:1px solid orange;color:orange;
+}

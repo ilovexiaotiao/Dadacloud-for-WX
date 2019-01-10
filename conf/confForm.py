@@ -16,7 +16,7 @@ MODULE_ID_PARAMS = {
         }
 #获取指定ENTITY实体列表配置信息
 MODULE_ENTITY_PARAMS = {
-            'keyOption': "Caption", #提交的实例数据和返回的实例数据以什么为属性名（键名）。- Entity 以实体属性名为属性名；- Caption 以[组名-]控件名为属性名；- Id 以字段的Id为属性名；- FieldName 以字段的FieldName为属性名，默认。
+            'keyOption': "Entity", #提交的实例数据和返回的实例数据以什么为属性名（键名）。- Entity 以实体属性名为属性名；- Caption 以[组名-]控件名为属性名；- Id 以字段的Id为属性名；- FieldName 以字段的FieldName为属性名，默认。
             'fields': "",  # 返回字段，fields允许包含的字段：Id, Name, CreatorName, Status, HasInstance, CreateTime, TplType。默认值为空，返回所有字段。
             'filter': "",  # 筛选条件，	筛选条件，目前只支持按单据名称模糊搜索；
             'start': '0',  # 页码，0-2147483647范围内某个整数值，默认值为0。

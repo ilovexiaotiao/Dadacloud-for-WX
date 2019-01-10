@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51603508-58bc-4ae8-a9d2-d8567d65584e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/lib/css/lesson_index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lesson_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apprun.py" beforeDir="false" afterPath="$PROJECT_DIR$/apprun.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/confLogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf/confLogger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/confForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf/confForm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Web QR.html.baiduyun.uploading.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/apprun1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lesson_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lesson_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lesson_list_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lesson_list_content.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,31 +93,38 @@
     <session id="1507976714">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="129" />
+          <entry key="html" value="274" />
+          <entry key="py" value="331" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="129" />
+          <entry key="HTML" value="274" />
+          <entry key="Python" value="331" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="py" value="2" />
+          <entry key="css" value="2" />
+          <entry key="html" value="8" />
+          <entry key="json" value="1" />
+          <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="Python" value="2" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="8" />
+          <entry key="JSON" value="1" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -121,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/testForm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+            <state>
+              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
               <folding>
                 <element signature="e#24#67#0" expanded="true" />
               </folding>
@@ -130,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2584">
-              <caret line="161" column="16" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+            <state relative-caret-position="139">
+              <caret line="313" column="21" selection-start-line="313" selection-start-column="16" selection-end-line="313" selection-end-column="21" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
@@ -145,17 +158,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/confForm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="209">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/confLogger.py">
+        <entry file="file://$PROJECT_DIR$/static/json/lesson_list1.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            <state relative-caret-position="133">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/lesson_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="113" column="45" lean-forward="true" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2056#2183#0" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/lesson_list_content.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -163,20 +202,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apprun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
-              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="132">
+              <caret line="89" column="53" lean-forward="true" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
+                <marker date="1547096692719" expanded="true" signature="3157:3230" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/test1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -187,6 +218,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -200,7 +232,6 @@
       <find>log_redis</find>
       <find>log_token</find>
       <find>get_c</find>
-      <find>print</find>
       <find>value</find>
       <find>logger</find>
       <find>http</find>
@@ -210,6 +241,13 @@
       <find>empty</find>
       <find>param</find>
       <find>False</find>
+      <find>src</find>
+      <find>href</find>
+      <find>img</find>
+      <find>Id</find>
+      <find>plan</find>
+      <find>print</find>
+      <find>end</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -237,12 +275,15 @@
         <option value="$PROJECT_DIR$/core/login.py" />
         <option value="$PROJECT_DIR$/conf/confFrom.py" />
         <option value="$PROJECT_DIR$/core/logger.py" />
-        <option value="$PROJECT_DIR$/conf/confForm.py" />
         <option value="$PROJECT_DIR$/test/testForm.py" />
         <option value="$PROJECT_DIR$/app.run.py" />
         <option value="$PROJECT_DIR$/conf/confLogger.py" />
-        <option value="$PROJECT_DIR$/apprun.py" />
+        <option value="$PROJECT_DIR$/conf/confForm.py" />
+        <option value="$PROJECT_DIR$/apprun1.py" />
+        <option value="$PROJECT_DIR$/../sport_coach/page/lesson/复制 lesson_index.html" />
         <option value="$PROJECT_DIR$/core/form.py" />
+        <option value="$PROJECT_DIR$/apprun.py" />
+        <option value="$PROJECT_DIR$/templates/lesson_index.html" />
       </list>
     </option>
   </component>
@@ -257,6 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,19 +311,49 @@
               <item name="Dadacloud-for-WX" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Dadacloud-for-WX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dadacloud-for-WX" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dadacloud-for-WX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dadacloud-for-WX" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dadacloud-for-WX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dadacloud-for-WX" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dadacloud-for-WX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dadacloud-for-WX" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dadacloud-for-WX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dadacloud-for-WX" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Nicholas Shan\Dadacloud-for-WX\static\lib\css" />
       <recent name="E:\Nicholas Shan\Dadacloud4WX\conf" />
       <recent name="E:\Nicholas Shan\Dadacloud4WX\core" />
       <recent name="E:\Nicholas Shan\Dadacloud4WX\test" />
@@ -471,19 +543,19 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24894217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24894217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49435824" weight="0.32749325" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49365303" weight="0.32614556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49858958" weight="0.32884097" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49209693" weight="0.32827735" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50564176" side_tool="true" visible="true" weight="0.32614556" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50634694" side_tool="true" visible="true" weight="0.32614556" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49858958" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -594,27 +666,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/confLogger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/testForm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        <state>
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
           <folding>
             <element signature="e#24#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../sport_coach/apprun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="37" lean-forward="true" selection-end-line="137" />
+          <folding>
+            <element signature="e#17#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apprun1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="e#17#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conf/confForm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        <state relative-caret-position="209">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/confLogger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -625,22 +717,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apprun.py">
+    <entry file="file://$PROJECT_DIR$/static/lib/css/lesson_index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="171">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/lesson_list1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sport_coach/page/lesson/复制 lesson_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5803">
+          <caret line="315" column="35" lean-forward="true" selection-start-line="315" selection-start-column="35" selection-end-line="315" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lesson_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="237" column="18" lean-forward="true" selection-start-line="237" selection-start-column="18" selection-end-line="237" selection-end-column="18" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2584">
-          <caret line="161" column="16" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+        <state relative-caret-position="139">
+          <caret line="313" column="21" selection-start-line="313" selection-start-column="16" selection-end-line="313" selection-end-column="21" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/lib/css/lesson_list.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1559" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apprun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="89" column="53" lean-forward="true" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1547096692719" expanded="true" signature="3157:3230" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lesson_list_content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lesson_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="113" column="45" lean-forward="true" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2056#2183#0" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

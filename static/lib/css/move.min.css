@@ -1,0 +1,50 @@
+/*超值套餐*/
+.mui-navigate-right:after,
+			.mui-push-right:after {
+				right: 40%;
+				color: lightseagreen;
+			}
+			
+			#movetipe {
+				font-size: 12px;
+				color: #000000;
+				margin-right: 5px;
+			}
+			
+			#moveeatp {
+				font-size: 12px;
+				position: relative;
+				margin-left: 18px;
+				top: 5px;
+			}
+			
+			#movepicture {
+				height: 100px;
+				text-indent: 0;
+				max-width: 100px;
+				margin-right: 3px;
+			}
+			
+			#movetop {
+				font-size: 13px;
+				word-wrap: break-word;
+				word-break: break-all;
+				white-space: normal;
+				width: 180px;
+			
+				color: #000000;
+			}
+			/*店面地址*/
+			.mui-navigate-right:after, .mui-push-right:after {right: 0;}
+			/*海王*/
+			#haiwang{font-size: 12px;margin: 0;}
+			.mui-table-view .mui-media-object {
+				max-width: 69px;				
+				}
+				.mui-table-view .mui-media-object.mui-pull-left{margin-right: 0;}
+				.haiwang{color: black;font-size: 16px;font-weight: 700;font-family: "宋体";text-indent: 0;left: 10px;position: relative;}
+				.haiwanga{color: black;font-size: 12px;text-indent: 0;left: 10px;position: relative;margin-top: -3px;}
+		.haiwangb{color: black;font-size: 12px;text-indent: 0;}
+		.mui-popover .mui-scroll-wrapper{margin: 0;}/*海王介绍总页面上下边距*/
+		.mui-popover .mui-popover-arrow:after{width: 0;}/*去掉小三角*/
+#middlePopover{margin-left: 45px;}/*改变海王位置*/

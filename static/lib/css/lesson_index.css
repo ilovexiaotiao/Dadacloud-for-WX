@@ -1,0 +1,172 @@
+/*背景色*/
+
+html,
+body {
+	background-color: #efeff4;
+}
+
+.mui-bar .mui-pull-left .mui-icon {
+	padding-right: 5px;
+	font-size: 28px;
+}
+
+.mui-bar .mui-btn {
+	font-weight: normal;
+	font-size: 17px;
+}
+
+.mui-bar .mui-btn-link {
+	top: 1px;
+}
+
+.mui-content img {
+	width: 100%;
+}
+
+.hm-description {
+	margin: 15px;
+}
+
+.hm-description>li {
+	font-size: 14px;
+	color: #8f8f94;
+}
+
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+	width: 105px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px #aaa;
+	line-height: 30px;
+}
+
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item.mui-active {
+	color: #fff;
+	background-color: #78909C;
+}
+
+.mui-segmented-control .mui-control-item {
+            line-height: 50px;
+            width: 100%;
+        }
+
+
+#lesson_first{
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*#segmentedControls{
+	width: 100px;
+}*/
+#popover{
+				height: 200px;
+				width:200px;
+			}
+			
+
+/*列表*/
+.film_list{
+	background: #FFFFFF;;
+	padding: 0 10px;
+}
+.film_tmpl {
+	padding: 10px 0;
+	/*float: left;*/
+}
+.film_tmpl_t_l{
+	width: 50%;
+	float:left;
+}
+.film_tmpl_t_l img{
+	width: 100%;
+}
+.film_tmpl_t_r{
+	width: 50%;
+	float:left;
+	padding-left: 10px;
+}
+.film_tmpl_t_r h2{
+	font-size: 17px;
+	font-weight: 700;
+}
+.ddd{
+	color:#FFFFFF;
+	background: #66beed !important;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 11px;
+	padding: 3px 8px;
+	position: relative;
+	top:-1px;
+	float: right;
+	font-weight: normal;
+}
+.want{
+	color:#ff9900;
+	float: right;
+	font-size: 11px;
+	position: relative;
+	top:-3px;
+	margin-left: 5px;
+	font-weight: normal;
+}
+.want span{
+	font-size: 18px;
+	position: relative;
+	top:1px;
+	margin-right: 1px;
+}
+.film_tmpl_t_r h5{
+	font-size: 11px;
+	border:1px solid #599eb6;
+	display: inline-block;
+	color:#599eb6;
+	padding: 2px 4px;
+	border-radius: 10px;
+}
+.film_tmpl_t_r p {
+	margin: 0px;
+	font-size: 13px;
+}
+.film_tmpl_t_r p  button{
+	color:#f35540;
+	border:1px solid #f35540;
+	height:26px !important;
+	line-height: 25px !important;
+	padding: 0px;
+	margin: 0px;
+	padding:  0 10px;
+	font-size: 13px;
+	float:right;
+	position: relative;
+	top:-4px;
+}
+.film_tmpl_b{
+	margin-top: 3px;
+}
+.film_tmpl_b p {
+	height:34px;
+	line-height: 34px;
+}
+.film_tmpl_b .film_tmpl_t_l p{
+	text-align: right;
+	margin: 0px;
+}
+.film_tmpl_b .film_tmpl_t_r p{
+	border-bottom: 1px solid #f0f0f0;
+}
+.film_tmpl_b .film_tmpl_t_l p span{
+	color:#ffb342;
+	border:1px solid #ffb342;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 13px;
+	margin: 0px;
+}
+
+
+.ui-alert {
+				text-align: center;
+				padding: 20px 10px;
+				font-size: 16px;
+			}

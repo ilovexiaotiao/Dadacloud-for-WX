@@ -1,45 +1,64 @@
-			<script src="{{ url_for('static', filename='js/mui.min.js')}}"></script>
-			<script type="text/javascript">
-				mui.init()
-			</script>
+<!--<script src="{{ url_for('static', filename='js/mui.min.js')}}"></script>-->
+<!--<script type="text/javascript">-->
+<!--mui.init()-->
+<!--</script>-->
+
+<!--运动标题部分-->
+<div id="sport-name" class="mui-row">
+
+    <h4>{{indexname}}</h4>
+    <div id="sport-desc" class="mui-collapse-content">
+        <p>{{desc}}</p>
+    </div>
+</div>
+
+
 <div class="mui-slider">
-					<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-						<!--选择栏-->
-						{% for key,value in result.items() %}
-						<a id='gotoitem1' class="mui-control-item" href="#{{key}}">{{key}}</a>
-						{%endfor%}
-					</div>
-					<!--选择光标-->
-					<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
-					<!--列表页-->
-					<div class="mui-slider-group">
-						{% for key,value in result.items() %}
+    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+        <!--选择栏-->
+        {% for key,value in datedict.items() %}
+        <a class="mui-control-item" href="#{{key}}">{{value}}</a>
+        {%endfor%}
+    </div>
+    <!--选择光标-->
+    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+    <!--列表页-->
+    <div class="mui-slider-group">
+        {% for key,value in result.items() %}
+        <div id="{{key}}" class="mui-slider-item mui-control-content">
+            <ul class="mui-table-view">
+                <!--整个row-->
+                {% for i in value | sort(attribute = 'start')%}
+                <li class="mui-table-view-cell">
+                    <div class="mui-row">
+                        <!--时间row-->
+                        <div class="mui-col-xl-3 lesson_time">
+                            <a href="#">
+                                <h4>{{i["start"]}}</h4>
+                                <div class="mui-collapse-content">
+                                    <h6>{{i["end"]}}结束</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <!--教练row-->
+                        <div class="mui-col-xl-3 lesson_coach">
+                            <a href="{{url_for('teacher_desc')}}">
+                                <h4>{{i["type"]}}</h4>
+                                <div class="mui-collapse-content">
+                                    <h6>{{i["teacher"]}}</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <!--按钮row-->
+                        <div class="mui-col-xl-3 lesson_detail">
+                            <button type="button" class="mui-btn mui-btn-yellow" onclick="window.location.href='{{url_for('lesson_detail')}}'">详情</button>
+                        </div>
 
-						<div id="{{key}}" class="mui-slider-item mui-control-content mui-active">
-							<ul class="mui-table-view">
-								<!--整个row-->
-								{% for i in value %}
-
-								<li class="mui-table-view-cell">
-									<div class="mui-row">
-										<!--时间row-->
-										<div class="mui-col-xl-3 lesson_time">
-											<a href="#">
-												<h4>{{i["teacher"]}}</h4>
-												<div class="mui-collapse-content">
-													<h6>{{i}}结束</h6>
-												</div>
-											</a>
-										</div>
-
-									</div>
-								</li>
-
-									{% endfor%}
-							</ul>
-						</div>
-
-
-						{% endfor%}
-					</div>
-				</div>
+                    </div>
+                </li>
+                {% endfor%}
+            </ul>
+        </div>
+        {% endfor%}
+    </div>
+</div>

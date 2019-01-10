@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>地图显示</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link href="{{ url_for('static', filename='css/mui.min.css') }}" rel="stylesheet"/>
+</head>
+
+<body>
+<!--MUI INIT-->
+<script src="{{ url_for('static', filename='js/mui.min.js')}}"></script>
+<script type="text/javascript">
+				mui.init()
+
+
+
+</script>
+
+<!--HEADER Part-->
+<!--导航栏-->
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">地图显示</h1>
+    <!--右侧按钮组-->
+    <a class="mui-icon mui-icon-bars mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
+    <a class="mui-icon mui-icon-paperplane mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
+    <a class="mui-icon mui-icon-star mui-pull-right" style="padding-left: 15px;padding-right: 15px;"></a>
+</header>
+
+<!--BODY PART-->
+<div class="mui-content">
+    <!--引入百度地图-->
+    <div class="mui-content">
+        <!--引用百度地图-->
+        <iframe style="width: 100%;height: 450px;"
+                src="http://api.map.baidu.com/geocoder?address=广东省深圳市福田区皇岗金田路金港豪庭F座金港健身会所&output=html&src=webapp.baidu.openAPIdemo"></iframe>
+
+    </div>
+    <!--底部栏-->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon mui-icon-phone"></span>
+            <span class="mui-tab-label">课程</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon mui-icon-email"></span>
+            <span class="mui-tab-label">教练</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">个人</span>
+        </a>
+    </nav>
+</div>
+<!-- Swiper JS -->
+<script src="{{ url_for('static', filename='js/swiper.min.js')}}"></script>
+
+<!-- Initialize Swiper -->
+<script>
+					var checkres;
+					var swiper = new Swiper('.swiper-container', {
+						effect: 'coverflow',
+						grabCursor: true,
+						centeredSlides: true,
+						slidesPerView: 'auto',
+
+						coverflowEffect: {
+							rotate: 50,
+							stretch: 0,
+							depth: 100,
+							modifier: 1,
+							slideShadows: true
+						},
+						//调用Swiper过渡函数，在滑动结束后选定元素
+						on: {
+							transitionEnd: function() {
+								var index = (this.activeIndex) .toString();
+								//alert(this.activeIndex);
+								var dataorigin={
+                   					 'index': index,
+            						};
+            					var data =JSON.stringify(dataorigin);
+            					//alert(data);
+            					$.ajax({
+            						async:false,
+									url:'/lesson_list',
+									type:'POST',
+									data:data,
+									dataType: 'json',
+									contentType: 'application/json; charset=UTF-8',
+									success:function(res){
+										console.log(res);
+										console.log(0);
+										document.getElementById("list-row").innerHTML = res.responseText;
+
+									},
+									error:function (res) {
+										console.log(res);
+										console.log(1);
+										<!--alert(res.responseText);-->
+										document.getElementById("list-row").innerHTML = res.responseText;
+
+										}
+										});
+								mui(".mui-slider").slider({
+  interval:0//自动轮播周期，若为0则不自动播放，默认为0；
+});
+								//var swipertriger = document.getElementById(index);
+								//mui('#row-list').refresh();
+								//alert(swipertriger.id);
+								//mui.trigger(swipertriger, 'touchstart');
+								//alert("OK");
+								//mui.trigger(swipertriger, 'tap');
+								//alert("OK1");
+							}
+						},
+						pagination: {
+							el: '.swiper-pagination',
+						},
+						//
+					});
+
+
+
+</script>
+
+
+</body>
+
+</html>
+
