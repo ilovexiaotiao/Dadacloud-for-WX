@@ -23,14 +23,13 @@ from core.logger import DadaLogger
 
 class DadaRedis(object):
     # 类的初始化
-    def __init__(self, login,host, port, ):
+    def __init__(self, login , host, port, ):
         # 实现StrictRedis的连接池
         self.host=host
         self.port=port
         self.__redis = redis.StrictRedis(host, port)
         self.loginInstance = login
         self.logger = login.logger
-
         self.logger.log_redis_connect(host,port)
 
 
@@ -60,3 +59,4 @@ class DadaRedis(object):
             # 输出Value值
             self.__redis.set(key, value, extime)
             self.logger.log_redis_setkey(key,value)
+

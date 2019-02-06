@@ -24,11 +24,11 @@
     <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
     <!--列表页-->
     <div class="mui-slider-group">
-        {% for key,value in result.items() %}
-        <div id="{{key}}" class="mui-slider-item mui-control-content">
+        {% for j in result| groupby('xingqi')|sort(reverse=True)  %}
+        <div id="{{j.grouper}}" class="mui-slider-item mui-control-content">
             <ul class="mui-table-view">
                 <!--整个row-->
-                {% for i in value | sort(attribute = 'start')%}
+                {% for i in j.list |sort(attribute="start") %}
                 <li class="mui-table-view-cell">
                     <div class="mui-row">
                         <!--时间row-->
@@ -43,9 +43,9 @@
                         <!--教练row-->
                         <div class="mui-col-xl-3 lesson_coach">
                             <a href="{{url_for('teacher_desc')}}">
-                                <h4>{{i["type"]}}</h4>
+                                <h4>{{i["neirong"]}}</h4>
                                 <div class="mui-collapse-content">
-                                    <h6>{{i["teacher"]}}</h6>
+                                    <h6>{{i["laoshi"]}}</h6>
                                 </div>
                             </a>
                         </div>
