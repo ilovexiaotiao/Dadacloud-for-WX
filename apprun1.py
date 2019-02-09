@@ -27,7 +27,7 @@ class Alist(object):
         self.indexdesc = datas["desc"]
         # print self.indexname
         # 获取大类下的课程明细JSON
-        result = datas["plan"]
+        self.result = datas["plan"]
         # key_list = result.keys()
         # key_list.sort()
         # print key_list
@@ -35,14 +35,32 @@ class Alist(object):
         # result_sort = result_sorted.fromkeys(datelist)
         # print result
         # 循环赋值
+        self.datelist = datelist
+        # templist=[]
+        # for i in range(0, len(self.result)):
+        #     # tempindex = datalist.index(result[i]['xingqi'])
+        #     if self.result[i]['xingqi'] in datelist:
+        #         # print type(result[i]['xingqi'])
+        #         # result_sort[datelist[i]] = result.get(datelist[i])
+        #         # tempdic[datelist[tempindex]] = result[i]
+        #         templist.append(self.result[i])
+        # self.result_sorted = templist
+
+    def form_date_dict(self,datevalue):
+        tempdic = {}
         templist=[]
-        for i in range(0, len(result)):
-            if result[i]['xingqi'] in datelist:
+        tempdic.fromkeys(datevalue)
+        # print tempdic
+        for i in range(0, len(self.result)):
+            if self.result[i]['xingqiname'] in self.datelist:
                 # print type(result[i]['xingqi'])
-            # result_sort[datelist[i]] = result.get(datelist[i])
-                templist.append(result[i])
-        # print result_sort
-        self.result_sorted = templist
+                # result_sort[datelist[i]] = result.get(datelist[i])
+                # tempdic[datevalue[self.datelist.index(self.result[i]['xingqi'])]] = self.result[i]
+                self.result[i]['datestring'] = datevalue[self.datelist.index(self.result[i]['xingqiname'])]
+                templist.append(self.result[i])
+        return templist
+
+
 
 
 class Adate(object):
@@ -58,18 +76,25 @@ class Adate(object):
 
     def date_string(self, i):
         date1 = self.date + datetime.timedelta(days=i)
+        return date1.strftime('%m/%d')
+
+    def date_string_chinese(self, i):
+        date1 = self.date + datetime.timedelta(days=i)
         return date1.strftime('%m月%d日')
+
 
     # 获取日期字典
     def get_date_dict(self):
         dic = collections.OrderedDict()
         list = []
-        for i in range(0, 3):
+        for i in range(0, 4):
             list.append(self.time_string(i))
+            # print self.time_string(i)
         dic.fromkeys(list)
         for i in range(0, len(list)):
             dic[list[i]] = self.date_string(i).decode('utf-8')
         return dic
+
 
 
 # 启动Flask总路由器
@@ -118,6 +143,8 @@ def get_list():
         dates = Adate()
         datedict = dates.get_date_dict()
         datelist = datedict.keys()
+        datevalue = datedict.values()
+        # print datevalue
         # if session.get(indexname) is None:
         #     print "new"
         #     fields = FormFields(form, LessonField, LessonExchange[indexname])
@@ -131,11 +158,12 @@ def get_list():
         # fields = FormFields(form, LessonField, LessonExchange[indexname])
         # data=fields.get_fields_list()
         alist = Alist(indexname, data, datelist)
+        result_list = alist.form_date_dict(datevalue)
         # print list.result_sorted
         resp = make_response()
         resp.status_code = 200
         resp.headers["content-type"] = "text/html"
-        resp.response = render_template('lesson_list_content.html', result=alist.result_sorted, indexname=alist.indexname,
+        resp.response = render_template('lesson_list_content.html', result=result_list, indexname=alist.indexname,
                                         desc=alist.indexdesc, datedict=datedict)
         # print resp.response
         # return jsonify(list.result)
@@ -171,6 +199,21 @@ def teacher_desc():
 @app.route('/lesson_detail')
 def lesson_detail():
     return render_template('lesson_detail.html')
+
+
+@app.route('/lesson_all')
+def lesson_all():
+    templist = []
+    for i in range(0,4):
+        templist.append(datalist[i]['plan'])
+
+    return render_template('lesson_index_new.html', result=templist)
+
+    # return render_template('1111.html', result=templist)
+
+
+
+    # return render_template('lesson_index_new.html')
 
 
 if __name__ == "__main__":

@@ -17,26 +17,28 @@
     <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
         <!--选择栏-->
         {% for key,value in datedict.items() %}
-        <a class="mui-control-item" href="#{{key}}">{{value}}</a>
+        <a class="mui-control-item" href="#{{value}}" style="width: 22%";>{{value}}</a>
         {%endfor%}
+        <a onclick=window.location.href='{{url_for('lesson_all')}}'>更多</a>
     </div>
     <!--选择光标-->
-    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3" style="width: 22%";></div>
     <!--列表页-->
     <div class="mui-slider-group">
-        {% for j in result| groupby('xingqi')|sort(reverse=True)  %}
+
+        {% for j in result| groupby('datestring')|sort(reverse=False) %}
         <div id="{{j.grouper}}" class="mui-slider-item mui-control-content">
             <ul class="mui-table-view">
                 <!--整个row-->
-                {% for i in j.list |sort(attribute="start") %}
+                {% for i in j.list|sort(attribute="start") %}
                 <li class="mui-table-view-cell">
                     <div class="mui-row">
                         <!--时间row-->
                         <div class="mui-col-xl-3 lesson_time">
                             <a href="#">
-                                <h4>{{i["start"]}}</h4>
+                                <h4>{{i["start"]}}-{{i["end"]}}</h4>
                                 <div class="mui-collapse-content">
-                                    <h6>{{i["end"]}}结束</h6>
+                                    <h6>地点:{{i["louceng"]}}</h6>
                                 </div>
                             </a>
                         </div>

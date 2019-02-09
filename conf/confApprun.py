@@ -3,13 +3,13 @@ import time
 
 # 转换
 DateExchange = {
-    '星期一':'Mon',
-    '星期二':'Tue',
-    '星期三':'Wed',
-    '星期四':'Thu',
-    '星期五':'Fri',
-    '星期六':'Sat',
-    '星期天':'Sun'
+    'Mon':'星期一',
+    'Tue':'星期二',
+    'Wed':'星期三',
+    'Thu':'星期四',
+    'Fri':'星期五',
+    'Sat':'星期六',
+    'Sun':'星期天'
 }
 LessonField = "d7aa8b5a-71d0-419d-8893-d112ad5ff266"
 LessonExchange ={
