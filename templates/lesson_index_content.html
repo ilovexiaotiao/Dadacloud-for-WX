@@ -1,0 +1,71 @@
+
+				<!--课程大类-->
+				<div class="mui-slider-group">
+					<!--第一个内容区容器-->
+					<!--{% for i in result %}-->
+					<div class="mui-slider-item ">
+					{% for j in result| groupby('neirong') %}
+						<div class="mui-table-view-cell mui-collapse">
+							<a href="#">
+							<div class="film_tmpl">
+							<div class="film_tmpl_t mui-row">
+							<div class="film_tmpl_t_l">
+											<img src="../../static/img/健身套餐.jpg" />
+										</div>
+							<div class="film_tmpl_t_r">
+							<h2><span>{{j.grouper}}</span></h2>
+							<h5>收腹</h5>
+											<h5>瘦腿</h5>
+											<p>最近场次: <span>19:00</span>
+											</p>
+											<p>教练: <span>阿威</span>
+											</p>
+											<p><button>课表<span class="mui-icon mui-icon-arrowdown" style="font-size: 14px;"></span></button></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+							</div>
+							</a>
+							<div class="mui-collapse-content">
+								{% for xiaolei in j.list | sort(attribute='xingqiorder')%}
+								<!--整个row-->
+								<div class="mui-table-view-cell">
+									<div class="mui-row">
+										<!--时间row-->
+										<div class="mui-col-xl-3 lesson_time">
+											<a href="#">
+												<h4>{{xiaolei['xingqi']}}({{xiaolei['laoshi']}})</h4>
+
+													<h6>地点:{{xiaolei['louceng']}}</h6>
+
+											</a>
+										</div>
+										<!--教练row-->
+										<div class="mui-col-xl-3 lesson_coach">
+											<a href="#">
+												<h4>{{xiaolei['start']}}</h4>
+
+													<h6>{{xiaolei['end']}}结束</h6>
+
+
+											</a>
+										</div>
+										<!--按钮row-->
+										<div class="mui-col-xl-3 lesson_detail">
+											<button type="button" class="mui-btn mui-btn-yellow">详情</button>
+										</div>
+									</div>
+								</div>
+								{%endfor%}
+
+							</div>
+						</div>
+						{%endfor%}
+
+
+					</div>
+					<!--{%endfor%}-->
+
+				</div>
+
+

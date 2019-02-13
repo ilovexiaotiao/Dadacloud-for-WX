@@ -1,0 +1,1073 @@
+2019-02-09 17:10:35,127 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:10:35,568 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:10:35
+2019-02-09 17:10:35,569 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:10:35,569 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:10:40,582 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:40,608 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:10:35
+2019-02-09 17:10:40,608 logger.py[line:133] INFO AccessToken : db976e71947d833af402df5401bba4e93e79b158b8d05509470799e66acc7414 is acquired
+2019-02-09 17:10:40,608 logger.py[line:138] INFO RefreshToken : 2abc0bbe02326ebd89d1499a0959eb13ab08714fcbb18fd54a2c2c09aca44f84 is acquired
+2019-02-09 17:10:41,720 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : db976e71947d833af402df5401bba4e93e79b158b8d05509470799e66acc7414 in redis
+2019-02-09 17:10:41,720 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:10:45,010 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:45,312 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:47,966 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:48,253 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:50,579 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:10:50,581 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:10:50
+2019-02-09 17:10:50,581 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:10:50,581 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:10:52,332 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:52,332 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:10:50
+2019-02-09 17:10:52,334 logger.py[line:133] INFO AccessToken : 1ac14870386fcb385e790d331082ab38bd21352288df466cfba2ad7ecb844671 is acquired
+2019-02-09 17:10:52,334 logger.py[line:138] INFO RefreshToken : 7ab00fc23dfbfa8419689b984f8edc45302f39128002d731033470b710e15f2c is acquired
+2019-02-09 17:10:53,342 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 1ac14870386fcb385e790d331082ab38bd21352288df466cfba2ad7ecb844671 in redis
+2019-02-09 17:10:53,344 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:10:53,668 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:54,608 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:55,109 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:10:55,549 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:11:14,323 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:12:15,062 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:28,308 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:13:28,309 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:13:28
+2019-02-09 17:13:28,309 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:13:28,309 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:13:29,211 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:29,211 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:13:28
+2019-02-09 17:13:29,211 logger.py[line:133] INFO AccessToken : 7da2cfac5c6ec4cf408381d9e7a829fde18b6b6f391996f7b340ed3859f8c47b is acquired
+2019-02-09 17:13:29,211 logger.py[line:138] INFO RefreshToken : 4c2f3f32564e7c2230023ff17c4c37b2ac6cf2a9575cc9516956da0b90c339d5 is acquired
+2019-02-09 17:13:30,213 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 7da2cfac5c6ec4cf408381d9e7a829fde18b6b6f391996f7b340ed3859f8c47b in redis
+2019-02-09 17:13:30,214 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:13:30,431 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:30,651 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:30,904 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:31,121 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:32,585 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:13:32,585 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:13:32
+2019-02-09 17:13:32,585 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:13:32,585 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:13:33,608 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:33,608 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:13:32
+2019-02-09 17:13:33,609 logger.py[line:133] INFO AccessToken : 42cc49eeb83806483a143de98256984633a2a05395100e5f47ed65bb3536959e is acquired
+2019-02-09 17:13:33,609 logger.py[line:138] INFO RefreshToken : dd09ab8fc2fd3982dacd4e3145e030ca4f9d7fed5482032a78ccb22e49878431 is acquired
+2019-02-09 17:13:34,619 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 42cc49eeb83806483a143de98256984633a2a05395100e5f47ed65bb3536959e in redis
+2019-02-09 17:13:34,621 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:13:34,858 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:35,102 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:35,326 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:35,545 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:13:44,437 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:14:01,822 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:51,540 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:17:51,542 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:17:51
+2019-02-09 17:17:51,542 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:17:51,542 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:17:52,368 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:52,368 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:17:51
+2019-02-09 17:17:52,368 logger.py[line:133] INFO AccessToken : 459c900df4fd0302d9b701b48d17a18366d408690b41d1556e332ae1e92e5ea7 is acquired
+2019-02-09 17:17:52,368 logger.py[line:138] INFO RefreshToken : 4180a14fcd9618d8479f85f0e825251138daa7e193e0093920c59b327712f80b is acquired
+2019-02-09 17:17:53,365 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 459c900df4fd0302d9b701b48d17a18366d408690b41d1556e332ae1e92e5ea7 in redis
+2019-02-09 17:17:53,367 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:17:53,618 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:53,849 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:54,069 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:54,286 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:55,790 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:17:55,790 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:17:55
+2019-02-09 17:17:55,792 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:17:55,792 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:17:56,835 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:56,836 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:17:55
+2019-02-09 17:17:56,836 logger.py[line:133] INFO AccessToken : f6a257b39e5e821291277b57b1b9ef47336bb454acf1498ffaf0f03ab3afb082 is acquired
+2019-02-09 17:17:56,836 logger.py[line:138] INFO RefreshToken : 306d976e5a38b34a26a5931af22f50718ec728615c75b426ac918257cb93f2fc is acquired
+2019-02-09 17:17:57,842 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : f6a257b39e5e821291277b57b1b9ef47336bb454acf1498ffaf0f03ab3afb082 in redis
+2019-02-09 17:17:57,842 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:17:58,068 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:58,292 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:58,513 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:17:58,753 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:18:04,427 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:19:42,056 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:21:09,707 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:22:00,535 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:24:38,259 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:25:26,986 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:36:06,619 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:37:50,150 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:40:19,986 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:40:59,716 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:41:35,871 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:42:06,755 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:43:31,321 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:44:29,242 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:57:53,776 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:57:53,778 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:57:53
+2019-02-09 17:57:53,778 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:57:53,778 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:57:54,905 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:57:54,905 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:57:53
+2019-02-09 17:57:54,905 logger.py[line:133] INFO AccessToken : 5b3f54a84a7551062d877aac67e37f63667f41aef1fca5fa8f3bb6d1e05c8f7c is acquired
+2019-02-09 17:57:54,907 logger.py[line:138] INFO RefreshToken : 766f1c3bc383445e4aa7c82583dd324813c65694288615e976f382edd5281704 is acquired
+2019-02-09 17:57:55,920 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 5b3f54a84a7551062d877aac67e37f63667f41aef1fca5fa8f3bb6d1e05c8f7c in redis
+2019-02-09 17:57:55,920 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:57:56,151 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:57:56,434 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:57:56,684 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:57:56,904 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:57:58,476 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:57:58,476 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:57:58
+2019-02-09 17:57:58,477 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:57:58,477 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:57:59,443 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:57:59,443 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:57:58
+2019-02-09 17:57:59,443 logger.py[line:133] INFO AccessToken : 174226d1b9aee60b9544bdd090b9bcf424ef562731b3e81488ab45eba9318db4 is acquired
+2019-02-09 17:57:59,443 logger.py[line:138] INFO RefreshToken : b6a3ed2035c0639ba151a7db9d22cd91bb0a6a63e0fbc858562241acbaf8a5e8 is acquired
+2019-02-09 17:58:00,444 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 174226d1b9aee60b9544bdd090b9bcf424ef562731b3e81488ab45eba9318db4 in redis
+2019-02-09 17:58:00,446 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:58:00,683 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:00,898 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:01,131 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:01,374 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:04,414 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:35,572 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:58:35,572 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:58:35
+2019-02-09 17:58:35,573 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:58:35,573 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:58:36,506 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:36,507 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:58:35
+2019-02-09 17:58:36,507 logger.py[line:133] INFO AccessToken : 3214f7711f2bf224d734c54351578a215e45e0607494cbc85575c1f5c5c5b2f3 is acquired
+2019-02-09 17:58:36,509 logger.py[line:138] INFO RefreshToken : ebca0687318179a55fa64918c671ab3a457703bedf7fc772ce74b0a93210ed85 is acquired
+2019-02-09 17:58:37,513 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 3214f7711f2bf224d734c54351578a215e45e0607494cbc85575c1f5c5c5b2f3 in redis
+2019-02-09 17:58:37,513 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:58:37,763 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:38,002 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:38,293 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:38,538 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:40,061 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:58:40,061 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:58:40
+2019-02-09 17:58:40,062 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:58:40,062 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:58:40,977 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:40,977 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:58:40
+2019-02-09 17:58:40,977 logger.py[line:133] INFO AccessToken : def83ca35662dca2fa4c9eb889d21996fe01a80a7ed61105a566829dffc9128f is acquired
+2019-02-09 17:58:40,977 logger.py[line:138] INFO RefreshToken : 31710329010d4eb3e9970a2c5bcb4ae9a4929f3264bb3a0ff653ec2a06efc23e is acquired
+2019-02-09 17:58:41,983 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : def83ca35662dca2fa4c9eb889d21996fe01a80a7ed61105a566829dffc9128f in redis
+2019-02-09 17:58:41,983 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:58:42,240 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:42,463 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:42,683 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:42,927 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:58:45,808 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:59:51,444 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:59:51,444 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:59:51
+2019-02-09 17:59:51,444 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 17:59:51,446 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 17:59:52,398 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:59:52,400 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 17:59:51
+2019-02-09 17:59:52,401 logger.py[line:133] INFO AccessToken : 8faf67a2b842d5ad3f07cb12816ba6fc2db5fe1bbd6f78e07e2664c56c8a34a5 is acquired
+2019-02-09 17:59:52,401 logger.py[line:138] INFO RefreshToken : 8aec27835f2ffefc7cd7537a28eaf55971e55463f6c884271bea77170393d381 is acquired
+2019-02-09 17:59:53,407 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 8faf67a2b842d5ad3f07cb12816ba6fc2db5fe1bbd6f78e07e2664c56c8a34a5 in redis
+2019-02-09 17:59:53,408 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 17:59:53,627 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:59:53,861 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:59:54,108 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 17:59:54,323 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:12:58,296 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:12:58,296 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:12:58
+2019-02-09 18:12:58,296 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:12:58,296 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:12:59,346 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:12:59,346 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:12:58
+2019-02-09 18:12:59,348 logger.py[line:133] INFO AccessToken : 87457151fc8f6302d3c61c7168b8c690bd594d69e1f4af3927a0a4c95f51c343 is acquired
+2019-02-09 18:12:59,348 logger.py[line:138] INFO RefreshToken : 52633123311ea34b256b86bf4531aeb195f9e7316108f90ead2a6b739fce3d97 is acquired
+2019-02-09 18:13:00,355 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 87457151fc8f6302d3c61c7168b8c690bd594d69e1f4af3927a0a4c95f51c343 in redis
+2019-02-09 18:13:00,357 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:13:00,591 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:13:00,813 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:13:01,029 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:13:01,276 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:48,081 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:18:48,081 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:18:48
+2019-02-09 18:18:48,081 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:18:48,081 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:18:49,022 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:49,023 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:18:48
+2019-02-09 18:18:49,023 logger.py[line:133] INFO AccessToken : d4c064d5044aecc21a5b82124816a30af44fb50f8083c9c6577397a8e1fff6d8 is acquired
+2019-02-09 18:18:49,023 logger.py[line:138] INFO RefreshToken : e7adfa3f60e2d7a9609d5644bb3acc210e9ef0959244a192aa20fe6d4fa2d6af is acquired
+2019-02-09 18:18:50,026 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : d4c064d5044aecc21a5b82124816a30af44fb50f8083c9c6577397a8e1fff6d8 in redis
+2019-02-09 18:18:50,029 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:18:50,288 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:50,536 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:50,744 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:50,976 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:52,505 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:18:52,506 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:18:52
+2019-02-09 18:18:52,506 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:18:52,506 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:18:53,404 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:53,404 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:18:52
+2019-02-09 18:18:53,404 logger.py[line:133] INFO AccessToken : 24ae2f34b3cac2e4b0e5e65de89ca8060e4fb4da7d7bb4c4fa1715561613e0ad is acquired
+2019-02-09 18:18:53,404 logger.py[line:138] INFO RefreshToken : 4fad12ab80a83bef3eb4ede743d2a74c6b1b3ea64654096fb63b23203729a05e is acquired
+2019-02-09 18:18:54,421 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 24ae2f34b3cac2e4b0e5e65de89ca8060e4fb4da7d7bb4c4fa1715561613e0ad in redis
+2019-02-09 18:18:54,421 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:18:54,697 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:54,917 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:55,138 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:18:55,355 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:19:01,193 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:20:25,842 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:20:25,842 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:20:25
+2019-02-09 18:20:25,842 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:20:25,842 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:20:26,894 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:20:26,894 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:20:25
+2019-02-09 18:20:26,894 logger.py[line:133] INFO AccessToken : 0bfd94614f8268ed7dd5384ea0581584974427ac7e57c5dae9a9edc632a41933 is acquired
+2019-02-09 18:20:26,895 logger.py[line:138] INFO RefreshToken : 03ffd600c530ddb0bf0d394783f8e7fa56b49f221fbb1fab5e27a55b46399c93 is acquired
+2019-02-09 18:20:27,900 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 0bfd94614f8268ed7dd5384ea0581584974427ac7e57c5dae9a9edc632a41933 in redis
+2019-02-09 18:20:27,921 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:20:28,174 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:20:28,401 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:20:28,612 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:20:28,825 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:44,362 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:21:44,362 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:21:44
+2019-02-09 18:21:44,364 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:21:44,364 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:21:45,395 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:45,397 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:21:44
+2019-02-09 18:21:45,397 logger.py[line:133] INFO AccessToken : 0b602dc67b65f0e725a20514c7a578d11dc668509388f7611822e684e16ceaa7 is acquired
+2019-02-09 18:21:45,397 logger.py[line:138] INFO RefreshToken : 73c6b875e01e020db84e845d1bf59b8bfea3d531f6fb6420584cb6179141cf92 is acquired
+2019-02-09 18:21:46,401 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 0b602dc67b65f0e725a20514c7a578d11dc668509388f7611822e684e16ceaa7 in redis
+2019-02-09 18:21:46,403 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:21:46,661 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:46,884 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:47,186 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:47,428 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:49,007 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:21:49,007 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:21:49
+2019-02-09 18:21:49,009 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:21:49,009 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:21:50,176 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:50,176 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:21:49
+2019-02-09 18:21:50,176 logger.py[line:133] INFO AccessToken : aad2bbe73476853c872ddc2f6b16ad61e1a856bf6223723da23bd8bf6df7a736 is acquired
+2019-02-09 18:21:50,177 logger.py[line:138] INFO RefreshToken : 969bd5091a783ffdbcda66163e12073f91d244cd7cb6e2bfdbed8db15bc2318d is acquired
+2019-02-09 18:21:51,176 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : aad2bbe73476853c872ddc2f6b16ad61e1a856bf6223723da23bd8bf6df7a736 in redis
+2019-02-09 18:21:51,176 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:21:51,398 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:51,625 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:51,864 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:52,088 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:21:55,628 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:22:59,903 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:22:59,903 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:22:59
+2019-02-09 18:22:59,903 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:22:59,903 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:23:00,924 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:23:00,924 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:22:59
+2019-02-09 18:23:00,924 logger.py[line:133] INFO AccessToken : 86e2ed4fb99ee27435c9645d899dbf810fdd6b8775849ba97107363162a7d4f2 is acquired
+2019-02-09 18:23:00,924 logger.py[line:138] INFO RefreshToken : a674370b2a30b54a843ec07e2f48fa638784dcdd9beb3d7f90829509f82d0b88 is acquired
+2019-02-09 18:23:01,928 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 86e2ed4fb99ee27435c9645d899dbf810fdd6b8775849ba97107363162a7d4f2 in redis
+2019-02-09 18:23:01,930 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:23:02,217 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:23:02,463 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:23:02,697 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:23:02,951 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:15,974 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:28:15,974 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:28:15
+2019-02-09 18:28:15,974 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:28:15,976 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:28:17,052 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:17,052 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:28:15
+2019-02-09 18:28:17,052 logger.py[line:133] INFO AccessToken : a944837120db1acd70ddcfc836e1791d8f8b6116de252cb81524449a2f043905 is acquired
+2019-02-09 18:28:17,052 logger.py[line:138] INFO RefreshToken : 4a44fcb8cd482fefc9666440ad0da7d1ba86667f3c715aa75b23271403ea5cc1 is acquired
+2019-02-09 18:28:18,069 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : a944837120db1acd70ddcfc836e1791d8f8b6116de252cb81524449a2f043905 in redis
+2019-02-09 18:28:18,071 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:28:18,311 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:18,529 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:18,736 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:18,964 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:39,976 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:28:39,976 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:28:39
+2019-02-09 18:28:39,976 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:28:39,977 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:28:41,003 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:41,003 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:28:39
+2019-02-09 18:28:41,003 logger.py[line:133] INFO AccessToken : 8aa55d8b3edde73eed9f0a22b16672cd64653e14058a1591f66d58d17f55318d is acquired
+2019-02-09 18:28:41,003 logger.py[line:138] INFO RefreshToken : cc6024b1bde8d01a2d4ccef40661fb7c70854de2f314ad7c61f7f9008d14cafc is acquired
+2019-02-09 18:28:42,003 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 8aa55d8b3edde73eed9f0a22b16672cd64653e14058a1591f66d58d17f55318d in redis
+2019-02-09 18:28:42,003 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:28:42,243 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:42,480 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:42,698 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:42,923 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:44,496 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:28:44,496 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:28:44
+2019-02-09 18:28:44,497 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:28:44,497 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:28:45,368 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:45,368 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:28:44
+2019-02-09 18:28:45,369 logger.py[line:133] INFO AccessToken : 78b298ee80da6974eb743f00428338d8c8bab8dc67cbf4fe630cc3233e165447 is acquired
+2019-02-09 18:28:45,369 logger.py[line:138] INFO RefreshToken : 8e74220e681aa7bdf995c5383e08d38ae30f509b816af2009fc2e334d4344ffc is acquired
+2019-02-09 18:28:46,380 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 78b298ee80da6974eb743f00428338d8c8bab8dc67cbf4fe630cc3233e165447 in redis
+2019-02-09 18:28:46,381 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:28:46,605 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:46,822 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:47,036 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:47,259 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:28:48,865 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:31:38,813 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:31:38,815 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:31:38
+2019-02-09 18:31:38,815 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:31:38,815 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:31:39,915 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:31:39,917 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:31:38
+2019-02-09 18:31:39,917 logger.py[line:133] INFO AccessToken : 6342550ca92b257eabbeeea7aac308f7a72af9d686c67a2b10425c67eb94bd0e is acquired
+2019-02-09 18:31:39,917 logger.py[line:138] INFO RefreshToken : 6fa46c300f503f0697dc32c7a9abb47946c721a2934e48e463821d6dcac18b6e is acquired
+2019-02-09 18:31:40,920 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 6342550ca92b257eabbeeea7aac308f7a72af9d686c67a2b10425c67eb94bd0e in redis
+2019-02-09 18:31:40,921 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:31:41,141 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:31:41,364 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:31:41,575 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:31:41,792 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:00,516 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:32:00,516 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:32:00
+2019-02-09 18:32:00,516 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:32:00,517 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:32:01,525 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:01,526 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:32:00
+2019-02-09 18:32:01,526 logger.py[line:133] INFO AccessToken : aa56cee178c5add18f9d523ad2ab556cab3490893e81379b759f517c844ceeec is acquired
+2019-02-09 18:32:01,526 logger.py[line:138] INFO RefreshToken : 425a502a535f4107774c5892fbb1aa5d3e1b1f0b63bcc05e78defff89188a8b9 is acquired
+2019-02-09 18:32:02,529 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : aa56cee178c5add18f9d523ad2ab556cab3490893e81379b759f517c844ceeec in redis
+2019-02-09 18:32:02,529 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:32:02,747 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:02,967 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:03,180 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:03,415 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:04,937 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:32:04,937 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:32:04
+2019-02-09 18:32:04,938 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:32:04,938 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:32:05,895 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:05,897 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:32:04
+2019-02-09 18:32:05,897 logger.py[line:133] INFO AccessToken : 1177ac60552179ad1dab746caf144fb0f2576bea0279298669681b295130c4b8 is acquired
+2019-02-09 18:32:05,898 logger.py[line:138] INFO RefreshToken : 5a1560bca6e67eb4bd08ddf72464858d7584cec58487e0f809418e153ccb331b is acquired
+2019-02-09 18:32:06,904 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 1177ac60552179ad1dab746caf144fb0f2576bea0279298669681b295130c4b8 in redis
+2019-02-09 18:32:06,904 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:32:07,161 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:07,388 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:07,608 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:07,828 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:32:53,193 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:10,351 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:33:10,351 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:33:10
+2019-02-09 18:33:10,352 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:33:10,352 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:33:11,374 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:11,375 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:33:10
+2019-02-09 18:33:11,375 logger.py[line:133] INFO AccessToken : 175eac6a7f9a31257340a6077712f24fce1e7a3d4c8106d7aaaf6778895eab97 is acquired
+2019-02-09 18:33:11,375 logger.py[line:138] INFO RefreshToken : b32b938d9dfb05c749cb4316d01d4e9deeb82c1eef71bdda4e4b1aad0b4b2e2d is acquired
+2019-02-09 18:33:12,382 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 175eac6a7f9a31257340a6077712f24fce1e7a3d4c8106d7aaaf6778895eab97 in redis
+2019-02-09 18:33:12,384 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:33:12,601 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:12,829 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:13,134 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:13,394 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:14,951 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:33:14,951 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:33:14
+2019-02-09 18:33:14,953 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:33:14,953 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:33:15,911 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:15,911 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:33:14
+2019-02-09 18:33:15,911 logger.py[line:133] INFO AccessToken : 94e99389008c3bc3b464d81aac8a30a76df86769a87cd7fd69a8ac13b48e9b14 is acquired
+2019-02-09 18:33:15,911 logger.py[line:138] INFO RefreshToken : 54690f9e0ef65c6a3ef7ede75a1d84d02917440ae5056e3198744b719c136b08 is acquired
+2019-02-09 18:33:16,914 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 94e99389008c3bc3b464d81aac8a30a76df86769a87cd7fd69a8ac13b48e9b14 in redis
+2019-02-09 18:33:16,914 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:33:17,147 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:17,361 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:17,608 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:17,835 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:33:19,911 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:34:54,227 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:34:54,229 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:34:54
+2019-02-09 18:34:54,229 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:34:54,229 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:34:55,288 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:34:55,288 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:34:54
+2019-02-09 18:34:55,289 logger.py[line:133] INFO AccessToken : b4c11d351ccc45caa62d321fdb5664e40b1a2d45edd467d3043bc4a706b70eae is acquired
+2019-02-09 18:34:55,289 logger.py[line:138] INFO RefreshToken : 2139091996739ae8df0d1659d275efaf6232199cd5a1ce2c0f0b0f616f2e474c is acquired
+2019-02-09 18:34:56,292 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : b4c11d351ccc45caa62d321fdb5664e40b1a2d45edd467d3043bc4a706b70eae in redis
+2019-02-09 18:34:56,292 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:34:56,510 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:34:56,734 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:34:56,953 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:34:57,164 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:51,698 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:38:51,700 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:38:51
+2019-02-09 18:38:51,700 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:38:51,700 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:38:52,645 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:52,645 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:38:51
+2019-02-09 18:38:52,647 logger.py[line:133] INFO AccessToken : f40e2ddab939b6b033eaf2affd9f25eeb419a49542a298ea6652c054b3ae9d4a is acquired
+2019-02-09 18:38:52,647 logger.py[line:138] INFO RefreshToken : ab24a223ac466ffb766537c7043c2560160d78920bcd4d17f227e201816b1f19 is acquired
+2019-02-09 18:38:53,650 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : f40e2ddab939b6b033eaf2affd9f25eeb419a49542a298ea6652c054b3ae9d4a in redis
+2019-02-09 18:38:53,650 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:38:53,874 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:54,096 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:54,328 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:54,545 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:56,118 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:38:56,118 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:38:56
+2019-02-09 18:38:56,118 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:38:56,118 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:38:57,089 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:57,089 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:38:56
+2019-02-09 18:38:57,091 logger.py[line:133] INFO AccessToken : 89f0bc8824e160112ed76825338a8ffe6eaafa5479cc68e59cb33b13b503ccef is acquired
+2019-02-09 18:38:57,092 logger.py[line:138] INFO RefreshToken : 0127aa35b7ee4d8ca35c95abd664395585a0361803b6012981f40bcd433b0dda is acquired
+2019-02-09 18:38:58,098 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 89f0bc8824e160112ed76825338a8ffe6eaafa5479cc68e59cb33b13b503ccef in redis
+2019-02-09 18:38:58,098 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:38:58,335 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:58,595 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:58,825 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:38:59,046 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:39:00,173 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:39:05,543 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:13,142 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:40:13,144 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:40:13
+2019-02-09 18:40:13,144 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:40:13,144 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:40:13,994 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:13,994 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:40:13
+2019-02-09 18:40:13,996 logger.py[line:133] INFO AccessToken : c36992ee183705a442479fddbf77bdb127d30e6a5b847a191880570bcc08ce80 is acquired
+2019-02-09 18:40:13,996 logger.py[line:138] INFO RefreshToken : ba18efd1b47fa27313648cf2c132f585e37fb3e0f594c7ddec99a2b2b0d8d9f0 is acquired
+2019-02-09 18:40:15,000 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : c36992ee183705a442479fddbf77bdb127d30e6a5b847a191880570bcc08ce80 in redis
+2019-02-09 18:40:15,002 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:40:15,239 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:15,477 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:15,698 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:15,924 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:17,497 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:40:17,507 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:40:17
+2019-02-09 18:40:17,509 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:40:17,509 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:40:18,492 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:18,492 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:40:17
+2019-02-09 18:40:18,493 logger.py[line:133] INFO AccessToken : c8b72cb127ea7769a6fdb61030ba4ffc8b0fcc417529f51bfe4d78b2a1c836a5 is acquired
+2019-02-09 18:40:18,493 logger.py[line:138] INFO RefreshToken : 382590de55e489308aed0a9855b4b6cb182c448074598299ee76dc01acace9fe is acquired
+2019-02-09 18:40:19,497 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : c8b72cb127ea7769a6fdb61030ba4ffc8b0fcc417529f51bfe4d78b2a1c836a5 in redis
+2019-02-09 18:40:19,497 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:40:19,740 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:19,956 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:20,177 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:20,397 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:21,012 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:39,372 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:40:39,374 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:40:39
+2019-02-09 18:40:39,374 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:40:39,375 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:40:40,543 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:40,543 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:40:39
+2019-02-09 18:40:40,543 logger.py[line:133] INFO AccessToken : 50187b841cecebc61f5e95a999eb4a9518fbe5698d31078503c89c2e7b2d015c is acquired
+2019-02-09 18:40:40,545 logger.py[line:138] INFO RefreshToken : 06cbc94bb7aaf940c783c084de5f1e4af0fd73dc91d43696646ef19addeb0744 is acquired
+2019-02-09 18:40:41,548 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 50187b841cecebc61f5e95a999eb4a9518fbe5698d31078503c89c2e7b2d015c in redis
+2019-02-09 18:40:41,548 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:40:41,767 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:42,003 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:42,257 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:42,522 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:40:44,276 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:07,130 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:41:07,131 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:41:07
+2019-02-09 18:41:07,131 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:41:07,131 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:41:08,173 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:08,174 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:41:07
+2019-02-09 18:41:08,174 logger.py[line:133] INFO AccessToken : 1d6ea81ab3f41ede985f1f87e9ed8e8bf89f4b0ca6742006caf26bb1c466a58e is acquired
+2019-02-09 18:41:08,174 logger.py[line:138] INFO RefreshToken : d79f439e5f9a7a419552e4df19b6c0dcded7b39cfa24d10ca4378a6fb40d85c3 is acquired
+2019-02-09 18:41:09,177 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 1d6ea81ab3f41ede985f1f87e9ed8e8bf89f4b0ca6742006caf26bb1c466a58e in redis
+2019-02-09 18:41:09,177 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:41:09,395 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:09,612 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:09,851 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:10,071 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:11,596 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:41:11,596 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:41:11
+2019-02-09 18:41:11,598 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:41:11,598 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:41:12,542 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:12,542 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:41:11
+2019-02-09 18:41:12,542 logger.py[line:133] INFO AccessToken : c7f17fd6ede4e96edf56005e000d9eb20ae2839002f21f7fffdc9ae4482e8610 is acquired
+2019-02-09 18:41:12,543 logger.py[line:138] INFO RefreshToken : 1d495abc56af40595060db9ebe7db18159ef779cd442bb0800c05fd56ce68cdc is acquired
+2019-02-09 18:41:13,552 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : c7f17fd6ede4e96edf56005e000d9eb20ae2839002f21f7fffdc9ae4482e8610 in redis
+2019-02-09 18:41:13,552 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:41:13,788 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:14,009 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:14,230 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:14,505 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:41:15,063 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:07,395 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:44:07,395 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:44:07
+2019-02-09 18:44:07,397 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:44:07,397 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:44:08,431 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:08,431 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:44:07
+2019-02-09 18:44:08,431 logger.py[line:133] INFO AccessToken : 7cec64cb747c2b2b263c931e2861e75e223977d961818c1bf5a72910bea38016 is acquired
+2019-02-09 18:44:08,433 logger.py[line:138] INFO RefreshToken : cc5d509997c1d95e3cc3ab478b7f6b2d80e0f9ea02c4ebd35b4d87d7f3152250 is acquired
+2019-02-09 18:44:09,436 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 7cec64cb747c2b2b263c931e2861e75e223977d961818c1bf5a72910bea38016 in redis
+2019-02-09 18:44:09,437 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:44:09,703 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:09,963 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:10,178 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:10,392 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:11,973 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:44:11,973 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:44:11
+2019-02-09 18:44:11,973 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:44:11,973 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:44:12,980 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:12,982 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:44:11
+2019-02-09 18:44:12,982 logger.py[line:133] INFO AccessToken : b05f0abaa51dab10cfbe825e7301740309a6f1c8605030337d719573742c5499 is acquired
+2019-02-09 18:44:12,982 logger.py[line:138] INFO RefreshToken : 1528bea589b9b8aa811c7927723d2ffb7cfb377d7b614205607ddc04e1101dac is acquired
+2019-02-09 18:44:13,983 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : b05f0abaa51dab10cfbe825e7301740309a6f1c8605030337d719573742c5499 in redis
+2019-02-09 18:44:13,984 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:44:14,206 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:14,434 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:14,658 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:14,887 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:44:18,016 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:45:18,032 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:45:18,033 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:45:18
+2019-02-09 18:45:18,033 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:45:18,033 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:45:19,069 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:45:19,071 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:45:18
+2019-02-09 18:45:19,071 logger.py[line:133] INFO AccessToken : e359bbf29c3d8c0787a704bdedc1994d487a4074a67d24fa3614fc023a1cb76a is acquired
+2019-02-09 18:45:19,071 logger.py[line:138] INFO RefreshToken : f68c414f9d259dff49e8932c87bfd4f589d14aee2e90dbc1dc6ab34eefbaf2b1 is acquired
+2019-02-09 18:45:20,073 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : e359bbf29c3d8c0787a704bdedc1994d487a4074a67d24fa3614fc023a1cb76a in redis
+2019-02-09 18:45:20,073 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:45:20,296 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:45:20,515 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:45:20,734 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:45:20,953 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:25,996 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:52:25,996 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:52:25
+2019-02-09 18:52:25,996 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:52:25,996 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:52:26,967 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:26,969 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:52:25
+2019-02-09 18:52:26,969 logger.py[line:133] INFO AccessToken : 00c7b1e6206fa231bd139e38d0051df7bbc53e107e75664f0800bb4175e23561 is acquired
+2019-02-09 18:52:26,969 logger.py[line:138] INFO RefreshToken : b4eec5e9ab9baa6cb5c6b96b1ebb077ee567c4f87fd4e0b69b3b290324b444b2 is acquired
+2019-02-09 18:52:27,971 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 00c7b1e6206fa231bd139e38d0051df7bbc53e107e75664f0800bb4175e23561 in redis
+2019-02-09 18:52:27,973 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:52:28,207 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:28,562 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:28,789 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:29,009 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:30,578 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:52:30,578 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:52:30
+2019-02-09 18:52:30,578 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:52:30,578 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:52:31,473 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:31,473 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:52:30
+2019-02-09 18:52:31,473 logger.py[line:133] INFO AccessToken : 4b8b1b794a0cd6c31f6d85f1f452b2a51c396b04422d768547d0b4a16bc4a843 is acquired
+2019-02-09 18:52:31,473 logger.py[line:138] INFO RefreshToken : 5e36c28b80ebebdf4383b873457c800c4120d20cc4b4a32229f71d842aacd7eb is acquired
+2019-02-09 18:52:32,473 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 4b8b1b794a0cd6c31f6d85f1f452b2a51c396b04422d768547d0b4a16bc4a843 in redis
+2019-02-09 18:52:32,474 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:52:32,690 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:32,907 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:33,137 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:33,361 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:52:41,157 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:34,378 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:57:34,378 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:57:34
+2019-02-09 18:57:34,378 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:57:34,378 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:57:35,394 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:35,395 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:57:34
+2019-02-09 18:57:35,395 logger.py[line:133] INFO AccessToken : 29632c8d950d0c5a4af29960ea860c80b23f4520c7679a698346236df7227e29 is acquired
+2019-02-09 18:57:35,397 logger.py[line:138] INFO RefreshToken : 2b47c141665c88cfa5171c4e7ca178d4ddaacf3a5de7e4daf0c3ac096d0e52c3 is acquired
+2019-02-09 18:57:36,401 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 29632c8d950d0c5a4af29960ea860c80b23f4520c7679a698346236df7227e29 in redis
+2019-02-09 18:57:36,401 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:57:36,625 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:36,848 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:37,065 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:37,299 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:38,805 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:57:38,805 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:57:38
+2019-02-09 18:57:38,805 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:57:38,805 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:57:39,801 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:39,802 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:57:38
+2019-02-09 18:57:39,802 logger.py[line:133] INFO AccessToken : 5d52ba40dec43d2248ce7ec317cc3131fdc2c9e556805cfbda450477807bd3c5 is acquired
+2019-02-09 18:57:39,802 logger.py[line:138] INFO RefreshToken : db2c771803b4533bc2f42b6a9c67244ac476b475544a9ad56c1d537e2563a12d is acquired
+2019-02-09 18:57:40,818 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 5d52ba40dec43d2248ce7ec317cc3131fdc2c9e556805cfbda450477807bd3c5 in redis
+2019-02-09 18:57:40,819 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:57:41,072 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:41,305 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:41,526 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:41,739 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:57:44,622 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:31,578 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:58:31,578 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:58:31
+2019-02-09 18:58:31,579 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:58:31,579 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:58:32,427 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:32,427 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:58:31
+2019-02-09 18:58:32,427 logger.py[line:133] INFO AccessToken : e8b72361bc2a9f9f0de2ba806de06c23da8864cfe45ddbbdd2348d87de0267a7 is acquired
+2019-02-09 18:58:32,428 logger.py[line:138] INFO RefreshToken : 5ff66b6ba08d014579b845d35cbc4eeab31d93a612acf7f7cd682d73ee61dc3a is acquired
+2019-02-09 18:58:33,450 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : e8b72361bc2a9f9f0de2ba806de06c23da8864cfe45ddbbdd2348d87de0267a7 in redis
+2019-02-09 18:58:33,450 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:58:33,667 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:33,888 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:34,102 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:34,313 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:36,130 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:58:36,130 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:58:36
+2019-02-09 18:58:36,131 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 18:58:36,131 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 18:58:37,308 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:37,309 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 18:58:36
+2019-02-09 18:58:37,309 logger.py[line:133] INFO AccessToken : f5d8c94e4737a1f3f7dd8b4c60e4d4bba7a275c4018956c18f8040667b6ae015 is acquired
+2019-02-09 18:58:37,309 logger.py[line:138] INFO RefreshToken : 96a526706369b22e051b72d00a3c25c6c0c67c53d165e864b918556cdf5cdc13 is acquired
+2019-02-09 18:58:38,308 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : f5d8c94e4737a1f3f7dd8b4c60e4d4bba7a275c4018956c18f8040667b6ae015 in redis
+2019-02-09 18:58:38,309 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 18:58:38,543 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:38,765 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:38,996 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:39,226 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 18:58:41,799 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:33,417 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:00:33,417 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:00:33
+2019-02-09 19:00:33,418 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 19:00:33,420 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:00:34,387 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:34,387 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:00:33
+2019-02-09 19:00:34,388 logger.py[line:133] INFO AccessToken : 6a084fc67cd25394e8892e6b19eb6f3d7d22d2f073cd5c77e5215da17b504bb2 is acquired
+2019-02-09 19:00:34,388 logger.py[line:138] INFO RefreshToken : 88e030dbd87544f9194c5373bbb9bae50c3197e20adc589cd613269ecb03923a is acquired
+2019-02-09 19:00:35,398 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 6a084fc67cd25394e8892e6b19eb6f3d7d22d2f073cd5c77e5215da17b504bb2 in redis
+2019-02-09 19:00:35,401 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 19:00:35,644 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:35,869 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:36,104 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:36,322 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:37,979 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:00:37,980 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:00:37
+2019-02-09 19:00:37,980 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 19:00:37,980 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:00:38,969 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:38,969 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:00:37
+2019-02-09 19:00:38,969 logger.py[line:133] INFO AccessToken : 9e1b82accaf226f69cc15e16f811e926c60c645a10c249778efcd30284c3d5cc is acquired
+2019-02-09 19:00:38,969 logger.py[line:138] INFO RefreshToken : 7fbf5901dbde3aec29671c2b9a4738025f8d73b76a4d56fa700b1f48578eb1d6 is acquired
+2019-02-09 19:00:39,973 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 9e1b82accaf226f69cc15e16f811e926c60c645a10c249778efcd30284c3d5cc in redis
+2019-02-09 19:00:39,973 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 19:00:40,196 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:40,417 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:40,638 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:00:40,901 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:01:14,358 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:01:42,960 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:01:56,197 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:02:20,456 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:02:50,273 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:06:34,460 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:07:24,542 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:07:24,543 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:07:24
+2019-02-09 19:07:24,543 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 19:07:24,543 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:07:25,569 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:07:25,569 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:07:24
+2019-02-09 19:07:25,569 logger.py[line:133] INFO AccessToken : 4494c81ceceeae383396741a3b2159f350232c6f16c6f0b1568ed0b11aefa4cb is acquired
+2019-02-09 19:07:25,569 logger.py[line:138] INFO RefreshToken : 14ef66426054fdaee00c5fecb3718d818dd064441130b7db461f3eb4d7a989fa is acquired
+2019-02-09 19:07:26,581 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 4494c81ceceeae383396741a3b2159f350232c6f16c6f0b1568ed0b11aefa4cb in redis
+2019-02-09 19:07:26,582 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 19:07:26,796 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:07:27,026 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:07:27,240 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:07:27,460 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:07:34,640 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:09:31,651 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:09:31,653 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:09:31
+2019-02-09 19:09:31,653 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 19:09:31,653 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:09:32,789 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:09:32,789 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:09:31
+2019-02-09 19:09:32,789 logger.py[line:133] INFO AccessToken : 2d654db140bc3366f50bf30918b3799529c920e25df481ed97bf7b4e51fb1c9a is acquired
+2019-02-09 19:09:32,789 logger.py[line:138] INFO RefreshToken : 4c8435f8a44fcdb7184ee9dd412b46475f17e6b5b6900fd5b0139d15eff8ef0b is acquired
+2019-02-09 19:09:33,793 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 2d654db140bc3366f50bf30918b3799529c920e25df481ed97bf7b4e51fb1c9a in redis
+2019-02-09 19:09:33,795 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 19:09:34,038 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:09:34,260 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:09:34,483 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:09:34,697 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:10:37,578 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:10:37,578 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:10:37
+2019-02-09 19:10:37,578 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 19:10:37,578 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:10:38,615 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:10:38,617 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:10:37
+2019-02-09 19:10:38,617 logger.py[line:133] INFO AccessToken : 58e03e63853dd9450c3171d8758658b09d3a1aba6900a41cecd648eead2945a2 is acquired
+2019-02-09 19:10:38,617 logger.py[line:138] INFO RefreshToken : 2cc3744d6890219d2a9f3d19f4a6560d999d8ce48df380fc7f776f16e069363e is acquired
+2019-02-09 19:10:39,617 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 58e03e63853dd9450c3171d8758658b09d3a1aba6900a41cecd648eead2945a2 in redis
+2019-02-09 19:10:39,617 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 19:10:39,832 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:10:40,117 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:10:40,335 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:10:40,558 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:10:43,252 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:27:05,667 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:44:47,994 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:44:47,996 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:44:47
+2019-02-09 19:44:47,996 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 19:44:47,996 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:44:49,134 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:44:49,134 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:44:47
+2019-02-09 19:44:49,134 logger.py[line:133] INFO AccessToken : 8d9609f5d6050c6275eef97760f610f900d3419e95bb334c8c0f7598c6af9782 is acquired
+2019-02-09 19:44:49,134 logger.py[line:138] INFO RefreshToken : dc03ac48af10f53499f4e8070f2771fbcce04a13f199c927c2a7b76cdb302548 is acquired
+2019-02-09 19:44:50,141 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 8d9609f5d6050c6275eef97760f610f900d3419e95bb334c8c0f7598c6af9782 in redis
+2019-02-09 19:44:50,141 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 19:44:50,368 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:44:50,589 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:44:50,842 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:44:51,069 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:55:31,828 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:55:31,829 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:55:31
+2019-02-09 19:55:31,829 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 19:55:31,829 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 19:55:33,112 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:55:33,112 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 19:55:31
+2019-02-09 19:55:33,112 logger.py[line:133] INFO AccessToken : 1cbf43818db94558479d1a14876c89ff47e56d44ee5da182fed69a08b6404951 is acquired
+2019-02-09 19:55:33,112 logger.py[line:138] INFO RefreshToken : 52545f7c094ef42826dfd5e0790c809f4dbc8094e8e7abae1b41311fe6ee6f24 is acquired
+2019-02-09 19:55:34,119 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 1cbf43818db94558479d1a14876c89ff47e56d44ee5da182fed69a08b6404951 in redis
+2019-02-09 19:55:34,121 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 19:55:34,352 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:55:34,576 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:55:34,805 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 19:55:35,029 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:01:35,819 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:01:48,299 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:06:57,105 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:06:57,107 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:06:57
+2019-02-09 20:06:57,107 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:06:57,107 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:06:58,509 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:06:58,509 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:06:57
+2019-02-09 20:06:58,510 logger.py[line:133] INFO AccessToken : dcfb959824064eecf205fef5242596dbb963693a1ea9aa8012e7c947168791d5 is acquired
+2019-02-09 20:06:58,510 logger.py[line:138] INFO RefreshToken : df3a757753a053711e79e734aa1337b9721b0edefd07943261788943bc5d5a99 is acquired
+2019-02-09 20:06:59,513 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : dcfb959824064eecf205fef5242596dbb963693a1ea9aa8012e7c947168791d5 in redis
+2019-02-09 20:06:59,513 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:06:59,732 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:06:59,977 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:07:00,194 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:07:00,428 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:12:52,638 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:16:15,392 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:16:15,392 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:16:15
+2019-02-09 20:16:15,394 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:16:15,394 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:16:16,378 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:16:16,378 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:16:15
+2019-02-09 20:16:16,378 logger.py[line:133] INFO AccessToken : 000a04630836dbb939c3cdce069dc693d15240e06cf466496fc12c83adfafa04 is acquired
+2019-02-09 20:16:16,380 logger.py[line:138] INFO RefreshToken : 138deb8f7da445a573c8adaf4bce410b602e621014bef773dd60c94be461f885 is acquired
+2019-02-09 20:16:17,398 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 000a04630836dbb939c3cdce069dc693d15240e06cf466496fc12c83adfafa04 in redis
+2019-02-09 20:16:17,398 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:16:17,640 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:16:17,993 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:16:18,207 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:16:18,421 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:16:22,454 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:18:52,000 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:18:52,002 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:18:51
+2019-02-09 20:18:52,002 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:18:52,002 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:18:53,049 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:18:53,049 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:18:51
+2019-02-09 20:18:53,049 logger.py[line:133] INFO AccessToken : 0748f64a49fc0531f5a4f1db1439b44604ea24486616174b5475bce207c32ef2 is acquired
+2019-02-09 20:18:53,051 logger.py[line:138] INFO RefreshToken : 8534db11a3983963f0c1052c7ba54af96aae3a7c831c025c98c7d071e3615f48 is acquired
+2019-02-09 20:18:54,053 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 0748f64a49fc0531f5a4f1db1439b44604ea24486616174b5475bce207c32ef2 in redis
+2019-02-09 20:18:54,055 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:18:54,322 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:18:54,540 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:18:54,779 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:18:55,000 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:33,841 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:19:33,841 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:19:33
+2019-02-09 20:19:33,842 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:19:33,842 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:19:34,848 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:34,848 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:19:33
+2019-02-09 20:19:34,848 logger.py[line:133] INFO AccessToken : 53fd7b33992a212ea37da0ac84fe1890b98b76e1094614d4755e901489abe443 is acquired
+2019-02-09 20:19:34,848 logger.py[line:138] INFO RefreshToken : 4434f3281ee01fed231495f2476becc871460a893fdaeeed3e00e163e60e17f8 is acquired
+2019-02-09 20:19:35,851 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 53fd7b33992a212ea37da0ac84fe1890b98b76e1094614d4755e901489abe443 in redis
+2019-02-09 20:19:35,852 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:19:36,069 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:36,301 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:36,522 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:36,752 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:38,483 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:19:38,483 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:19:38
+2019-02-09 20:19:38,484 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:19:38,484 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:19:39,424 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:39,424 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:19:38
+2019-02-09 20:19:39,424 logger.py[line:133] INFO AccessToken : 433997924db2f867cb9a9326cd052e919bff7dfb87fcfe1d31db95173e7861d8 is acquired
+2019-02-09 20:19:39,426 logger.py[line:138] INFO RefreshToken : 6af68e70d942466f58497e27b624eda4b4748f2e88fb4402f0c6041870208f5b is acquired
+2019-02-09 20:19:40,438 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 433997924db2f867cb9a9326cd052e919bff7dfb87fcfe1d31db95173e7861d8 in redis
+2019-02-09 20:19:40,440 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:19:40,690 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:40,913 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:41,130 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:19:41,342 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:14,380 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:21:14,380 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:21:14
+2019-02-09 20:21:14,380 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:21:14,381 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:21:15,321 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:15,322 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:21:14
+2019-02-09 20:21:15,322 logger.py[line:133] INFO AccessToken : 8a75d24989b13e952b6f2e63758595c2ec10f25dfd8ac980394faafb0b7cd39b is acquired
+2019-02-09 20:21:15,322 logger.py[line:138] INFO RefreshToken : 9964caff15d75bc3ffcdd71a84474284f4aeb2323b7df997c2baf779936b447d is acquired
+2019-02-09 20:21:16,326 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 8a75d24989b13e952b6f2e63758595c2ec10f25dfd8ac980394faafb0b7cd39b in redis
+2019-02-09 20:21:16,328 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:21:16,555 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:16,780 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:16,997 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:17,246 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:18,828 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:21:18,828 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:21:18
+2019-02-09 20:21:18,828 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:21:18,828 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:21:19,730 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:19,730 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:21:18
+2019-02-09 20:21:19,730 logger.py[line:133] INFO AccessToken : 3702d6494a4f7dc14e30f73d36fedbf9f262cf9489e3466bcd105fd109723100 is acquired
+2019-02-09 20:21:19,732 logger.py[line:138] INFO RefreshToken : bce117ac8a3a9429647d840d94fcc00db2a6efdb0610472b81c0299dd8c19ce8 is acquired
+2019-02-09 20:21:20,734 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 3702d6494a4f7dc14e30f73d36fedbf9f262cf9489e3466bcd105fd109723100 in redis
+2019-02-09 20:21:20,736 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:21:20,960 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:21,194 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:21,420 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:21:21,684 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:46:17,641 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:46:17,641 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:46:17
+2019-02-09 20:46:17,641 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:46:17,641 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:46:18,612 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:46:18,614 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:46:17
+2019-02-09 20:46:18,615 logger.py[line:133] INFO AccessToken : 8bd410945b12ff98bf29de85ecc8ea4c6dcd309e66a3a081876527f68427de30 is acquired
+2019-02-09 20:46:18,615 logger.py[line:138] INFO RefreshToken : 9fb0653afa8050367ddcd32a9da6de157916b3d1fb7cd61f5633de0e2d1e4359 is acquired
+2019-02-09 20:46:19,621 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 8bd410945b12ff98bf29de85ecc8ea4c6dcd309e66a3a081876527f68427de30 in redis
+2019-02-09 20:46:19,621 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:46:19,838 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:46:20,075 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:46:20,309 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:46:20,542 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:15,691 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:48:15,691 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:48:15
+2019-02-09 20:48:15,691 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:48:15,691 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:48:16,489 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:16,490 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:48:15
+2019-02-09 20:48:16,490 logger.py[line:133] INFO AccessToken : ac560fdc63b8f9d7e10f15fea7ff541d80d481eef94050b00d1bfa69eb38ea27 is acquired
+2019-02-09 20:48:16,490 logger.py[line:138] INFO RefreshToken : dfb4805afd594a6a5b52e78c765745385546cac2ee33d4b71e43377f97fdf0ce is acquired
+2019-02-09 20:48:17,499 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : ac560fdc63b8f9d7e10f15fea7ff541d80d481eef94050b00d1bfa69eb38ea27 in redis
+2019-02-09 20:48:17,500 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:48:17,746 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:17,971 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:18,207 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:18,427 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:19,990 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:48:19,990 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:48:19
+2019-02-09 20:48:19,990 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:48:19,990 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:48:20,937 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:20,937 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:48:19
+2019-02-09 20:48:20,937 logger.py[line:133] INFO AccessToken : 14e839af3a44fc53dfa1b4e1304da38ad74166a8e630f0c048677fa70f136698 is acquired
+2019-02-09 20:48:20,937 logger.py[line:138] INFO RefreshToken : 0c9d7d7af21448252fd369d227040d9c817e2b932364578b9aac0526786e549e is acquired
+2019-02-09 20:48:21,941 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 14e839af3a44fc53dfa1b4e1304da38ad74166a8e630f0c048677fa70f136698 in redis
+2019-02-09 20:48:21,943 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:48:22,165 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:22,392 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:22,624 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:48:22,848 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:51:32,040 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:51:32,040 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:51:32
+2019-02-09 20:51:32,040 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 20:51:32,040 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 20:51:33,099 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:51:33,099 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 20:51:32
+2019-02-09 20:51:33,099 logger.py[line:133] INFO AccessToken : 66c41f2bb234fbad2c0dd3b2c2485eacdcf8b67fddf06ee18eca6e8032440a48 is acquired
+2019-02-09 20:51:33,101 logger.py[line:138] INFO RefreshToken : c8984b165d5b21a68178f6da1319070e60583cdfdd0de89414468ddcc7a32613 is acquired
+2019-02-09 20:51:34,102 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 66c41f2bb234fbad2c0dd3b2c2485eacdcf8b67fddf06ee18eca6e8032440a48 in redis
+2019-02-09 20:51:34,105 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 20:51:34,335 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:51:34,561 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:51:34,779 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 20:51:35,005 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:16:11,311 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:16:11,311 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:16:11
+2019-02-09 21:16:11,312 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 21:16:11,312 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:16:12,358 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:16:12,359 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:16:11
+2019-02-09 21:16:12,359 logger.py[line:133] INFO AccessToken : ee79b6a033992facf9c19e16b440c93f3a87c903a4fe0b786268d4fecf1d2a62 is acquired
+2019-02-09 21:16:12,359 logger.py[line:138] INFO RefreshToken : 0994677694a0e6d0e92f2e11f6dad5820b5b3602f42d02f78dabc30aedbe3515 is acquired
+2019-02-09 21:16:13,372 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : ee79b6a033992facf9c19e16b440c93f3a87c903a4fe0b786268d4fecf1d2a62 in redis
+2019-02-09 21:16:13,372 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 21:16:13,604 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:16:13,828 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:16:14,053 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:16:14,316 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:23:55,799 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:23:55,801 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:23:55
+2019-02-09 21:23:55,801 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 21:23:55,802 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:23:56,992 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:23:56,992 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:23:55
+2019-02-09 21:23:56,992 logger.py[line:133] INFO AccessToken : cef0ca200c6d8f5c93e383fbc5aa6054a12d93c35c2d4ef63e69a53264b4ef25 is acquired
+2019-02-09 21:23:56,992 logger.py[line:138] INFO RefreshToken : 4858ecd358dd219b0e10e3e46bb3f8f4f604a8a148c0b2c2af3c8f9aa99f634a is acquired
+2019-02-09 21:23:57,990 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : cef0ca200c6d8f5c93e383fbc5aa6054a12d93c35c2d4ef63e69a53264b4ef25 in redis
+2019-02-09 21:23:57,990 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 21:23:58,207 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:23:58,424 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:23:58,661 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:23:58,881 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:26:32,293 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:26:32,293 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:26:32
+2019-02-09 21:26:32,295 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 21:26:32,295 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:26:33,249 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:26:33,249 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:26:32
+2019-02-09 21:26:33,249 logger.py[line:133] INFO AccessToken : a8e877cbe7729b5e10917c29e19814739007b1450f9416ddcbb4629ac3bb6085 is acquired
+2019-02-09 21:26:33,250 logger.py[line:138] INFO RefreshToken : c91445ca67c976575fde026bd586b6b2dbd7160a2c8dbd9b34093cc291865195 is acquired
+2019-02-09 21:26:34,255 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : a8e877cbe7729b5e10917c29e19814739007b1450f9416ddcbb4629ac3bb6085 in redis
+2019-02-09 21:26:34,256 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 21:26:34,469 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:26:34,691 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:26:34,917 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:26:35,127 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:02,328 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:28:02,328 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:28:02
+2019-02-09 21:28:02,328 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 21:28:02,329 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:28:03,463 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:03,464 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:28:02
+2019-02-09 21:28:03,464 logger.py[line:133] INFO AccessToken : ab1eb13460e06c2948eb3c97094c15eda7b26de972895d40aeb5dd9fc304c8c3 is acquired
+2019-02-09 21:28:03,466 logger.py[line:138] INFO RefreshToken : e6f302e003002dc6cbb165a157d86e05396004ede7791be4c28bd9fa26d72136 is acquired
+2019-02-09 21:28:04,473 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : ab1eb13460e06c2948eb3c97094c15eda7b26de972895d40aeb5dd9fc304c8c3 in redis
+2019-02-09 21:28:04,473 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 21:28:04,707 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:04,923 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:05,141 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:05,358 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:17,915 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:28:17,915 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:28:17
+2019-02-09 21:28:17,915 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 21:28:17,915 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:28:18,789 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:18,789 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:28:17
+2019-02-09 21:28:18,789 logger.py[line:133] INFO AccessToken : 9f67582c99146c8c5e989cad678fbf782bda23c752770321a38661eb09505e3e is acquired
+2019-02-09 21:28:18,789 logger.py[line:138] INFO RefreshToken : f1fcc740fc4ec870490405f187861f3f2903e5bcf00f026217c1378dec1b6e5d is acquired
+2019-02-09 21:28:19,798 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 9f67582c99146c8c5e989cad678fbf782bda23c752770321a38661eb09505e3e in redis
+2019-02-09 21:28:19,799 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 21:28:20,017 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:20,227 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:20,471 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:20,687 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:22,260 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:28:22,260 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:28:22
+2019-02-09 21:28:22,260 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 21:28:22,262 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:28:23,255 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:23,256 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:28:22
+2019-02-09 21:28:23,256 logger.py[line:133] INFO AccessToken : aa5ce76c99961c3279ec31fd9410b447c8c041a85730ea30cf7b67e32f8b0de4 is acquired
+2019-02-09 21:28:23,256 logger.py[line:138] INFO RefreshToken : 88d10108d5bfb63bc85faa366cac7b4aca16fb245fa91c5e092e267c0ce6f6a6 is acquired
+2019-02-09 21:28:24,260 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : aa5ce76c99961c3279ec31fd9410b447c8c041a85730ea30cf7b67e32f8b0de4 in redis
+2019-02-09 21:28:24,262 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 21:28:24,486 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:24,714 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:24,933 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:28:25,145 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:29:59,292 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:29:59,292 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:29:59
+2019-02-09 21:29:59,292 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 21:29:59,292 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 21:30:00,309 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:30:00,309 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 21:29:59
+2019-02-09 21:30:00,309 logger.py[line:133] INFO AccessToken : e9372727241928f33624df24dd3188c508d4184c910feb1ecd8d5e5c2b41514d is acquired
+2019-02-09 21:30:00,309 logger.py[line:138] INFO RefreshToken : ce4cd23fa77e606a5341423038fc9038dcf943a59c3e3de2cd029cfb7c5d6b8b is acquired
+2019-02-09 21:30:01,313 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : e9372727241928f33624df24dd3188c508d4184c910feb1ecd8d5e5c2b41514d in redis
+2019-02-09 21:30:01,313 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 21:30:01,637 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:30:01,851 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:30:02,076 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:30:02,299 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:31:36,802 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:33:09,618 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 21:35:41,247 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:15:15,448 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:15:15,448 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:15:15
+2019-02-09 22:15:15,450 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 22:15:15,450 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:15:16,640 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:15:16,641 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:15:15
+2019-02-09 22:15:16,641 logger.py[line:133] INFO AccessToken : 58f63231c00d8fc890cb25d05efcc42a1e6261f3ffedb5c7f6d6451ee2548353 is acquired
+2019-02-09 22:15:16,641 logger.py[line:138] INFO RefreshToken : c2e71953b30d6371ba1534bfdcb1d1a6eeba95a82e1653c53d8b0656d6a4779c is acquired
+2019-02-09 22:15:17,647 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 58f63231c00d8fc890cb25d05efcc42a1e6261f3ffedb5c7f6d6451ee2548353 in redis
+2019-02-09 22:15:17,648 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 22:15:18,076 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:15:18,319 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:15:18,553 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:15:18,772 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:32:54,255 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:32:54,256 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:32:54
+2019-02-09 22:32:54,256 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 22:32:54,256 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:32:55,164 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:32:55,164 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:32:54
+2019-02-09 22:32:55,164 logger.py[line:133] INFO AccessToken : bd7aea923fd7b8e5d7cc976d1da7556a93441e4c365acd7b575435cca9673d8c is acquired
+2019-02-09 22:32:55,165 logger.py[line:138] INFO RefreshToken : 2bfb46095a9b20d8de4c85358dbd711ac50a6661875f32c54ad46a72cccfda34 is acquired
+2019-02-09 22:32:56,171 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : bd7aea923fd7b8e5d7cc976d1da7556a93441e4c365acd7b575435cca9673d8c in redis
+2019-02-09 22:32:56,171 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 22:32:56,423 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:32:56,640 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:32:56,859 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:32:57,091 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:32:58,641 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:32:58,641 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:32:58
+2019-02-09 22:32:58,641 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 22:32:58,641 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:32:59,736 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:32:59,736 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:32:58
+2019-02-09 22:32:59,736 logger.py[line:133] INFO AccessToken : 5f53295c574d46092676568552234a8b03b73e93c95e61d9238fb98ed9cc2f91 is acquired
+2019-02-09 22:32:59,736 logger.py[line:138] INFO RefreshToken : 9b88968108db41e60eeed61b97223a79c93dda3f380354d8e4519fdde844d77c is acquired
+2019-02-09 22:33:00,779 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 5f53295c574d46092676568552234a8b03b73e93c95e61d9238fb98ed9cc2f91 in redis
+2019-02-09 22:33:00,779 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 22:33:01,003 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:33:01,226 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:33:01,453 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:33:01,671 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:15,572 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:35:15,572 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:35:15
+2019-02-09 22:35:15,572 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 22:35:15,572 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:35:16,417 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:16,417 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:35:15
+2019-02-09 22:35:16,417 logger.py[line:133] INFO AccessToken : 7afd26adab21a8330e809ef14d62b2d9b19eecd37f5e41a1e705d23cd3207e6e is acquired
+2019-02-09 22:35:16,417 logger.py[line:138] INFO RefreshToken : 9565e181b559d31a0453966dcde709f8e1fb83750155d8d1eabf178a68a28853 is acquired
+2019-02-09 22:35:17,421 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : 7afd26adab21a8330e809ef14d62b2d9b19eecd37f5e41a1e705d23cd3207e6e in redis
+2019-02-09 22:35:17,423 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 22:35:17,640 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:17,858 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:18,084 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:18,325 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:19,862 logger.py[line:75] INFO DadaLogin Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:35:19,862 logger.py[line:105] INFO DadaLogin is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:35:19
+2019-02-09 22:35:19,862 logger.py[line:159] INFO DadaRedis is created within host : localhost and port ;6379
+2019-02-09 22:35:19,864 logger.py[line:114] INFO DadaToken Request is created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin.
+2019-02-09 22:35:20,881 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:20,881 logger.py[line:128] INFO DadaLogin Request is successfully created by 1812bf31d6e641dfb4a18d66b41e8cfc-userAdmin and will expired in2019-03-11 22:35:19
+2019-02-09 22:35:20,882 logger.py[line:133] INFO AccessToken : e7ba77b96774ef1659f1a192b250d83bd6a7e1bbbcbc284c673c4b6dced4ad34 is acquired
+2019-02-09 22:35:20,882 logger.py[line:138] INFO RefreshToken : 4900266543a5fbfabd1c167441e20be4e34636b0f75616adef12fc5a5ca0160b is acquired
+2019-02-09 22:35:21,888 logger.py[line:170] INFO Write keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin and Value : e7ba77b96774ef1659f1a192b250d83bd6a7e1bbbcbc284c673c4b6dced4ad34 in redis
+2019-02-09 22:35:21,890 logger.py[line:163] INFO Search keyName : 1812bf31d6e641dfb4a18d66b41e8cfc/userAdmin in redis
+2019-02-09 22:35:22,107 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:22,323 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:22,539 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:22,756 logger.py[line:98] INFO HTTP response is recieved with a status code of 200
+2019-02-09 22:35:52,321 logger.py[line:98] INFO HTTP response is recieved with a status code of 200

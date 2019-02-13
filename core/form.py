@@ -246,7 +246,6 @@ class FormFields(object):
             response = requests.get(url=self.url, headers=self.headers)
             # result_totalcount = json.loads(json.dumps(dict(response.headers)))
             result_allfields = json.loads(response.content)
-            # print result_allfields
             # 获取当前Response的状态码
             httpcode = response.status_code
             # 打印LoginException错误日志

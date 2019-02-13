@@ -201,13 +201,54 @@ def lesson_detail():
     return render_template('lesson_detail.html')
 
 
-@app.route('/lesson_all')
+@app.route('/lesson_all', methods=['POST', 'GET'])
 def lesson_all():
     templist = []
+    templist1=[]
+    templist2=[]
+    weeklist=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
     for i in range(0,4):
         templist.append(datalist[i]['plan'])
+    # print templist[0],len(templist)
+    if request.method == 'POST':
+        strings = request.get_json()
+        temp1 = int(strings['type'])
+        # print temp1
+        temp2 = int(strings['xingqi'])
 
-    return render_template('lesson_index_new.html', result=templist)
+        if (temp1 == 999 and temp2 == -999):
+            result_list = templist
+            print "11111"
+
+        elif (temp1 == 999 and temp2 >= 0):
+            targetweek=weeklist[temp2]
+            for i in range(0, len(templist)):
+                for j in range(0,len(templist[i])):
+                    if templist[i][j]['xingqiname'] == targetweek:
+                        templist1.append(templist[i][j])
+            result_list = templist1
+            print "22222"
+        elif (temp1 >=0  and temp2 == -999):
+            result_list = templist[temp1]
+            print "33333"
+        else:
+            data_filter = templist[temp1]
+            targetweek = weeklist[temp2]
+            for i in range(0, len(data_filter)):
+                if data_filter[i]['xingqiname'] == targetweek:
+                    templist2.append(data_filter[i])
+            result_list = templist2
+            print result_list
+            print "4444"
+        resp = make_response()
+        resp.status_code = 200
+        resp.headers["content-type"] = "text/html"
+        resp.response = render_template('lesson_index_content.html', result=result_list)
+        # print result_list
+        # return jsonify(list.result)
+        return resp
+    else:
+        return render_template('lesson_index_new.html', result=templist)
 
     # return render_template('1111.html', result=templist)
 
